@@ -1,0 +1,42 @@
+/*
+    Title: styles/main.css
+    Author: NekoGoo
+    Date: 10/29/2021
+    Description: Main styling for NekoGoo site
+ */
+
+
+#container {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font-size: 16px;
+    margin: 50px 100px 0;
+}
+
+#container h1, h2, h3, h4 {
+    background-color: #3C275A;
+    color: white;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+#container a {
+    color: #453674;
+    text-decoration: none;
+}
+#container a:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+    text-decoration: underline;
+}
+#container a:visited {
+    color: #3C275A;
+}
+
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
