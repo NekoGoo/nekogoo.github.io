@@ -5,8 +5,9 @@
     Description: Main styling for NekoGoo site
  */
 
+
 html, body {
-    min-height: 100%;
+    min-height: 100% !important;
 }
 
 body {
@@ -22,69 +23,8 @@ body {
     }
 } */
 
-.rounded-img-bottom {
-    border-radius: 0 0 50% 50%;
-    max-width: 100%;
-}
 
-#container {
-    font-family: 'Oswald', Verdana, Arial, sans-serif;
-    font-size: 16px;
-    margin: 50px 100px 0;
-}
-
-#container h1, h2, h3, h4 {
-    padding: 8px 16px;
-    /* background-color: #3C275A; */
-    /* background-color: #4d004d; */
-    background-image: linear-gradient(#660066, #4d004d);
-    color: white;
-    border: 1px solid #F8D210;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-#container h1 {
-    text-align: center;
-    font-style: italic;
-}
-
-#container a {
-    color: #453674;
-    text-decoration: none;
-}
-#container a:hover {
-    background-color: #D6A800;
-    color: #4F3674;
-    text-decoration: underline;
-}
-#container a:visited {
-    color: #3C275A;
-}
-
-
-.b-example-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
-}
-
-
-#navMainZone {
-    /* box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%); */
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-}
-#navMainZone iframe {
-    border: 0;
-    width: 100%;
-    /* height: 100%; */
-    /* display: block; */
-    /* position: absolute; */
-    left: 0;
-    top: 0;
-}
+/* -------- Site Navigation Panel -------- */
 
 .nav-main-bg {
     background-image: linear-gradient(white, #ffffcc);
@@ -92,7 +32,69 @@ body {
 }
 
 
+/* -------- Landing Page -------- */
+
+#zoneLanding {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    margin: 50px 100px 0;
+    margin: 0 auto;
+}
+
+#zoneLanding h1 {
+    text-align: center;
+    font-style: italic;
+}
+#zoneLanding h1, h2, h3, h4 {
+    padding: 8px 16px;
+    /* background-color: #3C275A; */
+    /* background-color: #4d004d; */
+    background-image: linear-gradient(#660066, #4d004d);
+    border: 1px solid #F8D210;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    color: white;
+}
+
+#zoneLanding a {
+    color: #453674;
+    text-decoration: none;
+}
+#zoneLanding a:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+    text-decoration: underline;
+}
+#zoneLanding a:visited {
+    color: #3C275A;
+}
+
+
+/* -------- About Page -------- */
+
 #zoneAbout p {
     /* https://www.sitepoint.com/understanding-and-using-rem-units-in-css */
     font-size: 1.25rem; /* 20px; */
+}
+
+.rounded-img-bottom {
+    border-radius: 0 0 50% 50%;
+    max-width: 100%;
+}
+
+
+/* -------- Experimental Area -------- */
+
+#navMainZone iframe {
+    border: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
