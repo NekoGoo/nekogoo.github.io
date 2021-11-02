@@ -88,6 +88,7 @@ body {
 
 .nav-main-bg {
     /* background-image: linear-gradient(#3CC, #6FF); */
-    background-image: linear-gradient(#ffffe6, white);
+    /* background-image: linear-gradient(#ffffe6, white); */
+    background-image: linear-gradient(white, #ffff99);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
