@@ -1,8 +1,8 @@
 <!--
-    Title: index.html
+    Title: about/index.html
     Author: NekoGoo
-    Date: 10/30/2021
-    Description: Home landing page
+    Date: 11/02/2021
+    Description: About page for NekoGoo slime
 -->
 
 <!DOCTYPE html>
@@ -19,30 +19,18 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!-- https://getbootstrap.com/docs/5.1/examples/headers -->
-    <!-- https://getbootstrap.com/docs/5.1/components/navbar -->
-    <!-- https://getbootstrap.com/docs/5.1/utilities/spacing -->
-
-    <!-- <div id="navMainZone">
-        <iframe src="_partials/nav-main.html"></iframe>
-    </div> -->
-
     <header class="p-3 mb-3 border-bottom nav-main-bg">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                </a> -->
-        
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
                     <li><a class="nav-link px-2 link-dark">Blog</a></li>
                     <li><a class="nav-link px-2 link-dark">Forum</a></li>
-                    <li><a href="/about.html" class="nav-link px-2 link-dark">About</a></li>
+                    <li><a href="/about" class="nav-link px-2 link-dark">About</a></li>
                     <li><a class="nav-link px-2 link-dark">|</a></li>
                     <li class="nav-item dropdown">
                         <a id="navGamesMenu" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,12 +39,9 @@
                         <ul class="dropdown-menu" aria-labelledby="navGamesMenu">
                             <li class="dropdown-header">Game Test Servers</li>
                             <li><a href="/eRPGe/play" class="dropdown-item">Play eRPGe Demo</a></li>
-                            <!-- <li class="disabled"><a href="/swagger" class="dropdown-item">OpenAPI</a></li> -->
                             <li role="separator" class="divider"></li>
 
                             <li class="dropdown-header">Info | Game Systems | Controlled</li>
-                            <!-- <li><a href="/info/controlled-systems/user-profile" class="dropdown-item">User Profiles</a></li> -->
-                            <!-- <li><a href="/info/controlled-systems/save-slot" class="dropdown-item">Save Slots</a></li> -->
                             <li><a href="/info/controlled-systems/attribute" class="dropdown-item">Attributes</a></li>
                             <li><a href="/info/controlled-systems/effect" class="dropdown-item">Effects</a></li>
                             <li><a href="/info/controlled-systems/tag" class="dropdown-item">Tags</a></li>
@@ -69,16 +54,11 @@
                             <li><a href="/info/community-systems/moment" class="dropdown-item">Moments</a></li>
                             <li><a href="/info/community-systems/relationship" class="dropdown-item">Relationships</a></li>
                             <li><a href="/info/community-systems/skill" class="dropdown-item">Skills</a></li>
-                            <!-- <li class="disabled"><a href="/Game/Species" class="dropdown-item">Species</a></li> -->
-                            <!-- <li><a href="/info/community-systems/story" class="dropdown-item">Stories</a></li> -->
                         </ul>
                     </li>
                 </ul>
-        
                 <div class="dropdown text-end">
                     <a id="navAccountMenu" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- https://bootstrapshuffle.com/classes/borders/rounded-circle -->
-                        <!-- <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> -->
                         <img src="/images/NekoGoo-head-only-50.png" alt="profile avatar" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="navAccountMenu">
@@ -91,49 +71,41 @@
             </div>
         </div>
     </header>
-    
-    <!-- <br /> -->
-    <!-- <div class="b-example-divider"></div> -->
+    <br />
 
-    <div id="container">
-        <h1>NekoGoo.net</h1>
-
-        <!-- <h2>Entertainment</h2> -->
-        <hr />
-
-        <h3>Blog Articles</h3>
-        <ul>
-            <li>Example 01</li>
-            <li>Example 02</li>
-            <li>Example 03</li>
-            <li>Example 04</li>
-            <li>Example 05</li>
-            <li>Example 06</li>
-        </ul>
-
-        <h3>Projects</h3>
-        <ul>
-            <li>EroRPG: Play</li>
-            <li>System Mechanisms</li>
-            <li>Game Systems: Controlled</li>
-            <li>Game Systems: Community</li>
-        </ul>
-
-        <h4>Important Links</h4>
-        <ul>
-            <li><a href="https://validator.w3.org" target="_blank">W3C HTML Validator</a></li>
-            <li><a href="http://jigsaw.w3.org/css-validator" target="_blank">W3C CSS Validator</a></li>
-            <li><a href="https://www.w3schools.com/html" target="_blank">HTML Tutorial</a></li>
-            <li><a href="https://www.w3schools.com/js/js_best_practices.asp" target="_blank">JavaScript Best Practices</a></li>
-        </ul>
-
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <img src="/images/NekoGoo-head-only.png" class="rounded-img-bottom" alt="NekoGoo profile pic">
+            </div>
+            <div class="col">
+                <h3>About NekoGoo</h3><br />
+                <p>
+                    Hello, there!
+                </p>
+                <p>
+                    I am NekoGoo, a fruit slime monster that isekai'd from a clan village of ninja catgirls due to
+                    teleportation magic gone awry.&emsp14; I initially tried getting home..
+                    but there are so many games and snacks I want to try first!&emsp14; =(✪ω✪)=
+                    <!-- https://cutekaomoji.com/animals/cats -->
+                </p>
+                <p>
+                    I enjoy streaming games (no set schedule yet) and writing about my favorite hobbies
+                    like anime, superheroes, fantasy, sci-fi, videogames, and vtubers.
+                </p>
+                <p>
+                    You can also find me designing and programming my own text-based RPG on this site, which will be
+                    free to play upon release.&emsp14; Keep checking back for more, nya!~
+                </p>
+            </div>
+        </div>
     </div>
+    <br /><br /><br />
 
     <!-- JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- https://stackoverflow.com/questions/41722621/es6-modules-in-the-browser-uncaught-syntaxerror-unexpected-token-import -->
-    <script src="dist/app.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" type="text/JavaScript"></script>
+    <script src="../dist/app.js" type="module"></script>
 
 </body>
 </html>
