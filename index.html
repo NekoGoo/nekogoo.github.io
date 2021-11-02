@@ -26,7 +26,12 @@
     <!-- https://getbootstrap.com/docs/5.1/examples/headers -->
     <!-- https://getbootstrap.com/docs/5.1/components/navbar -->
     <!-- https://getbootstrap.com/docs/5.1/utilities/spacing -->
-    <header class="p-3 mb-3 border-bottom">
+
+    <!-- <div id="navMainZone">
+        <iframe src="_partials/nav-main.html"></iframe>
+    </div> -->
+
+    <header class="p-3 mb-3 border-bottom nav-main-bg">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
@@ -35,30 +40,45 @@
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Blog</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
                     <li class="nav-item dropdown">
-                        <a href="#" id="navbarDropdownMenuLink" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
+                        <a id="navGamesMenu" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Games
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navGamesMenu">
+                            <li class="dropdown-header">Game Test Servers</li>
+                            <li><a href="/eRPGe" class="dropdown-item">Play EroRPG</a></li>
+                            <li><a href="/swagger" class="dropdown-item">OpenAPI</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li class="dropdown-header">Game Systems: Controlled</li>
+                            <li><a href="/info/controlled-systems/user-profile" class="dropdown-item">User Profiles</a></li>
+                            <li><a href="/info/controlled-systems/save-slot" class="dropdown-item">Save Slots</a></li>
+                            <li><a href="/info/controlled-systems/attribute" class="dropdown-item">Attributes</a></li>
+                            <li><a href="/info/controlled-systems/tag" class="dropdown-item">Tags</a></li>
+                            <li><a href="/info/controlled-systems/effect" class="dropdown-item">Effects</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li class="dropdown-header">Game Systems: Community</li>
+                            <li><a href="/info/community-systems/character" class="dropdown-item">Characters</a></li>
+                            <li class="disabled"><a href="/Game/Species" class="dropdown-item">Species</a></li>
+                            <li><a href="/info/community-systems/relationship" class="dropdown-item">Relationships</a></li>
+                            <li><a href="/info/community-systems/item" class="dropdown-item">Items</a></li>
+                            <li><a href="/info/community-systems/location" class="dropdown-item">Locations</a></li>
+                            <li><a href="/info/community-systems/moment" class="dropdown-item">Moments</a></li>
+                            <li><a href="/info/community-systems/skill" class="dropdown-item">Skills</a></li>
+                            <li><a href="/info/community-systems/story" class="dropdown-item">Stories</a></li>
                         </ul>
-                      </li>
+                    </li>
                 </ul>
         
-                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                </form> -->
-        
                 <div class="dropdown text-end">
-                    <a href="#" id="dropdownUser1" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" id="navAccountMenu" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
-                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <ul class="dropdown-menu text-small" aria-labelledby="navAccountMenu">
                         <li><a class="dropdown-item" href="#">New project...</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -69,13 +89,14 @@
             </div>
         </div>
     </header>
-    <div class="b-example-divider"></div>
-
+    
+    <!-- <br /> -->
+    <!-- <div class="b-example-divider"></div> -->
 
     <div id="container">
-        <h1>NekoGoo's Landing Page</h1>
+        <h1>NekoGoo.net</h1>
 
-        <h2>Entertainment</h2>
+        <!-- <h2>Entertainment</h2> -->
         <hr />
 
         <h3>Blog Articles</h3>

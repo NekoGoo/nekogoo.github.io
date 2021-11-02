@@ -5,6 +5,22 @@
     Description: Main styling for NekoGoo site
  */
 
+html, body {
+    min-height: 100%;
+}
+
+body {
+    /* background-color: #ffffe6; */
+    /* background-image: linear-gradient(#3CC, #6FF); */
+    background-color: #ccffff;
+    background-image: linear-gradient(to bottom right, #ccffff, white);
+}
+/* @media screen and (min-width: 800px) {
+    body {
+        background-color: lavender;
+        background-image: linear-gradient(lavender, lavender);
+    }
+} */
 
 #container {
     font-family: 'Oswald', Verdana, Arial, sans-serif;
@@ -13,12 +29,20 @@
 }
 
 #container h1, h2, h3, h4 {
-    background-color: #3C275A;
+    /* background-color: #3C275A; */
+    /* background-color: #4d004d; */
+    background-image: linear-gradient(#660066, #4d004d);
+    border-radius: 8px;
+
     color: white;
-    border: 1px solid #D6A800;
+    /* border: 1px solid #D6A800; */
+    border: 1px solid #F8D210;
     padding: 10px;
 }
 
+#container h1 {
+    text-align: center;
+}
 #container a {
     color: #453674;
     text-decoration: none;
@@ -39,4 +63,25 @@
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+
+#navMainZone {
+    /* box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%); */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+#navMainZone iframe {
+    border: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* display: block; */
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+}
+
+.nav-main-bg {
+    /* background-image: linear-gradient(#3CC, #6FF); */
+    background-image: linear-gradient(#ffffe6, white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
