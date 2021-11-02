@@ -71,6 +71,9 @@ body {
 
 /* -------- About Page -------- */
 
+#zoneAbout figcaption {
+    text-align: center;
+}
 #zoneAbout p {
     /* https://www.sitepoint.com/understanding-and-using-rem-units-in-css */
     font-size: 1.25rem; /* 20px; */
