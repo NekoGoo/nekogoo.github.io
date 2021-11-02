@@ -29,20 +29,21 @@ body {
 }
 
 #container h1, h2, h3, h4 {
+    padding: 8px 16px;
     /* background-color: #3C275A; */
     /* background-color: #4d004d; */
     background-image: linear-gradient(#660066, #4d004d);
-    border-radius: 8px;
-
     color: white;
-    /* border: 1px solid #D6A800; */
     border: 1px solid #F8D210;
-    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 #container h1 {
     text-align: center;
+    font-style: italic;
 }
+
 #container a {
     color: #453674;
     text-decoration: none;
