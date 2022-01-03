@@ -93,6 +93,49 @@ footer {
 }
 
 
+/* -------- Modal -------- */
+
+[data-bs-toggle=tooltip] {
+    border-bottom: 1px dotted #c90;
+    text-decoration: none;
+    color: #212529;
+}
+
+.modal-header {
+    background-image: linear-gradient(white, #ffffcc);
+}
+.modal-title {
+    font-style: italic;
+}
+.modal-body .rounded-pill {
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+}
+
+.color_circle {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #E3E3E3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+    height: 1.25em;
+    width: 1.25em;
+    vertical-align: middle;
+}
+.bg_banana { background: #FFE866; }
+.bg_cream { background: #FEFEFA; }
+.bg_cyan { background: cyan; }
+.bg_tangerine { background: #F28500; }
+.bg_grey { background: #808080; }
+.bg_platinum { background: #E5E4E2; }
+
+p.lineb {
+    border-bottom: 1px solid #E3E3E3;
+}
+.inline_header {
+    font-style: italic;
+    color: purple;
+}
+
+
 /* -------- Experimental Area -------- */
 
 #navMainZone iframe {
