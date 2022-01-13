@@ -10,34 +10,74 @@
     font-size: 4rem;
     font-style: italic;
     /* https://www.cssportal.com/css-text-gradient-generator */
+}
+
+.nekogoo-color p {
     background: #ffe866;
     background: -webkit-repeating-linear-gradient(
         to bottom right,
         #ffe866 0%,
-        #ffe866 45%,
+        #ffe866 40%,
         #fefefa 50%,
-        #00ffff 55%,
+        #00ffff 60%,
         #00ffff 100%
     );
     background: -moz-repeating-linear-gradient(
         to bottom right,
         #ffe866 0%,
-        #ffe866 45%,
+        #ffe866 40%,
         #fefefa 50%,
-        #00ffff 55%,
+        #00ffff 60%,
         #00ffff 100%
     );
     background: repeating-linear-gradient(
         to bottom right,
         #ffe866 0%,
-        #ffe866 45%,
+        #ffe866 40%,
         #fefefa 50%,
-        #00ffff 55%,
+        #00ffff 60%,
         #00ffff 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.nekogoo-header {
+    background: #fff099;
+    background: -webkit-repeating-linear-gradient(
+        to bottom right,
+        #fff099 0%,
+        #fff099 40%,
+        #fefefa 50%,
+        #00ffff 60%,
+        #00ffff 100%
+    );
+    background: -moz-repeating-linear-gradient(
+        to bottom right,
+        #fff099 0%,
+        #fff099 40%,
+        #fefefa 50%,
+        #00ffff 60%,
+        #00ffff 100%
+    );
+    background: repeating-linear-gradient(
+        to bottom right,
+        #fff099 0%,
+        #fff099 40%,
+        #fefefa 50%,
+        #00ffff 60%,
+        #00ffff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Additional styling beyond color */
+    position: absolute;
+    top: -3px;
+    font-size: xx-large;
+    /* text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px; */
+    -webkit-text-stroke: 1px darkcyan;
 }
 
 /*
