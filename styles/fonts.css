@@ -1,0 +1,117 @@
+/*
+    Title: styles/fonts.css
+    Author: NekoGoo
+    Date: 2022/01/13
+    Description: Main rules for loading font class styles
+ */
+
+.font-preview p {
+    /* font-size: xx-large; */
+    font-size: 4rem;
+    font-style: italic;
+    /* https://www.cssportal.com/css-text-gradient-generator */
+    background: #ffe866;
+    background: -webkit-repeating-linear-gradient(
+        to bottom right,
+        #ffe866 0%,
+        #ffe866 45%,
+        #fefefa 50%,
+        #00ffff 55%,
+        #00ffff 100%
+    );
+    background: -moz-repeating-linear-gradient(
+        to bottom right,
+        #ffe866 0%,
+        #ffe866 45%,
+        #fefefa 50%,
+        #00ffff 55%,
+        #00ffff 100%
+    );
+    background: repeating-linear-gradient(
+        to bottom right,
+        #ffe866 0%,
+        #ffe866 45%,
+        #fefefa 50%,
+        #00ffff 55%,
+        #00ffff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+    Class per font style
+ */
+
+@font-face {
+    font-family: 'BubbleBobble';
+    src: url('../fonts/Bubble Bobble.ttf');
+}
+.bubble-bobble {
+    font-family: 'BubbleBobble';
+}
+
+@font-face {
+    font-family: 'CandyPop';
+    src: url('../fonts/Candy_Pop!-demo-font.ttf');
+}
+.candy-pop {
+    font-family: 'CandyPop';
+}
+
+@font-face {
+    font-family: 'CandyShop';
+    src: url('../fonts/Candyshop.ttf');
+}
+.candy-shop {
+    font-family: 'CandyShop';
+}
+
+@font-face {
+    font-family: 'ChocolateBar';
+    src: url('../fonts/chocolate-bar-demo.regular.otf');
+}
+.chocolate-bar {
+    font-family: 'ChocolateBar';
+}
+
+@font-face {
+    font-family: 'Gummy';
+    src: url('../fonts/Gummy.ttf');
+}
+.gummy {
+    font-family: 'Gummy';
+}
+
+@font-face {
+    font-family: 'GummyBook';
+    src: url('../fonts/GummyBook.ttf');
+}
+.gummy-book {
+    font-family: 'GummyBook';
+}
+
+@font-face {
+    font-family: 'ReglisseBack';
+    src: url('../fonts/reglisse.back.otf');
+}
+.reglisse-back {
+    font-family: 'ReglisseBack';
+}
+
+@font-face {
+    font-family: 'ReglisseFill';
+    src: url('../fonts/reglisse.fill.otf');
+}
+.reglisse-fill {
+    font-family: 'ReglisseFill';
+}
+
+@font-face {
+    font-family: 'ReglisseRegular';
+    src: url('../fonts/reglisse.regular.otf');
+}
+.reglisse-regular {
+    font-family: 'ReglisseRegular';
+}
