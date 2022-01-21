@@ -155,3 +155,39 @@
 .reglisse-regular {
     font-family: 'ReglisseRegular';
 }
+
+/* Caskaydia Cove */
+
+@font-face {
+    font-family: 'CaskaydiaCoveNerdFontMonoWindows';
+    src: url('../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono Windows Compatible.ttf');
+}
+.caskaydia-cove-mono-windows {
+    font-family: 'CaskaydiaCoveNerdFontMonoWindows';
+}
+
+@font-face {
+    font-family: 'CaskaydiaCoveNerdFontMono';
+    src: url('../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Mono.ttf');
+}
+.caskaydia-cove-mono {
+    font-family: 'CaskaydiaCoveNerdFontMono';
+}
+
+@font-face {
+    font-family: 'CaskaydiaCoveNerdFontWindows';
+    src: url('../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete Windows Compatible.ttf');
+}
+.caskaydia-cove-windows {
+    font-family: 'CaskaydiaCoveNerdFontWindows';
+}
+
+@font-face {
+    font-family: 'CaskaydiaCoveNerdFont';
+    src: url('../fonts/CascadiaCode/Caskaydia Cove Nerd Font Complete.ttf');
+}
+.caskaydia-cove {
+    font-family: 'CaskaydiaCoveNerdFont';
+}
+
+Caskaydia Cove Nerd Font Complete Mono Windows Compatible.ttf
