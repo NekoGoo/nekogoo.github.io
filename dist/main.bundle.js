@@ -1,0 +1,1 @@
+(()=>{console.log("Hello, world!");var o,a="Hey, ".concat((o={name_first:"Suu",name_last:""}).name_first," ").concat(o.name_last);console.log(a)})();
