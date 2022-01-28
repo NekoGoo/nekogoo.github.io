@@ -3,7 +3,7 @@
 
 module.exports = {
   extends: [
-    "eslint:recommended", // A bit too strict atm (doesn't like module.exports)
+    'eslint:recommended', // A bit too strict atm (doesn't like module.exports)
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     // 'eslint-config-prettier' v8.0+ handles all; other 'prettier/*' plugins deprecated
@@ -22,11 +22,13 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    // "@typescript-eslint/no-unused-vars" : "off",
+    // "@typescript-eslint/no-explicit-any": "off"
   },
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
     },
   },
-  ignorePatterns: ["*.cjs", "dist/"]
+  ignorePatterns: ['*.cjs', 'node_modules', 'wwwroot/dist/']
 };
