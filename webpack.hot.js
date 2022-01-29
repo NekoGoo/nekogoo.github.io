@@ -1,6 +1,6 @@
 import { merge } from 'webpack-merge';
-import dev from './webpack.dev.js';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+import dev from './webpack.dev';
 
 export default merge(dev, {
   devServer: {

@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+
 import { fileURLToPath } from 'url';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -13,7 +15,8 @@ const __dirname = path.dirname(__filename);
 export const context = __dirname;
 export const entry = {
   //   main: './src/index.tsx',
-  app: './src/app.ts',
+  main: './src/app.ts',
+  app: './src/index.tsx',
 };
 export const output = {
   path: path.resolve(__dirname, 'wwwroot/dist'),
@@ -25,7 +28,7 @@ export const output = {
 export const resolve = {
   extensions: ['.tsx', '.ts', '.jsx', '.js'],
   // https://blog.johnnyreilly.com/2018/08/21/typescript-webpack-alias-goodbye-relative-paths
-  plugins: [new TsconfigPathsPlugin()]
+  plugins: [new TsconfigPathsPlugin()],
 };
 export const plugins = [
   new MiniCssExtractPlugin(),
@@ -50,26 +53,30 @@ export const plugins = [
 ];
 export const module = {
   rules: [
-    // https://webpack.js.org/guides/asset-modules
+    // IMAGES: https://webpack.js.org/guides/asset-modules
     {
       test: /\.(png|jpe?g|gif|svg)$/i,
       type: 'asset',
     },
-    // Inject font data into the bundle instead of emitting separate files
+    // FONTS: Inject in bundle rather than emitting separate files
     {
       test: /\.(woff2?|eot|ttf|otf)$/,
       type: 'asset/inline',
     },
+    // SCSS/SASS/CSS
     {
       test: /\.(s[ac]|c)ss$/i,
       use: [
+        // https://www.npmjs.com/package/mini-css-extract-plugin
         {
           loader: MiniCssExtractPlugin.loader,
           options: {
             publicPath: '',
           },
         },
+        // https://webpack.js.org/loaders/css-loader
         { loader: 'css-loader', options: { importLoaders: 1 } },
+        // https://webpack.js.org/loaders/postcss-loader
         {
           loader: 'postcss-loader',
           options: {
@@ -78,6 +85,7 @@ export const module = {
             },
           },
         },
+        // https://webpack.js.org/loaders/sass-loader
         'sass-loader',
       ],
     },

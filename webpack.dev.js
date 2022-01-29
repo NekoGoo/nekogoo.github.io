@@ -1,5 +1,5 @@
 import { merge } from 'webpack-merge';
-import * as common from './webpack.common.js';
+import * as common from './webpack.common';
 
 export default merge(common, {
   mode: 'development', // https://webpack.js.org/configuration/mode
