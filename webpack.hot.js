@@ -1,6 +1,7 @@
+/* eslint-disable import/extensions */
 import { merge } from 'webpack-merge';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
-import dev from './webpack.dev';
+import dev from './webpack.dev.js';
 
 export default merge(dev, {
   devServer: {

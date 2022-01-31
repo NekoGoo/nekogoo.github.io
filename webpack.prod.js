@@ -1,5 +1,6 @@
+/* eslint-disable import/extensions */
 import { merge } from 'webpack-merge';
-import * as common from './webpack.common';
+import * as common from './webpack.common.js';
 
 // https://webpack.js.org/guides/production
 export default merge(common, {
