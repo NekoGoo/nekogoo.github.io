@@ -68,5 +68,6 @@ module.exports = {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
     },
   },
-  ignorePatterns: ['node_modules', 'wwwroot/dist'],
+  // https://eslint.org/docs/user-guide/configuring/ignoring-code
+  ignorePatterns: ['node_modules/', 'wwwroot/', 'dist/'],
 };
