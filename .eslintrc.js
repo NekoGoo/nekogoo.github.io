@@ -33,6 +33,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     // 'import/no-extraneous-dependencies': ['error', { devDependencies: false, optionalDependencies: false, peerDependencies: false }],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/no-unescaped-entities': 0,
+    'react/self-closing-comp': 0,
   },
   // https://stackoverflow.com/questions/58510287/parseroptions-project-has-been-set-for-typescript-eslint-parser
   // https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work
