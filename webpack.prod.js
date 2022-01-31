@@ -1,9 +1,9 @@
 /* eslint-disable import/extensions */
-import { merge } from 'webpack-merge';
-import * as common from './webpack.common.js';
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
 // https://webpack.js.org/guides/production
-export default merge(common, {
+module.exports = merge(common, {
   mode: 'production', // https://webpack.js.org/configuration/mode
   module: {
     // Other rules are prepended from webpack.common.js

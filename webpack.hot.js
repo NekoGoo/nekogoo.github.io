@@ -1,9 +1,9 @@
 /* eslint-disable import/extensions */
-import { merge } from 'webpack-merge';
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
-import dev from './webpack.dev.js';
+const { merge } = require('webpack-merge');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const dev = require('./webpack.dev.js');
 
-export default merge(dev, {
+module.exports = merge(dev, {
   devServer: {
     static: './wwwroot',
     open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen

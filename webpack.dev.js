@@ -1,8 +1,8 @@
 /* eslint-disable import/extensions */
-import { merge } from 'webpack-merge';
-import * as common from './webpack.common.js';
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-export default merge(common, {
+module.exports = merge(common, {
   mode: 'development', // https://webpack.js.org/configuration/mode
   devtool: 'source-map', // https://webpack.js.org/configuration/devtool
   module: {
