@@ -9,14 +9,17 @@ module.exports = {
     node: true,
     jest: true,
   },
+  // https://stackoverflow.com/questions/53189200/whats-the-difference-between-plugins-and-extends-in-eslint
+  // plugins: ['react'], // redundant with 'eslint-plugin-react' (extends 'plugin:react/recommended')
   extends: [
     'eslint:recommended', // A bit too strict atm (doesn't like module.exports)
     'airbnb',
+    'react-app',
+    'react-app/jest',
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     'airbnb/hooks',
     'plugin:prettier/recommended', // mods Prettier errors to throw ESLint errors (always last)
   ],
-  plugins: ['react'],
   parserOptions: {
     ecmaVersion: 'latest', // Parsing of modern ECMAScript features
     sourceType: 'module', // Enables the use of imports

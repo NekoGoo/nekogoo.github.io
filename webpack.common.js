@@ -29,17 +29,13 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css',
     }),
-    // https://github.com/TypeStrong/fork-ts-checker-webpack-plugin/blob/main/examples/babel-loader/webpack.config.js
+    // https://github.com/TypeStrong/fork-ts-checker-webpack-plugin/tree/main/examples/babel-loader
     new ForkTsCheckerWebpackPlugin({
       typescript: {
         diagnosticOptions: {
           semantic: true,
           syntactic: true,
         },
-        mode: 'write-references',
-      },
-      eslint: {
-        files: 'src/**/*.{tsx,ts,jsx,js}',
       },
     }),
   ],
