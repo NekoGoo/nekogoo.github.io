@@ -9,29 +9,25 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 module.exports = {
   context: __dirname,
   entry: {
-    //   main: './src/index.tsx',
-    main: './src/app.ts',
-    // app: './src/index.tsx',
-    app: './src/index.js',
+    main: 'src/app.ts',
+    // example: 'src/pages/examples/index.js',
+    app: 'src/pages/index.tsx',
   },
   output: {
-    path: path.resolve(__dirname, 'wwwroot/dist'),
-    publicPath: '/dist/',
-    filename: '[name].bundle.js',
-    assetModuleFilename: 'images/[hash]/[ext][query]',
+    path: path.resolve(__dirname, 'wwwroot'), // wwwroot/ akin to dist/
+    filename: 'js/[name].bundle.js',
+    assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js'],
-    // https://blog.johnnyreilly.com/2018/08/21/typescript-webpack-alias-goodbye-relative-paths
-    plugins: [new TsconfigPathsPlugin()],
-  },
   plugins: [
-    new MiniCssExtractPlugin(),
     // https://www.npmjs.com/package/html-webpack-plugin
+    // 'chunks' (include [name]) | 'excludeChunks' (exclude [name])
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: '../index.html',
+      template: 'src/index.html',
+      filename: 'index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[contenthash].css',
     }),
     // https://github.com/TypeStrong/fork-ts-checker-webpack-plugin/blob/main/examples/babel-loader/webpack.config.js
     new ForkTsCheckerWebpackPlugin({
@@ -43,7 +39,7 @@ module.exports = {
         mode: 'write-references',
       },
       eslint: {
-        files: './src/**/*.{tsx,ts,jsx,js}',
+        files: 'src/**/*.{tsx,ts,jsx,js}',
       },
     }),
   ],
@@ -66,12 +62,9 @@ module.exports = {
           // https://www.npmjs.com/package/mini-css-extract-plugin
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '',
-            },
           },
-          // https://webpack.js.org/loaders/css-loader
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          // https://webpack.js.org/loaders/css-loader (2 => postcss-loader, sass-loader)
+          { loader: 'css-loader', options: { importLoaders: 2 } },
           // https://webpack.js.org/loaders/postcss-loader
           {
             loader: 'postcss-loader',
@@ -86,5 +79,10 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+    // https://blog.johnnyreilly.com/2018/08/21/typescript-webpack-alias-goodbye-relative-paths
+    plugins: [new TsconfigPathsPlugin()],
   },
 };
