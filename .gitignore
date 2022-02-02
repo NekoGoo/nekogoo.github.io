@@ -266,6 +266,7 @@ __pycache__/
 *vault.yml
 package-lock.json
 wwwroot/
+dist/
 
 # Terraform
 .terraform.lock.*
