@@ -41,9 +41,9 @@
 
 ---
 
-- Install [React](https://reactjs.org) packages
+- Install [React](https://reactjs.org) packages ([Router](https://www.w3schools.com/react/react_router.asp))
 
-  - `npm i react react-dom`
+  - `npm i react react-dom react-router-dom`
   - `npm i -D @babel/preset-react`
   - _webpack.config.js_: update 'module:rules' & 'resolve:extensions' (target .jsx too)
   - create JSX files as needed and update import statements
