@@ -2,7 +2,7 @@
   "private": true,
   "homepage": "https://github.com/NekoGoo/nekogoo.github.io",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
