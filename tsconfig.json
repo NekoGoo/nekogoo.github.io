@@ -1,7 +1,7 @@
 {
   // pick either 'files' or 'include' | 'exclude' is applied after includes (https://www.typescriptlang.org/tsconfig#include)
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
-  "exclude": ["node_modules", "wwwroot", "dist", "archive-react-webpack-typescript", "archive-*"],
+  "exclude": ["node_modules", "wwwroot", "dist"],
   // https://vitejs.dev/guide/features.html#typescript-compiler-options
   "compilerOptions": {
     // https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
