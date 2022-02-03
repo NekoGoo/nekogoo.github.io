@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
 // import About from '../views/About.vue';
 
@@ -19,10 +19,12 @@ const routes: RouteRecordRaw[] = [
 ];
 
 // https://next.router.vuejs.org/guide/essentials/history-mode.html
-// there is createWebHistory, createWebHashHistory, createMemoryHistory
+// methods: createWebHistory, createWebHashHistory, createMemoryHistory
 const router = createRouter({
   // history: createWebHistory(process.env.BASE_URL),
-  history: createWebHistory(),
+  // history: createWebHistory(),
+  // Need to use hash address paths for GitHub Pages to avoid 404s
+  history: createWebHashHistory(),
   routes,
 });
 
