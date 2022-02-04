@@ -41,7 +41,7 @@
     // https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
     "baseUrl": "." /* Specify the base directory to resolve non-relative module names. (must be specified if "paths" is) */,
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["src/*"],
       "jquery": ["node_modules/jquery/dist/jquery"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
