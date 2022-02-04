@@ -9,13 +9,14 @@ const routes: RouteRecordRaw[] = [
     name: 'Home',
     component: Home,
   },
+  // https://next.router.vuejs.org/guide/advanced/lazy-loading.html
+  // Recommended to always use dynamic imports for all routes (can group these too)
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    // route level code-splitting generates a separate chunk (about.[hash].js)
+    // for each route which is lazy-loaded when the route is visited
+    component: () => import('../views/About.vue'),
   },
   // https://next.router.vuejs.org/guide/migration/#removed-star-or-catch-all-routes
   {
