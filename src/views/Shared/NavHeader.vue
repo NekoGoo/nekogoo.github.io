@@ -1,3 +1,7 @@
+<script setup lang="ts">
+// import ModeSwitch from '../../components/ui/ModeSwitch.vue';
+</script>
+
 <template>
   <header class="p-2 mb-4 border-bottom nav-main-bg">
     <nav class="container d-flex flex-wrap">
