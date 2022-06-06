@@ -37,7 +37,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'airbnb-typescript',
+        'airbnb-typescript/base',
         '@vue/typescript',
       ],
       parser: '@typescript-eslint/parser',
