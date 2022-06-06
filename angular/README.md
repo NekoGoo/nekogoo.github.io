@@ -23,8 +23,51 @@ The game will stand upon the Erotic RPG Engine (eRPGe), a RPG creation tool focu
 
 ### Commands Used
 
-Generate new Angular application
+Generate a new Angular application
 
 ```bash
 ng new <app-name>
+```
+
+Install linting & Prettier
+
+```bash
+npm i -D eslint prettier
+npm i -D eslint-config-airbnb eslint-config-airbnb-typescript
+npm i -D eslint-config-prettier eslint-plugin-prettier eslint-plugin-html
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+Add [jQuery](https://jquery.com) and [Bootstrap](https://getbootstrap.com) to the application (_reminder_: add to angular.json)
+
+```bash
+npm i jquery bootstrap
+npm i @types/jquery @types/bootstrap
+```
+
+Install [font awesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome)
+
+```bash
+ng add @fortawesome/angular-fontawesome
+```
+
+Install lodash
+
+```bash
+npm i lodash
+npm i @types/lodash
+```
+
+Install GitHub Pages deployment package
+
+```bash
+npm i -D gh-pages
+```
+
+---
+
+Generate a new Angular component
+
+```bash
+ng g c <component-name>
 ```
