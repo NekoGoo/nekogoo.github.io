@@ -38,4 +38,15 @@ console.log(welcomeMessage);
 //   return new bootstrap.Tooltip(tooltipTriggerEl);
 // });
 
-export {};
+function bg_body(bgColor) {
+  document.body.style.backgroundColor = bgColor;
+}
+
+function bg_app(bgImage = 'none') {
+  const app = document.getElementById('app');
+  if (!app) return;
+  app.style.backgroundImage = bgImage;
+  app.style.backgroundRepeat = 'no-repeat';
+}
+
+export { bg_body, bg_app };

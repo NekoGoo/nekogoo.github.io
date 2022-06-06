@@ -7,6 +7,12 @@ declare module '@vue/runtime-core' {
   // declare your own store states
   interface State {
     count: number;
+    // --- Game Context (Templates) ---
+    attributes: AttributeSeed;
+    effects: EffectSeed;
+    tags: TagSeed;
+    items: ItemSeed;
+    liveGame: SaveSlot | null;
   }
 
   // provide typings for `this.$store`
