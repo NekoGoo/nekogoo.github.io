@@ -23,7 +23,7 @@ The game will stand upon the Erotic RPG Engine (eRPGe), a RPG creation tool focu
 
 ### Commands Used
 
-Generate a new Angular application
+Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5))
 
 ```bash
 ng new <app-name>
@@ -58,11 +58,13 @@ npm i lodash
 npm i @types/lodash
 ```
 
-Install GitHub Pages deployment package
+Install GitHub Pages deployment package for [Angular](https://www.npmjs.com/package/angular-cli-ghpages)
 
 ```bash
-npm i -D gh-pages
+ng add angular-cli-ghpages
 ```
+
+- can also consider adding Angular blog ([Scully](https://scully.io), [example](https://solocoding.dev))
 
 ---
 

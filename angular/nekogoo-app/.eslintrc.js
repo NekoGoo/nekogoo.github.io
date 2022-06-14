@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     'no-console': 'off',
+    'import/prefer-default-export': 'off',
   },
   // https://stackoverflow.com/questions/58510287/parseroptions-project-has-been-set-for-typescript-eslint-parser
   // https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work
@@ -39,7 +40,13 @@ module.exports = {
         'airbnb-typescript/base',
       ],
       parser: '@typescript-eslint/parser',
-      parserOptions: { project: ['./tsconfig.json'] },
+      // parserOptions: { project: ['./tsconfig.json'] },
+      // https://stackoverflow.com/questions/64933543/parsing-error-cannot-read-file-tsconfig-json-eslint
+      parserOptions: {
+        project: 'tsconfig.json',
+        tsconfigRootDir: __dirname,
+        sourceType: 'module',
+      },
       rules: {
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
         // "@typescript-eslint/no-unused-vars" : "off",
