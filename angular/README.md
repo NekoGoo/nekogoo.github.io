@@ -21,7 +21,7 @@ The game will stand upon the Erotic RPG Engine (eRPGe), a RPG creation tool focu
 
 --- -->
 
-### Commands Used
+### Project Commands Used
 
 Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5))
 
@@ -38,6 +38,8 @@ npm i -D eslint-config-prettier eslint-plugin-prettier eslint-plugin-html
 npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
+- also consider `npm i -D @types/node` for Node.js application development
+
 Add [jQuery](https://jquery.com) and [Bootstrap](https://getbootstrap.com) to the application (_reminder_: add to angular.json)
 
 ```bash
@@ -45,11 +47,7 @@ npm i jquery bootstrap
 npm i @types/jquery @types/bootstrap
 ```
 
-Install [font awesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome)
-
-```bash
-ng add @fortawesome/angular-fontawesome
-```
+---
 
 Install lodash
 
@@ -58,18 +56,36 @@ npm i lodash
 npm i @types/lodash
 ```
 
-Install GitHub Pages deployment package for [Angular](https://www.npmjs.com/package/angular-cli-ghpages)
+Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/package/angular-cli-ghpages)
 
 ```bash
 ng add angular-cli-ghpages
 ```
 
-- can also consider adding Angular blog ([Scully](https://scully.io), [example](https://solocoding.dev))
+Install [Angular font awesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome)
 
----
+```bash
+ng add @fortawesome/angular-fontawesome
+```
+
+- also consider adding Angular blog ([Scully](https://scully.io), [example](https://solocoding.dev))
+
+### Angular Commands Used
 
 Generate a new Angular component
 
 ```bash
 ng g c <component-name>
+```
+
+Generate a new Angular module
+
+```bash
+ng g m <module-name>
+```
+
+Generate a new Angular route guard
+
+```bash
+ng g g <guard-name>
 ```
