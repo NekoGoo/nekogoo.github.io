@@ -1,29 +1,42 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+// import { AboutComponent } from './modules/home/components/about/about.component';
+// import { HomeComponent } from './modules/home/components/home/home.component';
 import { PageNotFoundComponent } from './pagenotfound.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // {
-  //   path: 'composer-list',
-  //   component: ComposerListComponent,
-  // },
-  // {
-  //   path: 'contact',
-  //   component: ContactComponent,
+  //   path: 'home',
+  //   loadChildren: () =>
+  //     import('./modules/home/home.module').then((m) => m.HomeModule),
+  //   data: { showSidebar: false },
   // },
   {
-    path: 'about',
-    component: AboutComponent,
-    // loadChildren: () => import('./about/about.component').then((m) => m.AboutComponent),
+    path: '',
+    loadChildren: () =>
+      import('./modules/home/home.module').then((m) => m.HomeModule),
+    data: { showSidebar: false },
   },
-  // Wild Card Route for 404 request
-  { path: '**', component: PageNotFoundComponent, pathMatch: 'full' },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./modules/about/about.module').then((m) => m.AboutModule),
+    data: { showSidebar: false },
+  },
+  {
+    path: 'coc',
+    loadChildren: () =>
+      import('./modules/coc/coc.module').then((m) => m.CocModule),
+    data: { header: 'coc' },
+  },
+  // Wild card route for 404 requests
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot([]), RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
