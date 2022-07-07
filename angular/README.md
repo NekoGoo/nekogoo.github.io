@@ -23,7 +23,7 @@ The game will stand upon the Erotic RPG Engine (eRPGe), a RPG creation tool focu
 
 ### Project Commands Used
 
-Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5))
+Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5), [layouts](https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2))
 
 ```bash
 ng new <app-name>
@@ -48,6 +48,20 @@ npm i @types/jquery @types/bootstrap
 ```
 
 ---
+
+[Default Angular component css display block](https://stackoverflow.com/questions/51032328/angular-component-default-style-css-display-block) (generated components will contain css `:host { display: block; }`)
+
+```json
+...
+// Set default value in angular.json (Angular v9.1+)
+"projectType": "application",
+"schematics": {
+    "@schematics/angular:component": {
+      "displayBlock": true
+   }
+ }
+...
+```
 
 Install lodash
 
