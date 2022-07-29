@@ -23,7 +23,7 @@ The game will stand upon the Erotic RPG Engine (eRPGe), a RPG creation tool focu
 
 ### Project Commands Used
 
-Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5), [layouts](https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2))
+Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5), [layouts](https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2), [RxJS](https://www.learnrxjs.io))
 
 ```bash
 ng new <app-name>
@@ -38,13 +38,28 @@ npm i -D eslint-config-prettier eslint-plugin-prettier eslint-plugin-html
 npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-- also consider `npm i -D @types/node` for Node.js application development
-
-Add [jQuery](https://jquery.com) and [Bootstrap](https://getbootstrap.com) to the application (_reminder_: add to angular.json)
+Install Angular Material ("custom" theme, 'y' typography, 'y' animations) ([background](https://material.angular.io/guide/theming#application-background-color))
 
 ```bash
-npm i jquery bootstrap
-npm i @types/jquery @types/bootstrap
+ng add @angular/material
+```
+
+Install [Angular Flex-Layout](https://github.com/angular/flex-layout) ([wiki](https://github.com/angular/flex-layout/wiki), [API](https://github.com/angular/flex-layout/wiki/API-Documentation))
+
+```bash
+npm i @angular/flex-layout
+```
+
+Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/package/angular-cli-ghpages)
+
+```bash
+ng add angular-cli-ghpages
+```
+
+Install [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hot-module-replacement)
+
+```bash
+npm i -D @angularclass/hmr
 ```
 
 ---
@@ -68,18 +83,6 @@ Install lodash
 ```bash
 npm i lodash
 npm i @types/lodash
-```
-
-Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/package/angular-cli-ghpages)
-
-```bash
-ng add angular-cli-ghpages
-```
-
-Install [Angular font awesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome)
-
-```bash
-ng add @fortawesome/angular-fontawesome
 ```
 
 - also consider adding Angular blog ([Scully](https://scully.io), [example](https://solocoding.dev))
