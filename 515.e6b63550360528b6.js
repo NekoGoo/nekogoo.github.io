@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknekogoo_app=self.webpackChunknekogoo_app||[]).push([[515],{836:(s,u,n)=>{n.r(u),n.d(u,{CocModule:()=>a});var l=n(895),c=n(256);let a=(()=>{class o{}return o.\u0275fac=function(d){return new(d||o)},o.\u0275mod=c.oAB({type:o}),o.\u0275inj=c.cJS({imports:[l.ez]}),o})()}}]);
