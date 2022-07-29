@@ -1,0 +1,23 @@
+/* -------- About Page -------- */
+
+figure {
+  margin: 0 0 1rem;
+}
+figcaption {
+  text-align: center;
+}
+
+.rounded-img-bottom {
+  border-radius: 0 0 50% 50%;
+}
+
+.about-modal-selectors {
+  button {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 4px 8px;
+  }
+  button:not(:first-of-type) {
+    margin-left: 6px;
+  }
+}

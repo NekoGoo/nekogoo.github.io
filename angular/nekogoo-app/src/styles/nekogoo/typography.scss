@@ -1,0 +1,127 @@
+/* -------- Typography -------- */
+
+// (fonts/typefaces, size, position/spacing, color)
+/*
+  --- Fonts / Typefaces ---
+  - font-family
+  
+  --- Size ---
+  - font-size
+  - font-line-height
+
+  --- Style ---
+  - font-weight
+  - font-style
+  - text-decoration
+
+  --- Position / Spacing ---
+  - text-align
+
+  --- Color ---
+  - color
+*/
+
+// https://ansrsource.com/elements-of-typography
+// https://careerfoundry.com/en/blog/ui-design/beginners-guide-to-typography
+
+/* -------- Nav toolbar -------- */
+
+.nekogoo-logo {
+  /* text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px; */
+  -webkit-text-stroke: 1px darkcyan; // outline trace
+  font-size: xx-large;
+}
+
+// Targeting .mat-typography activates more overrides without requiring !important
+body.mat-typography {
+  /* -------- Body -------- */
+
+  .mat-tooltip {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  // --- Tooltip text (dotted underline) ---
+  .mat-tooltip-trigger {
+    border-bottom: 1px dotted #c90;
+    text-decoration: none;
+    color: #212529;
+  }
+
+  // --- Dialog (Modal) ---
+  .cdk-overlay-container {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* -------- Overall NekoGoo Pages -------- */
+
+  app-home,
+  app-about,
+  app-demo-font {
+    // --- Headers ---
+    h1,
+    h3,
+    h5 {
+      font-family: 'Oswald', Verdana, Arial, sans-serif;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      font-style: italic;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+    h5 {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: white;
+    }
+  }
+
+  /* -------- Home Page -------- */
+
+  app-home,
+  app-demo-font {
+    main {
+      font-family: 'Oswald', Verdana, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    a {
+      color: #453674;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #4f3674;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #3c275a;
+    }
+  }
+
+  /* -------- About Page -------- */
+
+  app-about {
+    main {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+    figcaption {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

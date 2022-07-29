@@ -1,0 +1,62 @@
+<goo-modal-header msg="NekoGoo Appearance" (closeFunc)="onNoClick()"></goo-modal-header>
+
+
+<div mat-dialog-content cdkFocusInitial>
+    <!-- https://cocxianxia.fandom.com/wiki/Goo-Girl -->
+    <!-- https://wiki.smutosaur.us/CoC/Goo-Girl -->
+    <!-- https://dailylifewithamonstergirl.fandom.com/wiki/Suu -->
+
+    <goo-pill>Body Description (anatomy)</goo-pill>
+    <p>
+        Slimes are typically
+        <span matTooltip="gender neutral; not sex-specific; suitable for any type of sex" tabIndex="-1">unisex</span>
+        and capable of
+        <a href="https://en.wikipedia.org/wiki/Asexual_reproduction" target="_blank" matTooltip="can produce offspring with or without a partner" tabIndex="-1"
+            rel="noreferrer">reproducing asexually</a>.&nbsp; NekoGoo's body defaults to feminine because a soft &amp; bouncy shape is far easier to maintain
+        for a slime.&nbsp; It also provides more ample places to store water.&nbsp; That said, NekoGoo is quite indifferent to such matters and willing to have
+        as few (or many) body parts as pleases their partner.
+    </p>
+    <p>
+        Their body emits a very faint light (akin to a glowing mushroom) and slime surface is usually shimmering, appearing reminiscent of someone
+        glistening with sweat.&nbsp;
+    </p>
+    <p>
+        <small>tldr: androgynous head, feminine body, can have all or none of the things</small>
+    </p>
+
+    <goo-pill>Colors</goo-pill>
+    <p>
+        <span class="color_circle bg_banana" matTooltip="#FFE866 | rgb(255, 232, 102)"></span>&nbsp; banana yellow tentacles
+        ('hair' and tail)
+        <br />
+        <span class="color_circle bg_cream" matTooltip="#FEFEFA | rgb(254, 254, 250)"></span>&nbsp; creamy, milky swirls in
+        tentacles and 'clothing'
+        <br />
+        <span class="color_circle bg_cyan" matTooltip="#00FFFF | rgb(0, 255, 255)"></span>&nbsp; main body in various shades of
+        cyan
+    </p>
+    <p>
+        <span class="color_circle bg_tangerine" matTooltip="#F28500 | rgb(242, 133, 0)"></span>&nbsp; casual clothing (tops)
+        primary
+        <br />
+        <span class="color_circle bg_grey" matTooltip="#808080 | rgb(128, 128, 128)"></span>&nbsp; casual clothing (bottoms)
+        primary
+        <br />
+        <span class="color_circle bg_platinum" matTooltip="#E5E4E2 | rgb(229, 228, 226)"></span>&nbsp; casual clothing (bottoms)
+        secondary
+    </p>
+
+    <goo-pill>Physical Stats</goo-pill>
+    <p>
+        <span class="inline_header">Height:</span>&nbsp; Depends on water (average of 5'8" or 172.7 cm)
+        <br />
+        <span class="inline_header">Weight:</span>&nbsp; Varies, dependent on water
+    </p>
+</div>
+
+
+<!-- cdkFocusInitial: declare initial focus element (https://material.angular.io/cdk/a11y/overview#regions) -->
+<!-- <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div> -->

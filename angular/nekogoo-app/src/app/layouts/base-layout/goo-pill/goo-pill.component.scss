@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+// --- Badge Pills ---
+
+.nekogoo-badge-pill {
+  // Typography
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
+
+  // Container pill shape
+  display: inline-block;
+  border-radius: 16px;
+
+  // Container spacing
+  padding: 4px 8px;
+  margin-bottom: 8px;
+
+  // Container colors
+  // box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  // background-color: #ff00cc;
+  background-color: rgb(13, 202, 240);
+}
+
+// .mat-standard-chip {
+//   min-height: 20px !important;
+// }
