@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br />
+
+<coc-header></coc-header>
+<br />
+
+<!-- <div fxLayout="row wrap">
+    <div fxFlex>
+        <mat-card class="main-container">
+            <mat-card-title class="align-center">{{ title }}</mat-card-title>
+            <br /><br />
+
+            <mat-card-content>
+                <router-outlet></router-outlet>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div> -->
+
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center">
+    <div fxFlex="30%">
+        <coc-sidebar></coc-sidebar>
+    </div>
+    <div fxFlex="70%">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<br /><br />
+
+<coc-footer></coc-footer>

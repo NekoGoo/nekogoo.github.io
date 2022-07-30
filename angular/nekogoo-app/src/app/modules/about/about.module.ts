@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { GooModalHeaderComponent } from 'src/app/layouts/base-layout/goo-modal-header/goo-modal-header.component';
-import { GooPillComponent } from 'src/app/layouts/base-layout/goo-pill/goo-pill.component';
-import { MaterialModule } from '../material.module';
+// import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from '@shared/shared.module';
+// import { GooModalHeaderComponent } from 'src/app/layouts/base-layout/goo-modal-header/goo-modal-header.component';
+// import { GooPillComponent } from 'src/app/layouts/base-layout/goo-pill/goo-pill.component';
+// import { MaterialModule } from '../../shared/material.module';
 
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
@@ -17,9 +18,10 @@ import { ModalSpecialComponent } from './components/modal-special/modal-special.
     ModalAppearanceComponent,
     ModalPersonalityComponent,
     ModalSpecialComponent,
-    GooModalHeaderComponent,
-    GooPillComponent,
+    // GooModalHeaderComponent,
+    // GooPillComponent,
   ],
-  imports: [CommonModule, AboutRoutingModule, FlexLayoutModule, MaterialModule],
+  // imports: [CommonModule, AboutRoutingModule, FlexLayoutModule, MaterialModule],
+  imports: [CommonModule, AboutRoutingModule, SharedModule],
 })
 export class AboutModule {}
