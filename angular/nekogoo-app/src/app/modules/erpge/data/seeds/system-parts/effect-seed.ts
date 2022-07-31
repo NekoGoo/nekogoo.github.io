@@ -41,7 +41,13 @@ class EffectSeed {
         'Increases base spell strength by 50%.',
         "You choose the 'Spellpower' perk. Thanks to your sizeable intellect and willpower, you are able to more effectively use magic, boosting base spell effects by 50%.",
       ),
-      new Effect(EffectType.Perk, 'StrongBack', 'Strong Back', 'Enables fourth item slot.', "You choose the 'Strong Back' perk, enabling a fourth item slot."),
+      new Effect(
+        EffectType.Perk,
+        'StrongBack',
+        'Strong Back',
+        'Enables fourth item slot.',
+        "You choose the 'Strong Back' perk, enabling a fourth item slot.",
+      ),
       new Effect(
         EffectType.Perk,
         'Strong Back 2: Strong Harder',
@@ -49,7 +55,13 @@ class EffectSeed {
         'Enables fifth item slot.',
         "You choose the 'Strong Back 2: Strong Harder' perk, enabling a fifth item slot.",
       ),
-      new Effect(EffectType.Perk, 'Tank', 'Tank', 'Raises max HP by 50.', "You choose the 'Tank' perk, giving you an additional 50 HP!"),
+      new Effect(
+        EffectType.Perk,
+        'Tank',
+        'Tank',
+        'Raises max HP by 50.',
+        "You choose the 'Tank' perk, giving you an additional 50 HP!",
+      ),
       new Effect(
         EffectType.Perk,
         'Tank 2',
@@ -60,7 +72,12 @@ class EffectSeed {
       //------------
       // EQUIPMENT
       //------------
-      new Effect(EffectType.Perk, 'Wizard', "Wizard's Focus", "Your wizard's staff grants you additional focus, amplifying the power of your spells."),
+      new Effect(
+        EffectType.Perk,
+        'Wizard',
+        "Wizard's Focus",
+        "Your wizard's staff grants you additional focus, amplifying the power of your spells.",
+      ),
 
       //------------
       // EVENTS
@@ -83,19 +100,34 @@ class EffectSeed {
         'Enlightenment',
         "Jojo's tutelage has given you a master's focus and you can feel the universe in all its glory spread out before you. You've finally surpassed your teacher.",
       ),
-      //Marble
-      new Effect(EffectType.Perk, "Marble's Milk", 'MarblesMilk', "Add Marble's Milk perk description in perkLib.js"),
+      // Marble
+      new Effect(
+        EffectType.Perk,
+        "Marble's Milk",
+        'MarblesMilk',
+        "Add Marble's Milk perk description in perkLib.js",
+      ),
 
-      //Ovipositing
-      new Effect(EffectType.Perk, 'Bee Ovipositor', 'BeeOvipositor', 'Bee Ovipositor Description to be added.'),
-      new Effect(EffectType.Perk, 'Spider Ovipositor', 'SpiderOvipositor', 'Spider Ovipositor Description to be added.'),
+      // Ovipositing
+      new Effect(
+        EffectType.Perk,
+        'Bee Ovipositor',
+        'BeeOvipositor',
+        'Bee Ovipositor Description to be added.',
+      ),
+      new Effect(
+        EffectType.Perk,
+        'Spider Ovipositor',
+        'SpiderOvipositor',
+        'Spider Ovipositor Description to be added.',
+      ),
 
       //-----------
       // TRANSFORMATION RELATED
       //-----------
       new Effect(EffectType.Perk, 'Bimbo Brains', 'BimboBrains'),
       new Effect(EffectType.Perk, 'Futa Faculties', 'FutaFac'),
-      //Fire Fire!
+      // Fire Fire!
       new Effect(EffectType.Perk, 'FireLord', 'FireLord'),
       new Effect(EffectType.Perk, 'Hellfire', 'Hellfire'),
       new Effect(EffectType.Perk, 'Dragonfire', 'Dragonfire'),
@@ -144,8 +176,16 @@ class EffectSeed {
       new Effect(EffectType.Perk, 'Elven Bounty', 'ElvenBounty'),
       new Effect(EffectType.Perk, 'Feeder', 'Feeder'),
       new Effect(EffectType.Perk, 'Feras Boon Alpha', 'FerasBoonAlpha'),
-      new Effect(EffectType.Perk, 'Feras Boon Breeding Bitch', 'FerasBoonBreedingBitch'),
-      new Effect(EffectType.Perk, 'Feras Boon Milking Twat', 'FerasBoonMilkingTwat'),
+      new Effect(
+        EffectType.Perk,
+        'Feras Boon Breeding Bitch',
+        'FerasBoonBreedingBitch',
+      ),
+      new Effect(
+        EffectType.Perk,
+        'Feras Boon Milking Twat',
+        'FerasBoonMilkingTwat',
+      ),
       new Effect(EffectType.Perk, 'Feras Boon Seeder', 'FerasBoonSeeder'),
       new Effect(EffectType.Perk, 'Feras Boon Wide Open', 'FerasBoonWideOpen'),
       new Effect(EffectType.Perk, 'Fertility Minus', 'FertilityMinus'),
@@ -155,7 +195,11 @@ class EffectSeed {
       new Effect(EffectType.Perk, 'Lusty Regeneration', 'LustyRegeneration'),
       new Effect(EffectType.Perk, 'Magical Fertility', 'MagicalFertility'),
       new Effect(EffectType.Perk, 'Magical Virility', 'MagicalVirility'),
-      new Effect(EffectType.Perk, 'Maraes Gift Fertility', 'MaraesGiftFertility'),
+      new Effect(
+        EffectType.Perk,
+        'Maraes Gift Fertility',
+        'MaraesGiftFertility',
+      ),
       new Effect(EffectType.Perk, 'Masochist', 'Masochist'),
       new Effect(EffectType.Perk, 'Milk Maid', 'MilkMaid'),
       new Effect(EffectType.Perk, 'One Track Mind', 'OneTrackMind'),
@@ -166,7 +210,11 @@ class EffectSeed {
       new Effect(EffectType.Perk, 'Wet Pussy', 'WetPussy'),
       new Effect(EffectType.Perk, 'Blood Mage', 'BloodMage'),
       new Effect(EffectType.Perk, 'Speedy Recovery', 'SpeedyRecovery'),
-      new Effect(EffectType.Perk, 'Enlightened Ninetails', 'EnlightenedNinetails'),
+      new Effect(
+        EffectType.Perk,
+        'Enlightened Ninetails',
+        'EnlightenedNinetails',
+      ),
       new Effect(EffectType.Perk, 'Corrupted Ninetails', 'CorruptedNinetails'),
       // TODO: verify: called in CombatTeases but not originally defined
       new Effect(EffectType.Perk, 'Seduction', 'Seduction'),
@@ -186,33 +234,33 @@ class EffectSeed {
       //------------
       // NON-COMBAT
       //------------
-      //Bonus
+      // Bonus
       new Effect(EffectType.Status, 'Bonus aCapacity'),
       new Effect(EffectType.Status, 'Bonus vCapacity'),
       new Effect(EffectType.Status, 'Heat'),
       new Effect(EffectType.Status, 'Cunt Stretched'),
-      //Penalties
+      // Penalties
       new Effect(EffectType.Status, 'Infested'),
       new Effect(EffectType.Status, 'Worm Plugged'),
       new Effect(EffectType.Status, 'Dysfunction'),
       new Effect(EffectType.Status, 'Slime Craving'),
-      //Neutral
+      // Neutral
       new Effect(EffectType.Status, 'Feeder'),
       new Effect(EffectType.Status, 'Mean to Naga'),
       new Effect(EffectType.Status, 'Contraceptives'),
       new Effect(EffectType.Status, 'Eggs'),
-      new Effect(EffectType.Status, 'Uniball'), //TODO: Check code to see if this would be better as a gameflag
+      new Effect(EffectType.Status, 'Uniball'), // TODO: Check code to see if this would be better as a gameflag
       //------------
       // COMBAT
       //------------
-      //Buffs
+      // Buffs
       new Effect(EffectType.Status, 'ChargeWeapon'),
       new Effect(EffectType.Status, 'Might'),
       new Effect(EffectType.Status, 'Climbed'), // Used in Sand Trap fight
-      //Debuffs
+      // Debuffs
       new Effect(EffectType.Status, 'Acid'),
       new Effect(EffectType.Status, 'Blind'),
-      new Effect(EffectType.Status, 'Bind'), //Value determines the type
+      new Effect(EffectType.Status, 'Bind'), // Value determines the type
       new Effect(EffectType.Status, 'Confusion'),
       new Effect(EffectType.Status, 'NoFlee'),
       new Effect(EffectType.Status, 'Poison'),

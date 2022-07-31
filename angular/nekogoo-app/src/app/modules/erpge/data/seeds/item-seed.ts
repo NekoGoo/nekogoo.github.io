@@ -1,5 +1,12 @@
 import { ItemType } from '../../flags/asset-enums';
-import { Armor, BodyLotion, HairDye, Item, SkinOil, Weapon } from '../../models/item';
+import {
+  Armor,
+  BodyLotion,
+  HairDye,
+  Item,
+  SkinOil,
+  Weapon,
+} from '../../models/item';
 
 class ItemSeed {
   readonly data: Item[];
@@ -10,12 +17,12 @@ class ItemSeed {
 
       // --------- KeyItemTypeContainer --------
 
-      //Books
+      // Books
       new Item(ItemType.Key, 'Book - Dangerous Plants'),
       new Item(ItemType.Key, 'Book - Hentai Comic'),
       new Item(ItemType.Key, 'Book - Travel Guide'),
       new Item(ItemType.Key, 'Book - Yoga Guide'),
-      //Toys
+      // Toys
       new Item(ItemType.Key, 'Toy - All-Natural Belt'),
       new Item(ItemType.Key, 'Toy - All-Natural Onahole'),
       new Item(ItemType.Key, 'Toy - Centaur Pole'),
@@ -26,16 +33,16 @@ class ItemSeed {
       new Item(ItemType.Key, 'Toy - Fake Mare'),
       new Item(ItemType.Key, 'Toy - Onahole'),
       new Item(ItemType.Key, 'Toy - Stimulation Belt'),
-      //Milker Stuff
+      // Milker Stuff
       new Item(ItemType.Key, 'Breast Milker'),
       new Item(ItemType.Key, "Breast Milker - Installed at Whitney's Farm"),
       new Item(ItemType.Key, 'Cock Milker'),
       new Item(ItemType.Key, "Cock Milker - Installed at Whitney's Farm"),
-      //Storage Containers
+      // Storage Containers
       new Item(ItemType.Key, 'Equipment Rack - Armor'),
       new Item(ItemType.Key, 'Equipment Rack - Weapons'),
       new Item(ItemType.Key, 'Equipment Rack - Shields'),
-      //Others
+      // Others
       new Item(ItemType.Key, 'Bow'),
       new Item(ItemType.Key, 'Potent Mixture'),
       new Item(ItemType.Key, "Tamani's Satchel"),
@@ -332,7 +339,13 @@ class ItemSeed {
         'This container full of paste can be used to shrink a body part down by a significant amount.',
         30,
       ),
-      new Item(ItemType.Consumable, 'Scholars T.', 'Smart T', "a cup of scholar's tea", 'This potent tea supposedly has mind-strengthening effects.'),
+      new Item(
+        ItemType.Consumable,
+        'Scholars T.',
+        'Smart T',
+        "a cup of scholar's tea",
+        'This potent tea supposedly has mind-strengthening effects.',
+      ),
       new Item(
         ItemType.Consumable,
         'Tattered Scroll',
@@ -340,7 +353,13 @@ class ItemSeed {
         'a tattered scroll',
         'This tattered scroll is written in strange symbols, yet you have the feeling that if you tried to, you could decipher it.',
       ),
-      new Item(ItemType.Consumable, 'Vitality T.', 'Vital T', 'a fish fillet', 'This powerful brew is supposedly good for the strengthening the body.'),
+      new Item(
+        ItemType.Consumable,
+        'Vitality T.',
+        'Vital T',
+        'a fish fillet',
+        'This powerful brew is supposedly good for the strengthening the body.',
+      ),
       new Item(
         ItemType.Consumable,
         'White Book',
@@ -385,11 +404,22 @@ class ItemSeed {
 
       // Needed for Amily transformation code to work. Flesh out when we can obtain the items.
       new Item(ItemType.Consumable, 'Black Egg', 'BlEgg', 'a black egg'),
-      new Item(ItemType.Consumable, 'L.Black Egg', 'LBlEgg', 'a large black egg'),
+      new Item(
+        ItemType.Consumable,
+        'L.Black Egg',
+        'LBlEgg',
+        'a large black egg',
+      ),
 
       // --------- ItemMaterials --------
 
-      new Item(ItemType.Material, 'Green Gel', 'GreenGl', 'a clump of green gel', 'This tough substance has no obvious use that you can discern.'),
+      new Item(
+        ItemType.Material,
+        'Green Gel',
+        'GreenGl',
+        'a clump of green gel',
+        'This tough substance has no obvious use that you can discern.',
+      ),
       new Item(
         ItemType.Material,
         'B.Chitin',
@@ -447,11 +477,23 @@ class ItemSeed {
       // --------- ItemUndergarments --------
 
       new Item(ItemType.Undergarment, 'Spider Silk Bra', 'SpiderSilkBra'),
-      new Item(ItemType.Undergarment, 'Spider Silk Panties', 'SpiderSilkPanties'),
-      new Item(ItemType.Undergarment, 'Spider Silk Loincloth', 'SpiderSilkLoincloth'),
+      new Item(
+        ItemType.Undergarment,
+        'Spider Silk Panties',
+        'SpiderSilkPanties',
+      ),
+      new Item(
+        ItemType.Undergarment,
+        'Spider Silk Loincloth',
+        'SpiderSilkLoincloth',
+      ),
       new Item(ItemType.Undergarment, 'Dragonscale Bra', 'DragonscaleBra'),
       new Item(ItemType.Undergarment, 'Dragonscale Thong', 'DragonscaleThong'),
-      new Item(ItemType.Undergarment, 'Dragonscale Loincloth', 'DragonscaleLoincloth'),
+      new Item(
+        ItemType.Undergarment,
+        'Dragonscale Loincloth',
+        'DragonscaleLoincloth',
+      ),
       new Item(ItemType.Undergarment, 'Dragonscale Thone', 'DragonscaleThone'),
 
       // --------- ItemWeapon --------

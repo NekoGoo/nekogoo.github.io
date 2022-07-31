@@ -1,4 +1,4 @@
-import { ButtRatingType } from '@/erpge/flags/appearanceEnums';
+import { ButtRatingType } from '@erpge/flags/appearanceEnums';
 
 class Ass {
   size: number;

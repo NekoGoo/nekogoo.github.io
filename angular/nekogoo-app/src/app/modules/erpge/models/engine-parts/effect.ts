@@ -1,4 +1,4 @@
-import { EffectType } from '@/erpge/flags/asset-enums';
+import { EffectType } from '@erpge/flags/asset-enums';
 
 class Effect {
   type: EffectType;
@@ -9,7 +9,13 @@ class Effect {
   value: number;
   action: (() => void) | null;
 
-  constructor(type: EffectType, longName: string, shortName = '', description = '', longDescription = '') {
+  constructor(
+    type: EffectType,
+    longName: string,
+    shortName = '',
+    description = '',
+    longDescription = '',
+  ) {
     this.type = type;
     this.longName = longName;
     this.shortName = shortName;

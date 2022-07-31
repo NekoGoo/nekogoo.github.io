@@ -1,4 +1,4 @@
-import { IncubationType, PregType } from '@/erpge/flags/pregFlags';
+import { IncubationType, PregType } from '@erpge/flags/pregFlags';
 import { Character } from '../character';
 
 class Pregnancy {

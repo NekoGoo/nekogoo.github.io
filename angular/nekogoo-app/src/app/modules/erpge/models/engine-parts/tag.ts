@@ -1,4 +1,4 @@
-import { TagType } from '@/erpge/flags/asset-enums';
+import { TagType } from '@erpge/flags/asset-enums';
 
 class Tag {
   id: string;

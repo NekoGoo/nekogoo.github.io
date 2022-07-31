@@ -28,8 +28,16 @@ class TagSeed {
       new Tag(TagType.Species, 'Mouse'),
       new Tag(TagType.Species, 'Cow'),
       new Tag(TagType.Species, 'Minotaur'),
-      new Tag(TagType.Species, 'Lunar Elf', 'Has a natural affinity for the void.  Very curvatious with long, pointed back ears.'),
-      new Tag(TagType.Species, 'Solar Elf', 'Has a natural affinity for the light.  Delightfully lithe and perky with long, pointed up ears.'),
+      new Tag(
+        TagType.Species,
+        'Lunar Elf',
+        'Has a natural affinity for the void.  Very curvatious with long, pointed back ears.',
+      ),
+      new Tag(
+        TagType.Species,
+        'Solar Elf',
+        'Has a natural affinity for the light.  Delightfully lithe and perky with long, pointed up ears.',
+      ),
 
       // Condition Tags
       new Tag(TagType.Effect, 'Demon'),

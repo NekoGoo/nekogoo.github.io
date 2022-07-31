@@ -14,11 +14,11 @@ class AttributeSeed {
       new Attribute(AttributeType.Primary, 'Libido', 15, 'lib'),
       new Attribute(AttributeType.Primary, 'Sensitivity', 15, 'sens'),
       new Attribute(AttributeType.Primary, 'Corruption', 15, 'cor'),
-      //Combat stats (Delete when declaring a new mob except for changing initial stats)
+      // Combat stats (Delete when declaring a new mob except for changing initial stats)
       new Attribute(AttributeType.Secondary, 'Health', 0, 'HP'),
       new Attribute(AttributeType.Secondary, 'Lust', 0, 'lust'),
       new Attribute(AttributeType.Secondary, 'Fatigue', 0, 'fati'),
-      //Advancement
+      // Advancement
       new Attribute(AttributeType.Secondary, 'Level', 1, 'lvl'),
       new Attribute(AttributeType.Secondary, 'Experience', 0, 'XP'),
       new Attribute(AttributeType.Secondary, 'Gems', 0, 'gems'),
