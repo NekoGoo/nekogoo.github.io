@@ -24,12 +24,12 @@ const routes: Routes = [
         loadChildren: () =>
           import('../modules/demo/demo.module').then((m) => m.DemoModule),
       },
+      {
+        path: 'coc',
+        loadChildren: () =>
+          import('../modules/coc/coc.module').then((m) => m.CocModule),
+      },
     ],
-  },
-  {
-    path: 'coc',
-    loadChildren: () =>
-      import('../modules/coc/coc.module').then((m) => m.CocModule),
   },
   // Wild card route for 404 requests
   { path: '**', component: NotFoundComponent },

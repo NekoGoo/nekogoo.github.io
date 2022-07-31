@@ -1,0 +1,255 @@
+.coc-theme {
+  /* -------- Corruption of Champions: Content Wrapper -------- */
+
+  width: 910px;
+  margin: 0 auto;
+  border: 1px solid #808080;
+  background-color: #ebd7a5;
+  background-image: url('/assets/images/coc/interface/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  nav {
+    display: block;
+    float: left;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  // --- Heading Texts ---
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+
+  // --- Buttons ---
+  .buttonrow {
+    padding-bottom: 40px;
+  }
+  .button {
+    display: block;
+    float: left;
+    width: 136px;
+    height: 38px;
+    margin-top: 2px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    transition: color 0.2s linear;
+  }
+  .button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .button:hover div.coc-tooltip {
+    visibility: visible;
+  }
+  .button:active {
+    opacity: 0.6;
+  }
+
+  /* -------- Game Header -------- */
+
+  .topbuttonset {
+    margin-bottom: 2px;
+  }
+  .buttonbuffer {
+    margin-right: 74px;
+  }
+
+  /* -------- Game Main Stage -------- */
+
+  // --- Main Text Display ---
+  .coc-maintext {
+    width: 687px;
+    height: 440px;
+    padding-left: 5px;
+    overflow-y: scroll;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #000000;
+  }
+  // --- Tooltip Display ---
+  .coc-tooltip {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    z-index: 10;
+    left: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 202px;
+    background-image: url('/assets/images/coc/interface/tooltip.png');
+    background-size: cover;
+
+    h4 {
+      margin: 5px 10px 0px;
+      padding-top: 5px;
+      padding-left: 5px;
+      border-bottom: solid 2px black;
+    }
+    p {
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  /* -------- Game Sidebar -------- */
+
+  // --- Stats Display ---
+  .coc-stats {
+    width: 210px;
+    height: 560px;
+    margin-right: 0;
+    /*background-image: url('/assets/images/coc/interface/sidepanel.png');
+      background-repeat: no-repeat;*/
+    p {
+      width: 200px;
+      padding-left: 5px;
+      margin-top: 0;
+      overflow-x: visible;
+    }
+  }
+  .statframe {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    height: 20px;
+    width: 160px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px ridge #000000;
+  }
+  .statframeblank {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    height: 20px;
+    width: 160px;
+    display: block;
+    /*border: 2px ridge #000000;*/
+    padding: 2px;
+  }
+  .statbar {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0.7),
+      rgba(255, 127, 127, 0.7) 50%,
+      rgba(255, 0, 0, 0.7) 50%
+    );
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  .statlabel {
+    position: relative;
+    left: 0px;
+    top: -2px;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 100px;
+    display: block;
+  }
+  .statlabel:hover {
+    cursor: help;
+  }
+  .statnum {
+    position: relative;
+    top: -2px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 60px;
+  }
+  .statnum:hover {
+    cursor: help;
+  }
+  .statupdown {
+    float: inherit;
+    position: relative;
+    left: 162px;
+    bottom: 22px;
+    background-image: url('/assets/images/coc/interface/arrow-up.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+  }
+  // --- Time Display ---
+  .timeDisplay {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  // --- Sprite Display ---
+  .spriteDisplay {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    height: 80px;
+    width: 100px;
+    bottom: 0px;
+    img {
+      position: inherit;
+      display: block;
+      bottom: -50%;
+      padding-top: 18px;
+      padding-left: 10px;
+      transform: scale(2);
+      image-rendering: -moz-crisp-edges; /*Needed until Firefox properly resolves this.*/
+      image-rendering: pixelated;
+    }
+  }
+
+  /* -------- Game Footer -------- */
+
+  .buttonset {
+    bottom: 200px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+  }
+
+  #buttonMain,
+  #button0,
+  #button10 {
+    background-image: url('/assets/images/coc/interface/button0.jpg');
+  }
+  #buttonData,
+  #button1,
+  #button11 {
+    background-image: url('/assets/images/coc/interface/button1.jpg');
+  }
+  #buttonLevel,
+  #button2,
+  #button12 {
+    background-image: url('/assets/images/coc/interface/button2.jpg');
+  }
+  #buttonStats,
+  #button3,
+  #button13 {
+    background-image: url('/assets/images/coc/interface/button3.jpg');
+  }
+  #buttonPerks,
+  #button4,
+  #button14 {
+    background-image: url('/assets/images/coc/interface/button4.jpg');
+  }
+  #buttonAppearance,
+  #button5 {
+    background-image: url('/assets/images/coc/interface/button5.jpg');
+  }
+  #button6 {
+    background-image: url('/assets/images/coc/interface/button6.jpg');
+  }
+  #button7 {
+    background-image: url('/assets/images/coc/interface/button7.jpg');
+  }
+  #button8 {
+    background-image: url('/assets/images/coc/interface/button8.jpg');
+  }
+  #button9 {
+    background-image: url('/assets/images/coc/interface/button9.jpg');
+  }
+}

@@ -7,10 +7,13 @@ import { CocPlayComponent } from './components/play/play.component';
 import { CocProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     component: CocComponent,
+  },
+  {
+    path: 'profile',
+    component: CocProfileComponent,
   },
   {
     path: 'play',
@@ -21,10 +24,6 @@ const routes: Routes = [
         component: CocPlayComponent,
       },
     ],
-  },
-  {
-    path: 'profile',
-    component: CocProfileComponent,
   },
 ];
 
