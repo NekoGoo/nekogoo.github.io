@@ -56,12 +56,6 @@ Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/pack
 ng add angular-cli-ghpages
 ```
 
-Install [Hot Module Replacement (HMR)](https://webpack.js.org/guides/hot-module-replacement)
-
-```bash
-npm i -D @angularclass/hmr
-```
-
 ---
 
 [Default Angular component css display block](https://stackoverflow.com/questions/51032328/angular-component-default-style-css-display-block) (generated components will contain css `:host { display: block; }`)
