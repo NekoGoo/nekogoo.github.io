@@ -56,6 +56,12 @@ Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/pack
 ng add angular-cli-ghpages
 ```
 
+Install [NGRX](https://ngrx.io) [Store](https://ngrx.io/guide/store) for state management
+
+```bash
+ng add @ngrx/store --minimal=false --statePath=core/store
+```
+
 ---
 
 [Default Angular component css display block](https://stackoverflow.com/questions/51032328/angular-component-default-style-css-display-block) (generated components will contain css `:host { display: block; }`)
@@ -65,10 +71,10 @@ ng add angular-cli-ghpages
 // Set default value in angular.json (Angular v9.1+)
 "projectType": "application",
 "schematics": {
-    "@schematics/angular:component": {
-      "displayBlock": true
-   }
- }
+  "@schematics/angular:component": {
+    "displayBlock": true
+  }
+}
 ...
 ```
 

@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '@core/app-routing.module';
+// import { metaReducers, reducers } from '@core/store';
+import { counterReducer } from '@core/store/counter/counter.reducer';
+import { StoreModule } from '@ngrx/store';
 
 // Will contain singleton services
 // https://thetombomb.com/posts/app-core-shared-feature-modules
@@ -14,7 +17,21 @@ import { AppRoutingModule } from '@core/app-routing.module';
 
 @NgModule({
   declarations: [],
-  imports: [AppRoutingModule, BrowserModule, BrowserAnimationsModule],
-  exports: [AppRoutingModule, BrowserModule, BrowserAnimationsModule],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    // StoreModule.forRoot({}, {}),
+    // StoreModule.forRoot(reducers, {
+    //   metaReducers,
+    // }),
+    StoreModule.forRoot({ count: counterReducer }),
+  ],
+  exports: [
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    StoreModule,
+  ],
 })
 export class CoreModule {}
