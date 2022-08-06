@@ -25,7 +25,7 @@ import { StoreModule } from '@ngrx/store';
     // StoreModule.forRoot(reducers, {
     //   metaReducers,
     // }),
-    StoreModule.forRoot({ count: counterReducer }),
+    StoreModule.forRoot({ counter: counterReducer }),
   ],
   exports: [
     AppRoutingModule,
