@@ -50,7 +50,7 @@ Install [Angular Flex-Layout](https://github.com/angular/flex-layout) ([wiki](ht
 npm i @angular/flex-layout
 ```
 
-Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/package/angular-cli-ghpages)
+Install [GitHub Pages deployment package for Angular](https://www.npmjs.com/package/angular-cli-ghpages) ([Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows))
 
 ```bash
 ng add angular-cli-ghpages
