@@ -66,29 +66,27 @@ body.mat-typography {
     /* -------- Game Sidebar -------- */
 
     // --- Stats Display ---
-    .coc-stats {
-      p {
-        line-height: 1.4em;
+    coc-sidebar {
+      .stat-label,
+      .stat-num {
+        font-family: 'Palatino Linotype', Palatino, Georgia, 'Times New Roman',
+          serif;
+        text-shadow: 1px 1px 5px #333333;
       }
-    }
-    .statlabel {
-      font-family: 'Palatino Linotype', Palatino, Georgia, 'Times New Roman',
-        sans-serif;
-      font-size: 12px;
-      color: #000000;
-      text-shadow: 1px 1px 5px #333333;
-    }
-    .statnum {
-      font-family: 'Palatino Linotype', Palatino, Georgia, 'Times New Roman',
-        serif;
-      font-size: 18px;
-      text-align: right;
-      color: black;
-      text-shadow: 1px 1px 5px #333333;
-    }
-    // --- Time Display ---
-    .timeDisplay {
-      font-family: 'Lucida Console', 'Courier New', monospace;
+
+      .stat-label {
+        font-size: 12px;
+      }
+
+      .stat-num {
+        font-size: 18px;
+        text-align: right;
+      }
+
+      // --- Time Display ---
+      .timeDisplay {
+        font-family: 'Lucida Console', 'Courier New', monospace;
+      }
     }
   }
 }

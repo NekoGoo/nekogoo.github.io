@@ -1,0 +1,15 @@
+<div class="stat-container" fxLayout="row" fxLayoutAlign="start center">
+    <div fxFlex>
+        <div [ngClass]="statFrameClass" fxFlex id="{{ _id }}">
+            <div [ngClass]="statBarClass" fxLayout="row">
+                <span class="stat-label" fxFlexAlign="start" title="{{ tt }}">{{ label }}:</span>
+                <span class="stat-num" fxFlex fxFlexAlign="end">{{ value }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stat Level Up Indicator -->
+    <div fxFlex="24px">
+        <div *ngIf="statupdown" class="stat-updown"></div>
+    </div>
+</div>

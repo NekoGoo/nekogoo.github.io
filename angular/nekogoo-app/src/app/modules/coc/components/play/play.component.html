@@ -1,4 +1,7 @@
 <main>
-    <div class="coc-maintext">The game is loading. Please be patient. If it doesn't load, make sure JavaScript is enabled then refresh.</div>
-    <div class="coc-tooltip">Tooltip Text</div>
+    <!-- <div class="coc-maintext">The game is loading. Please be patient. If it doesn't load, make sure JavaScript is enabled then refresh.</div> -->
+    <!-- <div class="coc-tooltip">Tooltip Text</div> -->
+
+    <div class="coc-maintext">{{ mainText$ | async }}</div>
+    <div class="coc-tooltip">{{ tooltipText$ | async }}</div>
 </main>

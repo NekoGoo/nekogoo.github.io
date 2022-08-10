@@ -52,6 +52,10 @@
 
   .topbuttonset {
     margin-bottom: 2px;
+    // Replacement for buttonbuffer
+    div:nth-child(3) {
+      margin-left: 70px;
+    }
   }
   .buttonbuffer {
     margin-right: 74px;
@@ -98,112 +102,87 @@
   /* -------- Game Sidebar -------- */
 
   // --- Stats Display ---
-  .coc-stats {
+  coc-sidebar {
     width: 210px;
     height: 560px;
-    margin-right: 0;
-    /*background-image: url('/assets/images/coc/interface/sidepanel.png');
-      background-repeat: no-repeat;*/
-    p {
-      width: 200px;
-      padding-left: 5px;
-      margin-top: 0;
-      overflow-x: visible;
+    // background-image: url('/assets/images/coc/interface/sidepanel.png');
+    // background-repeat: no-repeat;
+
+    .stat-container {
+      margin: 0 10px 1px;
     }
-  }
-  .statframe {
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: 10px;
-    height: 20px;
-    width: 160px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 2px ridge #000000;
-  }
-  .statframeblank {
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: 10px;
-    height: 20px;
-    width: 160px;
-    display: block;
-    /*border: 2px ridge #000000;*/
-    padding: 2px;
-  }
-  .statbar {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 0, 0, 0.7),
-      rgba(255, 127, 127, 0.7) 50%,
-      rgba(255, 0, 0, 0.7) 50%
-    );
-    height: 100%;
-    width: 100%;
-    transition: width 0.5s ease-in-out;
-  }
-  .statlabel {
-    position: relative;
-    left: 0px;
-    top: -2px;
-    padding: 0;
-    margin: 0;
-    height: 0;
-    width: 100px;
-    display: block;
-  }
-  .statlabel:hover {
-    cursor: help;
-  }
-  .statnum {
-    position: relative;
-    top: -2px;
-    right: 50px;
-    padding: 0;
-    margin: 0;
-    height: 0;
-    width: 60px;
-  }
-  .statnum:hover {
-    cursor: help;
-  }
-  .statupdown {
-    float: inherit;
-    position: relative;
-    left: 162px;
-    bottom: 22px;
-    background-image: url('/assets/images/coc/interface/arrow-up.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 24px;
-    width: 24px;
-  }
-  // --- Time Display ---
-  .timeDisplay {
-    padding-top: 5px;
-    padding-left: 10px;
-  }
-  // --- Sprite Display ---
-  .spriteDisplay {
-    display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 0;
-    height: 80px;
-    width: 100px;
-    bottom: 0px;
-    img {
-      position: inherit;
-      display: block;
-      bottom: -50%;
-      padding-top: 18px;
+
+    .stat-frame {
+      // background-color: rgba(0, 0, 0, 0.2);
+      border: 2px ridge black;
+    }
+    .stat-frame-blank {
+      padding: 2px;
+    }
+
+    .stat-frame,
+    .stat-frame-blank,
+    .stat-updown {
+      height: 24px;
+    }
+
+    .stat-updown {
+      background-image: url('/assets/images/coc/interface/arrow-up.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 24px;
+      margin-left: 2px;
+    }
+
+    .stat-bar {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.7),
+        rgba(255, 127, 127, 0.7) 50%,
+        rgba(255, 0, 0, 0.7) 50%
+      );
+      transition: width 0.5s ease-in-out;
+      height: 100%;
+      width: 100%;
+      padding: 0 4px;
+    }
+
+    .stat-label:hover {
+      cursor: help;
+    }
+
+    // --- Time Display ---
+    .timeDisplay {
+      padding-top: 5px;
       padding-left: 10px;
-      transform: scale(2);
-      image-rendering: -moz-crisp-edges; /*Needed until Firefox properly resolves this.*/
-      image-rendering: pixelated;
+    }
+
+    // --- Sprite Display ---
+    .spriteDisplay {
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 0;
+      height: 80px;
+      width: 100px;
+      bottom: 0px;
+      img {
+        position: inherit;
+        display: block;
+        bottom: -50%;
+        padding-top: 18px;
+        padding-left: 10px;
+        transform: scale(2);
+        image-rendering: -moz-crisp-edges; /*Needed until Firefox properly resolves this.*/
+        image-rendering: pixelated;
+      }
     }
   }
 
   /* -------- Game Footer -------- */
+
+  coc-footer {
+    width: 700px;
+  }
 
   .buttonset {
     bottom: 200px;

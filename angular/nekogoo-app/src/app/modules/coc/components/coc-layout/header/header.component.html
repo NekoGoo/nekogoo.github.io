@@ -1,5 +1,5 @@
-<div class="topbuttonset">
-    <!-- <div class="buttonrow">
+<!-- <div class="topbuttonset"> -->
+<!-- <div class="buttonrow">
             <a>
                 <div class="button" id="buttonMain" onclick="mainMenu()">Main Menu</div>
             </a>
@@ -20,16 +20,7 @@
             </a>
         </div> -->
 
-    <div class="buttonrow">
-        <div id="buttonMain" class="button">Main Menu</div>
-        <div id="buttonData" class="button buttonbuffer">Data</div>
-        <div id="buttonLevel" class="button">Level Up</div>
-        <div id="buttonStats" class="button">Stats</div>
-        <div id="buttonPerks" class="button">Perks</div>
-        <div id="buttonAppearance" class="button">Appearance</div>
-    </div>
-
-    <!-- <div class="buttonrow">
+<!-- <div class="buttonrow">
         <div id="buttonMain" class="button" @click="mainMenu">Main Menu</div>
         <div id="buttonData" class="button buttonbuffer" @click="dataScreen">Data</div>
         <div id="buttonLevel" class="button" @click="levelScreen">Level Up</div>
@@ -37,4 +28,50 @@
         <div id="buttonPerks" class="button" @click="perksScreen">Perks</div>
         <div id="buttonAppearance" class="button" @click="appearanceScreen">Appearance</div>
     </div> -->
+
+<!-- <div class="buttonrow">
+        <div id="buttonMain" class="button">Main Menu</div>
+        <div id="buttonData" class="button buttonbuffer">Data</div>
+        <div id="buttonLevel" class="button">Level Up</div>
+        <div id="buttonStats" class="button">Stats</div>
+        <div id="buttonPerks" class="button">Perks</div>
+        <div id="buttonAppearance" class="button">Appearance</div>
+    </div> -->
+
+<!-- </div> -->
+
+
+<!-- <div class="topbuttonset" fxLayout="row wrap">
+    <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
+        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
+    </div>
+</div> -->
+
+
+<!-- <div class="topbuttonset" fxLayout="row wrap">
+    <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
+        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
+    </div>
+</div> -->
+
+
+<!-- <div class="topbuttonset" fxLayout="row wrap">
+    <coc-button _id="buttonMain">Main Menu</coc-button>
+    <coc-button _id="buttonData">Data</coc-button>
+    <div class="coc-buttonbuffer"></div>
+    <coc-button _id="buttonLevel">Level Up</coc-button>
+    <coc-button _id="buttonStats">Stats</coc-button>
+    <coc-button _id="buttonPerks">Perks</coc-button>
+    <coc-button _id="buttonAppearance">Appearance</coc-button> -->
+
+<!-- <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
+        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
+    </div> -->
+<!-- </div> -->
+
+
+<div class="topbuttonset" fxLayout="row wrap">
+    <div *ngFor="let button of headButtons | keyvalue : originalOrder" fxFlex="140px">
+        <coc-button _id="{{ button.key }}" *ngIf="button.value.visible">{{ button.value.title }}</coc-button>
+    </div>
 </div>
