@@ -1,0 +1,15 @@
+<!-- https://material.angular.io/components/toolbar -->
+<mat-toolbar class="nekogoo-nav-toolbar-bg mat-elevation-z3" style="margin-top: -19px;">
+    <mat-toolbar-row>
+        <div fxLayout="row wrap" fxLayoutAlign="center">
+            <button mat-button routerLink="/coc"><i>Corruption of Champions</i></button>
+            Info:
+            <button mat-button routerLink="/coc/info/attributes">Attributes</button>
+            <button mat-button routerLink="/coc/info/effects">Effects</button>
+            <button mat-button routerLink="/coc/info/tags">Tags</button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<br />
+
+<router-outlet></router-outlet>

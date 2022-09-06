@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+// https://www.w3schools.com/colors/colors_picker.asp
+.nekogoo-nav-toolbar-bg {
+  // background-image: linear-gradient(white, #ffffcc);
+  // background-image: linear-gradient(white, #00ff99);
+  background-image: linear-gradient(white, #66ff99);
+}
+
+.mat-toolbar,
+.mat-toolbar-row {
+  height: auto;
+  min-height: auto;
+}

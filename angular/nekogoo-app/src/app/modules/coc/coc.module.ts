@@ -13,6 +13,7 @@ import { CocHeaderComponent } from './components/coc-layout/header/header.compon
 import { CocSidebarComponent } from './components/coc-layout/sidebar/sidebar.component';
 import { CocPlayComponent } from './components/play/play.component';
 import { CocProfileComponent } from './components/profile/profile.component';
+import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
 
 // https://www.npmjs.com/package/ngx-cookie-service
 // https://www.optizent.com/blog/cookies-vs-javascript-local-storage-vs-session-storage-difference-and-uses
@@ -28,6 +29,7 @@ import { CocProfileComponent } from './components/profile/profile.component';
     CocProfileComponent,
     CocButtonComponent,
     CocStatFrameComponent,
+    CocNavLayoutComponent,
   ],
   imports: [
     SharedModule,
