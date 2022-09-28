@@ -6,7 +6,6 @@
     "paths": {
       "@env": ["src/environments/environment"],
       "@shared/*": ["src/app/shared/*"],
-      "@core/*": ["src/app/core/*"],
       "@modules/*": ["src/app/modules/*"],
       "@erpge/*": ["src/app/modules/erpge/*"]
     },
