@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { EMPTY, Observable } from 'rxjs';
 
+import { SaveState } from '@modules/coc/interfaces';
 import { getMainText } from '@modules/coc/store/play/play.selectors';
-import { PlayState } from '@modules/coc/store/play/play.state';
 import { getMode } from '@modules/coc/store/ui/ui.selectors';
 
 @Component({
@@ -16,7 +16,7 @@ export class CocPlayComponent implements OnInit {
   tooltipText$: Observable<string>;
   mode$ = this.store.select(getMode);
 
-  constructor(private store: Store<PlayState>) {
+  constructor(private store: Store<SaveState>) {
     this.tooltipText$ = EMPTY;
   }
 
