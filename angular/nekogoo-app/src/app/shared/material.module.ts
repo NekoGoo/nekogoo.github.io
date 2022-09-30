@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDialogModule,
     MatChipsModule,
     MatTooltipModule,
+    MatTreeModule,
   ],
   exports: [
     MatButtonModule,
@@ -44,6 +46,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDialogModule,
     MatChipsModule,
     MatTooltipModule,
+    MatTreeModule,
   ],
 })
 export class MaterialModule {}

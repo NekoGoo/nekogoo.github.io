@@ -4,8 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { CocComponent } from './coc.component';
 import { CocLayoutComponent } from './components/coc-layout/coc-layout.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
-import { CocPlayComponent } from './components/play/play.component';
-import { CocProfileComponent } from './components/profile/profile.component';
+import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
+import { CocPlayComponent } from './pages/play/play.component';
+import { CocProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
             component: CocPlayComponent,
           },
         ],
+      },
+      {
+        path: 'info/roadmap',
+        component: CocRoadmapComponent,
       },
     ],
   },

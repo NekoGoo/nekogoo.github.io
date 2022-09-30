@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import { BaseLayoutComponent } from '@shared/components/base-layout/base-layout.component';
-import { HomeComponent } from '@shared/components/home/home.component';
 import { NotFoundComponent } from '@shared/components/not-found/not-found.component';
+import { HomeComponent } from '@shared/pages/home/home.component';
+import { RoadmapComponent } from '@shared/pages/roadmap/roadmap.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -29,6 +30,10 @@ const routes: Routes = [
         path: 'coc',
         loadChildren: () =>
           import('./modules/coc/coc.module').then((m) => m.CocModule),
+      },
+      {
+        path: 'roadmap',
+        component: RoadmapComponent,
       },
     ],
   },
