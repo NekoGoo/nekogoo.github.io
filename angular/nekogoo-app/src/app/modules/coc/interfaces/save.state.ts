@@ -1,5 +1,3 @@
-import { EntityState } from '@ngrx/entity';
-
 import { Time } from './engine-mechanisms/time';
 // import { GameTime } from '../models/mechanisms/game-time';
 
@@ -78,5 +76,3 @@ export interface OgSaveState {
   currentTurn: number;
   currentRound: number;
 }
-
-export interface SaveStateTable extends EntityState<SaveState> {}

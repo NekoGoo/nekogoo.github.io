@@ -1,5 +1,3 @@
-import { EntityState } from '@ngrx/entity';
-
 import { Character } from './engine-mechanisms/character';
 import { Item } from './engine-mechanisms/item';
 import { Moment } from './engine-mechanisms/moment';
@@ -32,5 +30,3 @@ export interface Template {
   characters: Character[];
   relationships: Relationship[];
 }
-
-export interface TemplateTable extends EntityState<Template> {}
