@@ -60,6 +60,10 @@ Install [NGRX](https://ngrx.io) [Store](https://ngrx.io/guide/store) for state m
 
 ```bash
 ng add @ngrx/store --minimal=false --statePath=core/store
+ng add @ngrx/store-devtools --skip-confirmation
+ng add @ngrx/effects --skip-confirmation
+ng add @ngrx/entity --skip-confirmation
+ng add @ngrx/data --skip-confirmation
 ```
 
 ---
