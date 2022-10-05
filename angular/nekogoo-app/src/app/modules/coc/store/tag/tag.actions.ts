@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 
-import { CocState } from '../../interfaces/coc.state';
+import { CocState } from '../play/coc.state';
 import { TagTable } from './tag.state';
 
 export const loadTags = createAction('[CoC Tag] Load Game Tags');

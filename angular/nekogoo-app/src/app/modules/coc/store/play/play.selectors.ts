@@ -1,7 +1,7 @@
 import { SaveState } from '@modules/coc/interfaces';
 import { createSelector } from '@ngrx/store';
-import { CocState } from '../../interfaces/coc.state';
 import { getCocState } from '../index';
+import { CocState } from './coc.state';
 
 // export interface FeatureState {
 //   counter: number;

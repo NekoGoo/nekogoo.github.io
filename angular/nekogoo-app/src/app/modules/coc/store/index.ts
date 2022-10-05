@@ -1,13 +1,14 @@
-import { environment } from '@env';
 import {
   ActionReducerMap,
   createFeatureSelector,
   MetaReducer,
 } from '@ngrx/store';
-import { templateReducer } from './templates/template.reducer';
 
-import { CocState } from '../interfaces';
+import { environment } from '@env';
+import { CocState } from './play/coc.state';
+
 import { playReducer } from './play/play.reducer';
+import { templateReducer } from './templates/template.reducer';
 import { uiReducer } from './ui/ui.reducer';
 
 // --- Store used for Selectors ---

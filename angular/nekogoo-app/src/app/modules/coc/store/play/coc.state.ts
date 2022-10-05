@@ -1,6 +1,5 @@
-import { SaveState } from './save.state';
-import { TemplateTable } from './template';
-import { UiState } from './ui';
+import { SaveState, UiState } from '../../interfaces';
+import { TemplateTable } from '../templates/template.state';
 
 // --- Game Context (main) ---
 export interface CocState {

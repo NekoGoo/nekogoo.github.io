@@ -1,7 +1,7 @@
 import { createSelector } from '@ngrx/store';
 
-import { CocState } from '../../interfaces/coc.state';
 import { getCocState } from '../index';
+import { CocState } from '../play/coc.state';
 import { TagTable, templateAdapter } from './tag.state';
 
 export const { selectAll, selectEntities, selectIds, selectTotal } =
@@ -38,15 +38,15 @@ export const getSaveSlots = createSelector(
   (state: TagTable) => state.entities,
 );
 
-export const getMomentStep = createSelector(
-  getTagTable,
-  (state: TagTable) => state.momentStep,
-);
+// export const getMomentStep = createSelector(
+//   getTagTable,
+//   (state: TagTable) => state.momentStep,
+// );
 
-export const getMainText = createSelector(
-  getTagTable,
-  (state: TagTable) => state.mainText,
-);
+// export const getMainText = createSelector(
+//   getTagTable,
+//   (state: TagTable) => state.mainText,
+// );
 
 // -------- Other --------
 

@@ -1,6 +1,8 @@
-import { createEntityAdapter, EntityAdapter } from '@ngrx/entity';
+import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 
-import { Template, TemplateTable } from '@modules/coc/interfaces';
+import { Template } from '@modules/coc/interfaces';
+
+export interface TemplateTable extends EntityState<Template> {}
 
 // --- Adapters ---
 

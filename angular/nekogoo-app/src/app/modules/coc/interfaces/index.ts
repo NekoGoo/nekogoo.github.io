@@ -2,7 +2,6 @@ export * from './body-parts/ass';
 export * from './body-parts/breast';
 export * from './body-parts/cock';
 export * from './body-parts/pussy';
-export * from './coc.state';
 export * from './engine-mechanisms/character';
 export * from './engine-mechanisms/item';
 export * from './engine-mechanisms/location';

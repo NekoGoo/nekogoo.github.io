@@ -1,6 +1,8 @@
 import { createAction, props } from '@ngrx/store';
 
-import { CocState, Template, TemplateTable } from '@modules/coc/interfaces';
+import { Template } from '@modules/coc/interfaces';
+import { CocState } from '../play/coc.state';
+import { TemplateTable } from './template.state';
 
 export const loadTemplates = createAction('[CoC Template] Load Game Templates');
 export const loadTemplatesSuccess = createAction(
