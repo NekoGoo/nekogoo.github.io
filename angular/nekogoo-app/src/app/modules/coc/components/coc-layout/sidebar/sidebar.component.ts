@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CocSidebarState } from '@modules/coc/store/models/mechanisms/coc-sidebar';
+import { Store } from '@ngrx/store';
+
+import { CocSidebarState } from '@modules/coc/interfaces';
 import { setSidebar } from '@modules/coc/store/ui/ui.actions';
 import { getSidebarState } from '@modules/coc/store/ui/ui.selectors';
-import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'coc-sidebar',

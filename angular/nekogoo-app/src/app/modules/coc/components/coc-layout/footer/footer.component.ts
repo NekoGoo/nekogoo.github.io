@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CocButton } from '@modules/coc/store/models/mechanisms/coc-button';
+
+import { CocButton } from '@modules/coc/interfaces';
 
 @Component({
   selector: 'coc-footer',

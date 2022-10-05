@@ -1,19 +1,18 @@
 import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
 import { Store } from '@ngrx/store';
 
+import { Attribute, Effect, SaveState, Tag } from '@modules/coc/interfaces';
 import {
   AttributeService,
   EffectService,
   TagService,
 } from '@modules/coc/services';
-import { Attribute, Effect, Tag } from '@modules/coc/store/models';
 import {
   createNewGame,
   loadGameMoment,
   loadMainMenu,
   outputText,
 } from '@modules/coc/store/play/play.actions';
-import { PlayState } from '@modules/coc/store/play/play.state';
 import { getMode } from '@modules/coc/store/ui/ui.selectors';
 
 @Component({
@@ -31,7 +30,7 @@ export class CocLayoutComponent implements AfterViewInit {
   tags: Tag[] = this.tagService.data;
 
   constructor(
-    private store: Store<PlayState>,
+    private store: Store<SaveState>,
     private attributeService: AttributeService,
     private effectService: EffectService,
     private tagService: TagService,
@@ -74,7 +73,7 @@ export class CocLayoutComponent implements AfterViewInit {
 
   loadGameMoment() {
     console.log('loadGameMoment');
-    const newState: PlayState = {
+    const newState: SaveState = {
       momentId: 1,
       momentStep: 1,
     };
