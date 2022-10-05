@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { AppState } from '@core/store/app.state';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+
+import { AppState } from '@shared/store/app.state';
 import {
   decrement,
   increment,
   reset,
-} from '@core/store/counter/counter.actions';
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
+} from '@shared/store/counter/counter.actions';
 
 @Component({
   selector: 'app-counter',

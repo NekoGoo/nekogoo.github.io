@@ -1,6 +1,6 @@
+import { UiModeType, UiState } from '@modules/coc/interfaces/ui';
 import { createReducer, on } from '@ngrx/store';
 import * as PlayActionTypes from './ui.actions';
-import { UiModeType, UiState } from './ui.state';
 
 export const initialState: UiState = {
   // mode: 'main-menu',

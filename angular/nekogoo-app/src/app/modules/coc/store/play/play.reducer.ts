@@ -1,8 +1,8 @@
+import { SaveState } from '@modules/coc/interfaces';
 import { createReducer, on } from '@ngrx/store';
 import * as PlayActionTypes from './play.actions';
-import { PlayState } from './play.state';
 
-export const initialState: PlayState = {
+export const initialState: SaveState = {
   momentId: 0,
   momentStep: 0,
   mainText:

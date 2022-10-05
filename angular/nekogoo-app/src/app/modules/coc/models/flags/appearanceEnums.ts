@@ -1,3 +1,4 @@
+// 0 genderless, 1 male, 2 female, 3 hermaphrodite
 enum GenderType {
   NONE,
   Male,

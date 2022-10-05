@@ -1,7 +1,7 @@
+import { UiState } from '@modules/coc/interfaces/ui';
 import { createSelector } from '@ngrx/store';
-import { CocState } from '../coc.state';
+import { CocState } from '../../interfaces/coc.state';
 import { getCocState } from '../index';
-import { UiState } from './ui.state';
 
 // -------- Table / Feature Slice --------
 

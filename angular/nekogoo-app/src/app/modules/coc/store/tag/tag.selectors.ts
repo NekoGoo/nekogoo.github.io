@@ -1,7 +1,11 @@
-import { SaveState } from '@modules/coc/interfaces';
 import { createSelector } from '@ngrx/store';
+
 import { CocState } from '../../interfaces/coc.state';
 import { getCocState } from '../index';
+import { TagTable, templateAdapter } from './tag.state';
+
+export const { selectAll, selectEntities, selectIds, selectTotal } =
+  templateAdapter.getSelectors();
 
 // export interface FeatureState {
 //   counter: number;
@@ -18,30 +22,30 @@ import { getCocState } from '../index';
 //   (state: FeatureState) => state.counter,
 // );
 
-// export const getMomentId = (state: SaveState) => state.momentId;
-// export const getMomentStep = (state: SaveState) => state.momentStep;
-// export const getMainText = (state: SaveState) => state.mainText;
+// export const getMomentId = (state: TagTable) => state.momentId;
+// export const getMomentStep = (state: TagTable) => state.momentStep;
+// export const getMainText = (state: TagTable) => state.mainText;
 
-// export const getSaveState = (state: CocState) => state.playState;
+// export const getTagTable = (state: CocState) => state.playState;
 
-export const getSaveState = createSelector(
+export const getTagTable = createSelector(
   getCocState,
-  (state: CocState) => state.playState,
+  (state: CocState) => state.templates,
 );
 
-export const getMomentId = createSelector(
-  getSaveState,
-  (state: SaveState) => state.momentId,
+export const getSaveSlots = createSelector(
+  getTagTable,
+  (state: TagTable) => state.entities,
 );
 
 export const getMomentStep = createSelector(
-  getSaveState,
-  (state: SaveState) => state.momentStep,
+  getTagTable,
+  (state: TagTable) => state.momentStep,
 );
 
 export const getMainText = createSelector(
-  getSaveState,
-  (state: SaveState) => state.mainText,
+  getTagTable,
+  (state: TagTable) => state.mainText,
 );
 
 // -------- Other --------

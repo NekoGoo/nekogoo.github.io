@@ -1,6 +1,7 @@
 import { createAction, props } from '@ngrx/store';
-import { CocSidebarState } from '../models/mechanisms/coc-sidebar';
-import { UiModeType, UiState } from './ui.state';
+
+import { UiModeType, UiState } from '@modules/coc/interfaces/ui';
+import { CocSidebarState } from '@modules/coc/interfaces/ui/coc-sidebar';
 
 export const updateMode = createAction('[CoC UI] Update Display Mode');
 export const createNewGame = createAction('[CoC UI] Create New Game');

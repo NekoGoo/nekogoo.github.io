@@ -1,6 +1,4 @@
 // https://wiki.smutosaur.us/CoC/Stats
-// https://cocxianxia.fandom.com/wiki/List_of_Stats
-// https://ffxiv.consolegameswiki.com/wiki/Attributes
 
 export enum AttributeType {
   Unassigned,

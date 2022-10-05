@@ -9,7 +9,6 @@ export * from './engine-parts/tag';
 export * from './item';
 export * from './item-functions';
 export * from './location';
-export * from './mechanisms/coc-button';
 export * from './mechanisms/game-time';
 export * from './mechanisms/moment';
 export * from './mechanisms/pregnancy';
