@@ -1,0 +1,29 @@
+{
+  "ui": {
+    "mode": "initial",
+    "mainText": "",
+    "headButtons": [],
+    "footButtons": [],
+    "sidebar": {
+      "charName": "",
+      "coreStats": [],
+      "combatStats": [],
+      "advancement": []
+    }
+  },
+  "saveSlots": {
+    "entities": {
+      "main": {
+        "momentId": 0,
+        "momentStep": 0,
+        "player": 0
+      },
+      "slot01": {
+        "momentId": 0,
+        "momentStep": 0,
+        "player": 0
+      }
+    },
+    "ids": ["main", "slot01"]
+  }
+}
