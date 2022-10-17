@@ -1,19 +1,6 @@
-// Represents tag groups
-export enum TagType {
-  Unassigned,
-  Tag,
-  Effect,
-  Character,
-  Species,
-  Item,
-  Location,
-  Moment,
-  Relationship,
-  Skill,
-  Story,
-}
+import { Tag as ITag, TagType } from '../../interfaces/engine-parts/tag';
 
-export class Tag {
+export class Tag implements ITag {
   id: string;
   type: TagType;
   title: string;
