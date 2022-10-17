@@ -13,6 +13,7 @@ import { CocHeaderComponent } from './components/coc-layout/header/header.compon
 import { CocSidebarComponent } from './components/coc-layout/sidebar/sidebar.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
 import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
+import { TagsComponent } from './pages/info/tags/tags.component';
 import { CocPlayComponent } from './pages/play/play.component';
 import { CocProfileComponent } from './pages/profile/profile.component';
 import { metaReducers, reducers } from './store';
@@ -34,6 +35,7 @@ import { entityMetadata } from './store/entity-metadata';
     CocStatFrameComponent,
     CocNavLayoutComponent,
     CocRoadmapComponent,
+    TagsComponent,
   ],
   imports: [
     CocRoutingModule,

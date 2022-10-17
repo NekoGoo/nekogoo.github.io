@@ -5,6 +5,7 @@ import { CocComponent } from './coc.component';
 import { CocLayoutComponent } from './components/coc-layout/coc-layout.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
 import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
+import { TagsComponent } from './pages/info/tags/tags.component';
 import { CocPlayComponent } from './pages/play/play.component';
 import { CocProfileComponent } from './pages/profile/profile.component';
 
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: 'info/roadmap',
         component: CocRoadmapComponent,
+      },
+      {
+        path: 'info/tags',
+        component: TagsComponent,
       },
     ],
   },
