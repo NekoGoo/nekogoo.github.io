@@ -25,7 +25,7 @@ module.exports = {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     'no-console': 'off',
     'import/prefer-default-export': 'off',
-    'class-methods-use-this': 'warn',
+    'class-methods-use-this': 'off',
   },
   // https://stackoverflow.com/questions/58510287/parseroptions-project-has-been-set-for-typescript-eslint-parser
   // https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work
