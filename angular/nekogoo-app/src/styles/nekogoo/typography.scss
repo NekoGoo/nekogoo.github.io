@@ -42,7 +42,8 @@ body.mat-typography {
   }
 
   // --- Tooltip text (dotted underline) ---
-  .mat-tooltip-trigger {
+  // .mat-tooltip-trigger {
+  .tooltip-underline {
     border-bottom: 1px dotted #c90;
     text-decoration: none;
     color: #212529;
