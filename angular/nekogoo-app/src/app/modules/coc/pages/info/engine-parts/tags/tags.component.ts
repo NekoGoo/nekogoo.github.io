@@ -4,11 +4,11 @@ import { DimensionType, Tag, TagType } from '@modules/coc/interfaces';
 import { TagService } from '@modules/coc/services';
 
 @Component({
-  selector: 'app-tags',
+  selector: 'coc-info-tags',
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
 })
-export class TagsComponent implements OnInit {
+export class TagsInfoComponent implements OnInit {
   tags!: Tag[];
   displayedColumns: string[] = ['type', 'title', 'description'];
 

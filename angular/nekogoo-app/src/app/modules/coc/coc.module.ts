@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { EntityDefinitionService } from '@ngrx/data';
 import { StoreModule } from '@ngrx/store';
-import { SharedModule } from '@shared/shared.module';
 
+import { SharedModule } from '@shared/shared.module';
 import { CocRoutingModule } from './coc-routing.module';
 import { CocComponent } from './coc.component';
 import { CocButtonComponent } from './components/coc-layout/coc-button/coc-button.component';
@@ -12,12 +12,15 @@ import { CocFooterComponent } from './components/coc-layout/footer/footer.compon
 import { CocHeaderComponent } from './components/coc-layout/header/header.component';
 import { CocSidebarComponent } from './components/coc-layout/sidebar/sidebar.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
-import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
-import { TagsComponent } from './pages/info/tags/tags.component';
-import { CocPlayComponent } from './pages/play/play.component';
-import { CocProfileComponent } from './pages/profile/profile.component';
 import { metaReducers, reducers } from './store';
 import { entityMetadata } from './store/entity-metadata';
+
+import { AttributesInfoComponent } from './pages/info/engine-parts/attributes/attributes.component';
+import { EffectsInfoComponent } from './pages/info/engine-parts/effects/effects.component';
+import { TagsInfoComponent } from './pages/info/engine-parts/tags/tags.component';
+import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
+import { CocPlayComponent } from './pages/play/play.component';
+import { CocProfileComponent } from './pages/profile/profile.component';
 
 // https://www.npmjs.com/package/ngx-cookie-service
 // https://www.optizent.com/blog/cookies-vs-javascript-local-storage-vs-session-storage-difference-and-uses
@@ -35,7 +38,9 @@ import { entityMetadata } from './store/entity-metadata';
     CocStatFrameComponent,
     CocNavLayoutComponent,
     CocRoadmapComponent,
-    TagsComponent,
+    TagsInfoComponent,
+    AttributesInfoComponent,
+    EffectsInfoComponent,
   ],
   imports: [
     CocRoutingModule,
