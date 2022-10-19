@@ -1,13 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="center">
     <mat-card fxFlex="95%">
-        <mat-card-title>Tag Configuration</mat-card-title>
+        <mat-card-title>Info: Tags</mat-card-title>
 
         <mat-card-content *ngIf="tags">
             <br />
             <p>
-                Tags are among the three core <i>engine parts</i> (Attributes, Effects, Tags) - static building blocks used to generate dynamic game
+                Tags are among the three core <i>engine parts</i> (Attributes, Effects, Tags) - static building blocks that are used to generate dynamic game
                 assets.&nbsp; For simplicity's sake, tags can be compared to groups/categories in other games, although they may have special additions to how
                 they operate depending on the game system using them.&nbsp;
+            </p>
+            <p>
+                <i>Tag Types:</i> {{tagTypes.join(', ')}}
             </p>
             <br />
 

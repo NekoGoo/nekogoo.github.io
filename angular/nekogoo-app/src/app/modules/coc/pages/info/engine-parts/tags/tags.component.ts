@@ -11,10 +11,13 @@ import { TagService } from '@modules/coc/services';
 export class TagsInfoComponent implements OnInit {
   tags!: Tag[];
   displayedColumns: string[] = ['type', 'title', 'description'];
+  tagTypes: string[];
 
   constructor(private tagService: TagService) {
     // this.tags = this.tagService.data;
     this.tags = this.tagService.seed(DimensionType.CoC);
+    // https://bobbyhadz.com/blog/typescript-get-all-enum-names
+    this.tagTypes = Object.keys(TagType).filter((v) => Number.isNaN(Number(v)));
   }
 
   // https://fonts.google.com/icons?icon.set=Material+Icons

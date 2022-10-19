@@ -1,12 +1,15 @@
 <div fxLayout="row" fxLayoutAlign="center">
     <mat-card fxFlex="95%">
-        <mat-card-title>Attribute Configuration</mat-card-title>
+        <mat-card-title>Info: Attributes</mat-card-title>
 
         <mat-card-content *ngIf="attributes">
             <br />
             <p>
-                Attributes are among the three core <i>engine parts</i> (Attributes, Effects, Attributes) - static building blocks used to generate dynamic game
-                assets.&nbsp; Attributes are comparable to stats in other games.
+                Attributes are among the three core <i>engine parts</i> (Attributes, Effects, Tags) - static building blocks that are used to generate dynamic
+                game assets.&nbsp; Attributes are comparable to stats in other games.
+            </p>
+            <p>
+                <i>Attribute Types:</i> {{attributeTypes.join(', ')}}
             </p>
             <br />
 

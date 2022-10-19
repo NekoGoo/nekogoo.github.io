@@ -5,7 +5,7 @@
 import { DimensionType } from '../dimension';
 
 export enum AttributeType {
-  Unassigned,
+  // Unassigned,
   Primary, // Base/Core: vit/str/dex
   Secondary, // HP, MP
   Tertiary, // Appearance/Body

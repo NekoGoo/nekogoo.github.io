@@ -15,10 +15,15 @@ import { AttributeService } from '@modules/coc/services';
 export class AttributesInfoComponent implements OnInit {
   attributes!: Attribute[];
   displayedColumns: string[] = ['type', 'title', 'description'];
+  attributeTypes: string[];
 
   constructor(private attributeService: AttributeService) {
     // this.attributes = this.attributeService.data;
     this.attributes = this.attributeService.seed(DimensionType.CoC);
+    // https://bobbyhadz.com/blog/typescript-get-all-enum-names
+    this.attributeTypes = Object.keys(AttributeType).filter((v) =>
+      Number.isNaN(Number(v)),
+    );
   }
 
   // https://fonts.google.com/icons?icon.set=Material+Icons
