@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 import {
   Attribute,
@@ -6,6 +7,7 @@ import {
   DimensionType,
 } from '@modules/coc/interfaces';
 import { AttributeService } from '@modules/coc/services';
+import { AttributesInfoDetailComponent } from './detail/detail.component';
 
 @Component({
   selector: 'coc-info-attributes',
@@ -17,13 +19,30 @@ export class AttributesInfoComponent implements OnInit {
   displayedColumns: string[] = ['type', 'title', 'description'];
   attributeTypes: string[];
 
-  constructor(private attributeService: AttributeService) {
+  constructor(
+    private attributeService: AttributeService,
+    public dialog: MatDialog,
+  ) {
     // this.attributes = this.attributeService.data;
     this.attributes = this.attributeService.seed(DimensionType.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names
     this.attributeTypes = Object.keys(AttributeType).filter((v) =>
       Number.isNaN(Number(v)),
     );
+  }
+
+  ngOnInit(): void {}
+
+  openDetailDialog(row: Attribute): void {
+    // const dialogRef = this.dialog.open(DialogComponent, {});
+    // dialogRef.afterClosed().subscribe((result) => {
+    //   console.log('The dialog was closed');
+    // });
+
+    this.dialog.open(AttributesInfoDetailComponent, {
+      width: '500px',
+      data: row,
+    });
   }
 
   // https://fonts.google.com/icons?icon.set=Material+Icons
@@ -62,6 +81,4 @@ export class AttributesInfoComponent implements OnInit {
     }
     return text;
   }
-
-  ngOnInit(): void {}
 }

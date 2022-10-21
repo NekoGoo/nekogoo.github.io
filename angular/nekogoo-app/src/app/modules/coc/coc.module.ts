@@ -16,6 +16,7 @@ import { metaReducers, reducers } from './store';
 import { entityMetadata } from './store/entity-metadata';
 
 import { AttributesInfoComponent } from './pages/info/engine-parts/attributes/attributes.component';
+import { AttributesInfoDetailComponent } from './pages/info/engine-parts/attributes/detail/detail.component';
 import { EffectsInfoComponent } from './pages/info/engine-parts/effects/effects.component';
 import { TagsInfoComponent } from './pages/info/engine-parts/tags/tags.component';
 import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
@@ -41,6 +42,7 @@ import { CocProfileComponent } from './pages/profile/profile.component';
     TagsInfoComponent,
     AttributesInfoComponent,
     EffectsInfoComponent,
+    AttributesInfoDetailComponent,
   ],
   imports: [
     CocRoutingModule,

@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+
+<div mat-dialog-content>
+    <p>Id: {{data.id}}</p>
+    <p *ngIf="data.abbreviation">Abbreviation: {{data.abbreviation}}</p>
+    <p>Type: {{data.type}}</p>
+    <p *ngIf="data.description">Description: {{data.description}}</p>
+    <p>Format: {{data.format}}</p>
+    <p *ngIf="data.value">Value: {{data.value}}</p>
+    <p *ngIf="data.minValue">Min Value: {{data.minValue}}</p>
+    <p *ngIf="data.maxValue">Max Value: {{data.maxValue}}</p>
+</div>
