@@ -1,23 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 import { DimensionType, Tag, TagType } from '@modules/coc/interfaces';
 import { TagService } from '@modules/coc/services';
+import { InfoTagsDetailComponent } from './detail/detail.component';
 
 @Component({
   selector: 'coc-info-tags',
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
 })
-export class TagsInfoComponent implements OnInit {
+export class InfoTagsComponent implements OnInit {
   tags!: Tag[];
   displayedColumns: string[] = ['type', 'title', 'description'];
   tagTypes: string[];
 
-  constructor(private tagService: TagService) {
+  constructor(private tagService: TagService, public dialog: MatDialog) {
     // this.tags = this.tagService.data;
     this.tags = this.tagService.seed(DimensionType.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names
     this.tagTypes = Object.keys(TagType).filter((v) => Number.isNaN(Number(v)));
+  }
+
+  ngOnInit(): void {}
+
+  openDetailDialog(row: Tag): void {
+    this.dialog.open(InfoTagsDetailComponent, {
+      width: '580px',
+      data: row,
+    });
   }
 
   // https://fonts.google.com/icons?icon.set=Material+Icons
@@ -52,7 +63,7 @@ export class TagsInfoComponent implements OnInit {
     if (type === TagType.Attribute) {
       text = 'Attribute';
     } else if (type === TagType.Effect) {
-      text = 'Effect';
+      text = 'Tag';
     } else if (type === TagType.Item) {
       text = 'Item';
     } else if (type === TagType.Location) {
@@ -72,6 +83,4 @@ export class TagsInfoComponent implements OnInit {
     }
     return text;
   }
-
-  ngOnInit(): void {}
 }

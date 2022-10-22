@@ -7,14 +7,14 @@ import {
   DimensionType,
 } from '@modules/coc/interfaces';
 import { AttributeService } from '@modules/coc/services';
-import { AttributesInfoDetailComponent } from './detail/detail.component';
+import { InfoAttributesDetailComponent } from './detail/detail.component';
 
 @Component({
   selector: 'coc-info-attributes',
   templateUrl: './attributes.component.html',
   styleUrls: ['./attributes.component.scss'],
 })
-export class AttributesInfoComponent implements OnInit {
+export class InfoAttributesComponent implements OnInit {
   attributes!: Attribute[];
   displayedColumns: string[] = ['type', 'title', 'description'];
   attributeTypes: string[];
@@ -39,8 +39,8 @@ export class AttributesInfoComponent implements OnInit {
     //   console.log('The dialog was closed');
     // });
 
-    this.dialog.open(AttributesInfoDetailComponent, {
-      width: '500px',
+    this.dialog.open(InfoAttributesDetailComponent, {
+      width: '580px',
       data: row,
     });
   }

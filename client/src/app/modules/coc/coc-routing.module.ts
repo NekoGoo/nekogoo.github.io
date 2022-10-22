@@ -5,9 +5,9 @@ import { CocComponent } from './coc.component';
 import { CocLayoutComponent } from './components/coc-layout/coc-layout.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
 
-import { AttributesInfoComponent } from './pages/info/engine-parts/attributes/attributes.component';
-import { EffectsInfoComponent } from './pages/info/engine-parts/effects/effects.component';
-import { TagsInfoComponent } from './pages/info/engine-parts/tags/tags.component';
+import { InfoAttributesComponent } from './pages/info/engine-parts/attributes/attributes.component';
+import { InfoEffectsComponent } from './pages/info/engine-parts/effects/effects.component';
+import { InfoTagsComponent } from './pages/info/engine-parts/tags/tags.component';
 import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
 import { CocPlayComponent } from './pages/play/play.component';
 import { CocProfileComponent } from './pages/profile/profile.component';
@@ -41,15 +41,15 @@ const routes: Routes = [
       },
       {
         path: 'info/attributes',
-        component: AttributesInfoComponent,
+        component: InfoAttributesComponent,
       },
       {
         path: 'info/effects',
-        component: EffectsInfoComponent,
+        component: InfoEffectsComponent,
       },
       {
         path: 'info/tags',
-        component: TagsInfoComponent,
+        component: InfoTagsComponent,
       },
     ],
   },

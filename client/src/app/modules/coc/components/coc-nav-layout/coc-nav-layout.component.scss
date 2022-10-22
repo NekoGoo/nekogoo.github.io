@@ -61,3 +61,24 @@
     // font-style: italic;
   }
 }
+
+.info-detail-table {
+  width: 100%;
+
+  // --- Table Cell Styling ---
+
+  th.mat-header-cell,
+  th.mat-header-cell:first-of-type,
+  td.mat-cell,
+  td.mat-cell:first-of-type {
+    padding: 0 6px;
+    // vertical-align: top;
+  }
+
+  // --- Table Cell Styling (by columm definition) ---
+
+  .mat-column-0.mat-cell {
+    // font-weight: bold;
+    font-style: italic;
+  }
+}

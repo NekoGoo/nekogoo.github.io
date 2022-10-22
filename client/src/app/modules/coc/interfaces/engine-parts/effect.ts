@@ -1,10 +1,10 @@
 import { DimensionType } from '../dimension';
 
 export enum EffectType {
-  Perk,
-  Status,
-  Consumable,
-  Equipment,
+  Perk = 'perk',
+  Status = 'status',
+  Consumable = 'consumable',
+  Equipment = 'equipment',
 }
 
 export interface Effect {

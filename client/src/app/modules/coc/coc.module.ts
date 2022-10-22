@@ -15,10 +15,12 @@ import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layou
 import { metaReducers, reducers } from './store';
 import { entityMetadata } from './store/entity-metadata';
 
-import { AttributesInfoComponent } from './pages/info/engine-parts/attributes/attributes.component';
-import { AttributesInfoDetailComponent } from './pages/info/engine-parts/attributes/detail/detail.component';
-import { EffectsInfoComponent } from './pages/info/engine-parts/effects/effects.component';
-import { TagsInfoComponent } from './pages/info/engine-parts/tags/tags.component';
+import { InfoAttributesComponent } from './pages/info/engine-parts/attributes/attributes.component';
+import { InfoAttributesDetailComponent } from './pages/info/engine-parts/attributes/detail/detail.component';
+import { InfoEffectsDetailComponent } from './pages/info/engine-parts/effects/detail/detail.component';
+import { InfoEffectsComponent } from './pages/info/engine-parts/effects/effects.component';
+import { InfoTagsDetailComponent } from './pages/info/engine-parts/tags/detail/detail.component';
+import { InfoTagsComponent } from './pages/info/engine-parts/tags/tags.component';
 import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
 import { CocPlayComponent } from './pages/play/play.component';
 import { CocProfileComponent } from './pages/profile/profile.component';
@@ -39,10 +41,12 @@ import { CocProfileComponent } from './pages/profile/profile.component';
     CocStatFrameComponent,
     CocNavLayoutComponent,
     CocRoadmapComponent,
-    TagsInfoComponent,
-    AttributesInfoComponent,
-    EffectsInfoComponent,
-    AttributesInfoDetailComponent,
+    InfoAttributesComponent,
+    InfoAttributesDetailComponent,
+    InfoEffectsComponent,
+    InfoEffectsDetailComponent,
+    InfoTagsComponent,
+    InfoTagsDetailComponent,
   ],
   imports: [
     CocRoutingModule,

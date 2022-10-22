@@ -6,15 +6,15 @@ import { DimensionType } from '../dimension';
 
 export enum AttributeType {
   // Unassigned,
-  Primary, // Base/Core: vit/str/dex
-  Secondary, // HP, MP
-  Tertiary, // Appearance/Body
-  Offensive,
-  Defensive,
-  Sexual,
+  Primary = 'primary', // Base/Core: vit/str/dex
+  Secondary = 'secondary', // HP, MP
+  Tertiary = 'tertiary', // Appearance/Body
+  Offensive = 'offensive',
+  Defensive = 'defensive',
+  Sexual = 'sexual',
 }
 
-type AttributeFormats = 'num' | 'str' | 'bool';
+type AttributeFormats = 'number' | 'string' | 'boolean';
 
 export interface Attribute {
   id: string;
@@ -39,9 +39,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'str',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your physical strength. Increases physical damage and bow damage. Helps with physical special attacks and events requiring brute force.',
+    format: 'number',
     minValue: 1,
     maxValue: 100,
   },
@@ -51,9 +51,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'tou',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your constitution. Extremely important. Increases your HP by 2 as well as maximum natural armor by 1. Tough PCs will be able to wield heavy items much more easily.',
+    format: 'number',
     minValue: 1,
     maxValue: 100,
   },
@@ -63,9 +63,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'spe',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your dexterity and quickness. Very important. Increases accuracy, evasion and both bow stats. Quick PCs will act sooner, hit much more easily and be able to avoid otherwise lethal situations.',
+    format: 'number',
     minValue: 1,
     maxValue: 100,
   },
@@ -75,9 +75,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'inte',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your mental sharpness and focus. Very important, especially to mages. Increases bow accuracy and magic damage, literacy, intuition and general knowledge about Mareth.',
+    format: 'number',
     minValue: 1,
     maxValue: 100,
   },
@@ -87,9 +87,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'lib',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your mental control over sexual desire. A double-edged blade. Significantly increases lust gains as time passes, lust damage done as well as lust damage received. New players, beware!',
+    format: 'number',
     minValue: 10,
     maxValue: 100,
   },
@@ -99,9 +99,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'sens',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your physical control over sexual desire. Another double-edged blade, albeit way less drastic than libido. Increases physical lust gains and damage done. Can be easily changed.',
+    format: 'number',
     minValue: 10,
     maxValue: 100,
   },
@@ -111,9 +111,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'cor',
     dimension: DimensionType.CoC,
     type: AttributeType.Primary,
-    format: 'num',
     description:
       'Your perversion and taint. The last and most dangerous double-edged blade; high corruption unlocks otherwise impossible encounters, but if you keep this high, control the situation or pay the price!',
+    format: 'number',
     minValue: 1,
     maxValue: 100,
   },
@@ -127,9 +127,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'HP',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       'Your physical health. Affected by level, toughness, and Perks.',
+    format: 'number',
     minValue: 50,
     maxValue: 700,
   },
@@ -139,9 +139,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'lust',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       "Your sexual desire. Affected by Perks, Shouldra's sexual frustration, wearing the Lusty Maiden's Armor, Libido and Sensitivity. Increases when being teased or stimulated.",
+    format: 'number',
     maxValue: 100,
   },
   {
@@ -150,9 +150,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'fati',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       'Your exhaustion. Magic and special attacks cost fatigue, as well as many actions. Lowered by resting, waiting or events/items. Extremely high Fatigue may lead to a Bad End.',
+    format: 'number',
     maxValue: 100,
   },
   /**
@@ -164,9 +164,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'lvl',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       'Your current level. The higher your level, the more powerful, resilient and experienced your character becomes. There is no level cap.',
+    format: 'number',
   },
   {
     id: 'experience',
@@ -174,9 +174,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'XP',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       'Your current pooled experienced. Can be used to level up if high enough. No cap but hidden if over 9999.',
+    format: 'number',
   },
   {
     id: 'gems',
@@ -184,9 +184,9 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'gems',
     dimension: DimensionType.CoC,
     type: AttributeType.Secondary,
-    format: 'num',
     description:
       'The main currency in the world of Mareth. A small amount of gems and time will be lost upon losing a (real) fight unless a Bad End is triggered. No cap but hidden if over 9999.',
+    format: 'number',
   },
   /**
    * Corruption of Champions (other stats)
@@ -197,8 +197,7 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'cumx',
     dimension: DimensionType.CoC,
     type: AttributeType.Sexual,
-    format: 'num',
-    description: '',
+    format: 'number',
   },
   {
     id: 'hoursSinceCum',
@@ -206,34 +205,34 @@ export const AttributeSeed: Attribute[] = [
     abbreviation: 'tcum',
     dimension: DimensionType.CoC,
     type: AttributeType.Sexual,
-    format: 'num',
+    format: 'number',
   },
   {
     id: 'bonusHP',
     title: 'bonusHP',
     dimension: DimensionType.CoC,
     type: AttributeType.Tertiary,
-    format: 'num',
+    format: 'number',
   },
   {
     id: 'additionalXP',
     title: 'additionalXP',
     dimension: DimensionType.CoC,
     type: AttributeType.Tertiary,
-    format: 'num',
+    format: 'number',
   },
   {
     id: 'lustVuln',
     title: 'lustVuln',
     dimension: DimensionType.CoC,
     type: AttributeType.Tertiary,
-    format: 'num',
+    format: 'number',
   },
   {
     id: 'temperment',
     title: 'temperment',
     dimension: DimensionType.CoC,
     type: AttributeType.Tertiary,
-    format: 'num',
+    format: 'number',
   },
 ];
