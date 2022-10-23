@@ -1,4 +1,4 @@
-import { DimensionType } from '../dimension';
+import { DimensionType } from '../space';
 
 // Represents tag groups
 export enum TagType {

@@ -1,4 +1,5 @@
-import { Time } from './engine-mechanisms/time';
+import { Space } from './space';
+import { Time } from './time';
 // import { GameTime } from '../models/mechanisms/game-time';
 
 // GameContext / liveData/saveData
@@ -44,6 +45,7 @@ export interface OgSaveState {
   gameStarted: boolean;
   shiftKeyDown: boolean;
 
+  space: Space;
   // time: GameTime;
   time: Time;
   // exploration: Exploration;

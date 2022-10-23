@@ -4,3 +4,8 @@ export enum DimensionType {
   CoC = 'coc',
   eRPGe = 'ergpe',
 }
+
+export interface Space {
+  title: string;
+  dimension: DimensionType;
+}

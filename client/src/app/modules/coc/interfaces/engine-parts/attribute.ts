@@ -2,7 +2,7 @@
 // https://cocxianxia.fandom.com/wiki/List_of_Stats
 // https://ffxiv.consolegameswiki.com/wiki/Attributes
 
-import { DimensionType } from '../dimension';
+import { DimensionType } from '../space';
 
 export enum AttributeType {
   // Unassigned,

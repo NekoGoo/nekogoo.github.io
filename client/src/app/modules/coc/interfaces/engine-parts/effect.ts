@@ -1,4 +1,4 @@
-import { DimensionType } from '../dimension';
+import { DimensionType } from '../space';
 
 export enum EffectType {
   Perk = 'perk',
