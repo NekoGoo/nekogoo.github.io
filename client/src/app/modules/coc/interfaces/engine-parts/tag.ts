@@ -30,6 +30,10 @@ export const TagSeed: Tag[] = [
   /**
    * Corruption of Champions (core stats)
    */
+  /**
+   * https://cocxianxia.fandom.com/wiki/Sapient_Species
+   * https://wiki.smutosaur.us/CoC/Sentient_Species
+   */
   {
     id: 'human',
     title: 'Human',
@@ -37,6 +41,7 @@ export const TagSeed: Tag[] = [
     type: TagType.Species,
   },
   {
+    // https://wiki.smutosaur.us/CoC/Goo_Girls_(Codex)
     id: 'slime',
     title: 'Slime',
     dimension: DimensionType.CoC,
