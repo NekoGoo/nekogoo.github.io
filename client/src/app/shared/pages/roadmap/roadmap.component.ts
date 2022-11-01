@@ -72,6 +72,28 @@ const TASK_DATA: TaskNode[] = [
       { name: 'Fruit loops' },
     ],
   },
+  {
+    name: 'MMD',
+    children: [
+      { name: "Modify model's animation scripts in Blender" },
+      { name: 'Create Blender scene with proper lighting' },
+      { name: 'Document steps to load MMD animations in Blender' },
+      { name: 'Document steps to render MMDs from Blender' },
+    ],
+  },
+  {
+    name: 'Streaming',
+    children: [
+      { name: 'Config System Audio - Windows Sound, VoiceMeeter, VoiceMap' },
+      { name: 'Configure timestamp system (may save directly to OneNote)' },
+      {
+        name: 'Setup footpedal actions: (L) push-to-talk Discord, (M) push-to-mute VoiceMod, (R) log timestamp',
+      },
+      {
+        name: 'Experiment with stopping/starting streams and how it feels splitting VODs',
+      },
+    ],
+  },
 ];
 
 @Component({
