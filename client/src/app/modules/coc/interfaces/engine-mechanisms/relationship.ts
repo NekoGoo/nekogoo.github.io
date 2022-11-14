@@ -1,38 +1,36 @@
-import { GenderType } from './character';
+import { GenderType, GenderTypes } from '../appearance-types';
 
 // https://www.myenglishteacher.eu/blog/family-relationships-in-english-57-words-and-phrases-about-family
 // https://support.ancestry.com/s/article/Understanding-Kinship-Terms
 // https://lemongrad.com/family-relationships-in-english
-export enum RelationshipType {
+export const RelationshipTypes = {
   // -------- Immediate Family (By Blood) --------
 
-  Spouse, // Husband/Wife
-  Parent, // Father/Mother
-  Child, // Son/Daughter
-  Sibling, // Brother/Sister
-  Grandparent, // Grandfather/Grandmother
-  Grandchild, // Grandson/Granddaughter
-  ParentSibling, // Uncle/Aunt
-  SiblingChild, // Nephew/Niece
-  AuntUncleChild, // Cousin
+  Spouse: 0, // Husband/Wife
+  Parent: 1, // Father/Mother
+  Child: 2, // Son/Daughter
+  Sibling: 3, // Brother/Sister
+  Grandparent: 4, // Grandfather/Grandmother
+  Grandchild: 5, // Grandson/Granddaughter
+  ParentSibling: 6, // Uncle/Aunt
+  SiblingChild: 7, // Nephew/Niece
+  AuntUncleChild: 8, // Cousin
 
   // -------- Immediate Family (By Law) --------
 
   // --- (Married Into) ---
-  StepParent, // Step-Father/Mother
-  StepChild, // Step-Son/Daughter
-  StepSibling, // Step-Brother/Sister
+  StepParent: 9, // Step-Father/Mother
+  StepChild: 10, // Step-Son/Daughter
+  StepSibling: 11, // Step-Brother/Sister
   // --- (Child Married To) ---
-  ParentInLaw, // Father/Mother-in-law
-  ChildInLaw, // Son/Daughter-in-law
-  SiblingInLaw, // Brother/Sister-in-law
-}
+  ParentInLaw: 12, // Father/Mother-in-law
+  ChildInLaw: 13, // Son/Daughter-in-law
+  SiblingInLaw: 14, // Brother/Sister-in-law
+} as const;
+export type RelationshipType =
+  typeof RelationshipTypes[keyof typeof RelationshipTypes];
 
 export interface Relationship {
-  type: RelationshipType;
-}
-
-export interface RelationshipMatrixType {
   CharacterA: string;
   GenderA: GenderType;
   RelationshipA: RelationshipType;
@@ -41,13 +39,13 @@ export interface RelationshipMatrixType {
   RelationshipB: RelationshipType;
 }
 
-export const relationshipMatrix: RelationshipMatrixType[] = [
+const egRelationshipMatrix: Relationship[] = [
   {
     CharacterA: 'player',
-    GenderA: GenderType.Male,
-    RelationshipA: RelationshipType.StepSibling,
+    GenderA: GenderTypes.Male,
+    RelationshipA: RelationshipTypes.StepSibling,
     CharacterB: 'D',
-    GenderB: GenderType.Male,
-    RelationshipB: RelationshipType.StepSibling,
+    GenderB: GenderTypes.Male,
+    RelationshipB: RelationshipTypes.StepSibling,
   },
 ];

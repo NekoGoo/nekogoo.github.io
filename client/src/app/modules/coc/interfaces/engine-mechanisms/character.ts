@@ -4,31 +4,25 @@ import {
   EarType,
   EyeType,
   FaceType,
+  GenderType,
   HairType,
   HornType,
   SkinType,
   TailType,
   TongueType,
   WingType,
-} from '@modules/erpge/flags/appearanceEnums';
+} from '../appearance-types';
 import { Ass } from '../body-parts/ass';
 import { Breast } from '../body-parts/breast';
 import { Cock } from '../body-parts/cock';
 import { Pussy } from '../body-parts/pussy';
 
-// 0 genderless, 1 male, 2 female, 3 hermaphrodite
-export enum GenderType {
-  NONE,
-  Male,
-  Female,
-  Herm,
-}
-
-export enum CharacterType {
-  Unassigned,
-  Creature,
-  Player,
-}
+export const CharacterTypes = {
+  Unassigned: 0,
+  Creature: 1,
+  Player: 2,
+} as const;
+export type CharacterType = typeof CharacterTypes[keyof typeof CharacterTypes];
 
 export interface Character {
   // Name and references

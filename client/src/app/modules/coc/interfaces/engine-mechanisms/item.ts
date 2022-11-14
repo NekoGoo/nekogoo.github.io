@@ -1,13 +1,14 @@
-export enum ItemType {
-  None,
-  Weapon,
-  Armor,
-  Key,
-  Consumable,
-  Material,
-  Undergarment,
-  Shield,
-}
+export const ItemTypes = {
+  None: 0,
+  Weapon: 1,
+  Armor: 2,
+  Key: 3,
+  Consumable: 4,
+  Material: 5,
+  Undergarment: 6,
+  Shield: 7,
+} as const;
+export type ItemType = typeof ItemTypes[keyof typeof ItemTypes];
 
 export interface Item {
   type: ItemType;

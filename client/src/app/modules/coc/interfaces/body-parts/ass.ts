@@ -1,19 +1,19 @@
-export enum ButtRatingType {
-  BUTTLESS = 0,
-  TIGHT = 2,
-  AVERAGE = 4,
-  NOTICEABLE = 6,
-  LARGE = 8,
-  JIGGLY = 10,
-  EXPANSIVE = 13,
-  HUGE = 16,
-  INCONCEIVABLE = 20,
-}
+import {
+  AnalLoosenessType,
+  AnalWetnessType,
+  HipRatingType,
+} from '../appearance-types';
 
 export interface Ass {
   size: number;
-  rating: ButtRatingType;
+
+  // --- CoC data ---
+  rating: HipRatingType;
   virgin: boolean;
-  analWetness: number;
-  analLooseness: number;
+
+  wetness: AnalWetnessType;
+  looseness: AnalLoosenessType;
+  // Used to determine thickness of knot relative to normal thickness
+  // Used during sex to determine how full it currently is.  For multi-dick sex.
+  fullness: number;
 }
