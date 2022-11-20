@@ -4,7 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 import {
   Attribute,
   AttributeType,
-  DimensionType,
+  AttributeTypes,
+  DimensionTypes,
 } from '@modules/coc/interfaces';
 import { AttributeService } from '@modules/coc/services';
 import { InfoAttributesDetailComponent } from './detail/detail.component';
@@ -24,9 +25,9 @@ export class InfoAttributesComponent implements OnInit {
     public dialog: MatDialog,
   ) {
     // this.attributes = this.attributeService.data;
-    this.attributes = this.attributeService.seed(DimensionType.CoC);
+    this.attributes = this.attributeService.seed(DimensionTypes.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names
-    this.attributeTypes = Object.keys(AttributeType).filter((v) =>
+    this.attributeTypes = Object.keys(AttributeTypes).filter((v) =>
       Number.isNaN(Number(v)),
     );
   }
@@ -48,17 +49,17 @@ export class InfoAttributesComponent implements OnInit {
   // https://fonts.google.com/icons?icon.set=Material+Icons
   attributeIcon(type: AttributeType): string {
     let text = '';
-    if (type === AttributeType.Primary) {
+    if (type === AttributeTypes.Primary) {
       text = 'filter_1';
-    } else if (type === AttributeType.Secondary) {
+    } else if (type === AttributeTypes.Secondary) {
       text = 'filter_2';
-    } else if (type === AttributeType.Tertiary) {
+    } else if (type === AttributeTypes.Tertiary) {
       text = 'filter_3';
-    } else if (type === AttributeType.Sexual) {
+    } else if (type === AttributeTypes.Sexual) {
       text = 'filter_vintage';
-    } else if (type === AttributeType.Offensive) {
+    } else if (type === AttributeTypes.Offensive) {
       text = 'gps_not_fixed';
-    } else if (type === AttributeType.Defensive) {
+    } else if (type === AttributeTypes.Defensive) {
       text = 'tonality';
     }
     return text;
@@ -66,17 +67,17 @@ export class InfoAttributesComponent implements OnInit {
 
   attributeText(type: AttributeType): string {
     let text = '';
-    if (type === AttributeType.Primary) {
+    if (type === AttributeTypes.Primary) {
       text = 'Primary';
-    } else if (type === AttributeType.Secondary) {
+    } else if (type === AttributeTypes.Secondary) {
       text = 'Secondary';
-    } else if (type === AttributeType.Tertiary) {
+    } else if (type === AttributeTypes.Tertiary) {
       text = 'Tertiary';
-    } else if (type === AttributeType.Sexual) {
+    } else if (type === AttributeTypes.Sexual) {
       text = 'Sexual';
-    } else if (type === AttributeType.Offensive) {
+    } else if (type === AttributeTypes.Offensive) {
       text = 'Offensive';
-    } else if (type === AttributeType.Defensive) {
+    } else if (type === AttributeTypes.Defensive) {
       text = 'Defensive';
     }
     return text;

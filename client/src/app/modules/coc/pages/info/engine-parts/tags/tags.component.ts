@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-import { DimensionType, Tag, TagType } from '@modules/coc/interfaces';
+import {
+  DimensionTypes,
+  Tag,
+  TagType,
+  TagTypes,
+} from '@modules/coc/interfaces';
 import { TagService } from '@modules/coc/services';
 import { InfoTagsDetailComponent } from './detail/detail.component';
 
@@ -17,9 +22,11 @@ export class InfoTagsComponent implements OnInit {
 
   constructor(private tagService: TagService, public dialog: MatDialog) {
     // this.tags = this.tagService.data;
-    this.tags = this.tagService.seed(DimensionType.CoC);
+    this.tags = this.tagService.seed(DimensionTypes.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names
-    this.tagTypes = Object.keys(TagType).filter((v) => Number.isNaN(Number(v)));
+    this.tagTypes = Object.keys(TagTypes).filter((v) =>
+      Number.isNaN(Number(v)),
+    );
   }
 
   ngOnInit(): void {}
@@ -34,25 +41,25 @@ export class InfoTagsComponent implements OnInit {
   // https://fonts.google.com/icons?icon.set=Material+Icons
   tagIcon(type: TagType): string {
     let text = '';
-    if (type === TagType.Attribute) {
+    if (type === TagTypes.Attribute) {
       text = 'insights';
-    } else if (type === TagType.Effect) {
+    } else if (type === TagTypes.Effect) {
       text = 'lens_blur';
-    } else if (type === TagType.Item) {
+    } else if (type === TagTypes.Item) {
       text = 'ad_units';
-    } else if (type === TagType.Location) {
+    } else if (type === TagTypes.Location) {
       text = 'explore';
-    } else if (type === TagType.Skill) {
+    } else if (type === TagTypes.Skill) {
       text = 'grain';
-    } else if (type === TagType.Moment) {
+    } else if (type === TagTypes.Moment) {
       text = 'shutter_speed';
-    } else if (type === TagType.Story) {
+    } else if (type === TagTypes.Story) {
       text = 'history_edu';
-    } else if (type === TagType.Character) {
+    } else if (type === TagTypes.Character) {
       text = 'attribution';
-    } else if (type === TagType.Relationship) {
+    } else if (type === TagTypes.Relationship) {
       text = 'groups';
-    } else if (type === TagType.Species) {
+    } else if (type === TagTypes.Species) {
       text = 'diversity_2';
     }
     return text;
@@ -60,25 +67,25 @@ export class InfoTagsComponent implements OnInit {
 
   tagText(type: TagType): string {
     let text = '';
-    if (type === TagType.Attribute) {
+    if (type === TagTypes.Attribute) {
       text = 'Attribute';
-    } else if (type === TagType.Effect) {
+    } else if (type === TagTypes.Effect) {
       text = 'Tag';
-    } else if (type === TagType.Item) {
+    } else if (type === TagTypes.Item) {
       text = 'Item';
-    } else if (type === TagType.Location) {
+    } else if (type === TagTypes.Location) {
       text = 'Location';
-    } else if (type === TagType.Skill) {
+    } else if (type === TagTypes.Skill) {
       text = 'Skill';
-    } else if (type === TagType.Moment) {
+    } else if (type === TagTypes.Moment) {
       text = 'Moment';
-    } else if (type === TagType.Story) {
+    } else if (type === TagTypes.Story) {
       text = 'Story';
-    } else if (type === TagType.Character) {
+    } else if (type === TagTypes.Character) {
       text = 'Character';
-    } else if (type === TagType.Relationship) {
+    } else if (type === TagTypes.Relationship) {
       text = 'Relationship';
-    } else if (type === TagType.Species) {
+    } else if (type === TagTypes.Species) {
       text = 'Species';
     }
     return text;

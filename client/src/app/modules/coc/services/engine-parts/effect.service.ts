@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { DimensionType, Effect, EffectSeed } from '@modules/coc/interfaces';
+import {
+  DimensionType,
+  DimensionTypes,
+  Effect,
+  EffectSeed,
+} from '@modules/coc/interfaces';
 
 @Injectable({
   providedIn: 'root',
@@ -12,9 +17,9 @@ export class EffectService {
     this.data = EffectSeed;
   }
 
-  seed(dimension: DimensionType = DimensionType.All): Effect[] {
+  seed(dimension: DimensionType = DimensionTypes.All): Effect[] {
     let effects: Effect[] = [];
-    if (dimension === DimensionType.All) {
+    if (dimension === DimensionTypes.All) {
       effects = this.data;
     } else {
       effects = this.data.filter((t) => {

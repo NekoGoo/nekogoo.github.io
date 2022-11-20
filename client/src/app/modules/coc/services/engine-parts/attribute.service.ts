@@ -4,6 +4,7 @@ import {
   Attribute,
   AttributeSeed,
   DimensionType,
+  DimensionTypes,
 } from '@modules/coc/interfaces';
 
 @Injectable({
@@ -16,9 +17,9 @@ export class AttributeService {
     this.data = AttributeSeed;
   }
 
-  seed(dimension: DimensionType = DimensionType.All): Attribute[] {
+  seed(dimension: DimensionType = DimensionTypes.All): Attribute[] {
     let attributes: Attribute[] = [];
-    if (dimension === DimensionType.All) {
+    if (dimension === DimensionTypes.All) {
       attributes = this.data;
     } else {
       attributes = this.data.filter((t) => {
