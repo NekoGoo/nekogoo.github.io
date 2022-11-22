@@ -89,13 +89,24 @@ body.mat-typography {
     h4 {
       color: white;
     }
+
+    figcaption {
+      // font-size: 1rem; // 16px expected
+      // line-height: 1.5rem;
+      font-size: 0.875rem; // 14px expected
+      line-height: 1.3125rem;
+      a {
+        font-style: italic;
+      }
+    }
   }
 
   /* -------- Home Page -------- */
 
   app-home,
   app-demo-font {
-    main {
+    p,
+    li {
       font-family: 'Oswald', Verdana, Arial, sans-serif;
       font-size: 1rem;
       line-height: 1.5rem;
@@ -116,13 +127,9 @@ body.mat-typography {
   /* -------- About Page -------- */
 
   app-about {
-    main {
-      font-size: 1.25rem;
+    p {
+      font-size: 1.25rem; // 20px expected
       line-height: 1.875rem;
-    }
-    figcaption {
-      font-size: 1rem;
-      line-height: 1.5rem;
     }
   }
 }

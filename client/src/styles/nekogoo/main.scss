@@ -1,6 +1,9 @@
 /* https://www.cssportal.com/css-text-gradient-generator */
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
+
   /* background-color: #ffffe6; */
   /* background-image: linear-gradient(#3CC, #6FF); */
   background-color: #ccffff;
@@ -16,18 +19,21 @@ body {
 } */
 
 // --- SCROLLBAR STYLES (https://codepen.io/GhostRider/pen/oNvoNv) ---
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.mat-dialog-content::-webkit-scrollbar {
   width: 8px;
   // background-color: #f5f5f5;
   background-color: #ffccff;
 }
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.mat-dialog-content::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   // border-radius: 10px;
   // background-color: #f5f5f5;
   background-color: #ffccff;
 }
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.mat-dialog-content::-webkit-scrollbar-thumb {
   // border-radius: 10px;
   background-color: #fff;
   // background-image: -webkit-gradient(
