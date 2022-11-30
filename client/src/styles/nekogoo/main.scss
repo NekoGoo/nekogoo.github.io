@@ -124,3 +124,27 @@ app-about {
 .bg_platinum {
   background: #e5e4e2;
 }
+
+// --- Dialogs / Modals ---
+
+.nekogoo-modal-noscroll {
+  overflow-y: hidden;
+}
+
+$screen-sm: 600px;
+$screen-md: 960px;
+
+.nekogoo-modal-about {
+  // extra small (0-600px, e.g. smart phone)
+  width: 95vw;
+  max-width: 95vw !important;
+  // small (600-960px, e.g. tablet)
+  @media screen and (min-width: $screen-sm) {
+    width: 80vw;
+  }
+  // medium (960-1280px)
+  @media screen and (min-width: $screen-md) {
+    width: 60vw;
+  }
+  // large (1280-1920px)
+}

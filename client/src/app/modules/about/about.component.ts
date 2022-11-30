@@ -15,6 +15,8 @@ export class AboutComponent implements OnInit {
   imgNekoGooHead = 'assets/images/NekoGoo-head-only.png';
   gapSize = '24px';
   modalWidth = '60%';
+  backdropClass = 'nekogoo-modal-noscroll';
+  modalWindowClass = 'nekogoo-modal-about';
 
   constructor(public dialog: MatDialog) {}
 
@@ -34,19 +36,23 @@ export class AboutComponent implements OnInit {
   openAppearanceDialog(): void {
     this.dialog.open(ModalAppearanceComponent, {
       // width: '500px',
-      width: this.modalWidth,
+      // width: this.modalWidth,
+      panelClass: this.modalWindowClass,
     });
   }
 
   openPersonalityDialog(): void {
     this.dialog.open(ModalPersonalityComponent, {
-      width: this.modalWidth,
+      // width: this.modalWidth,
+      // backdropClass: this.backdropClass,
+      panelClass: this.modalWindowClass,
     });
   }
 
   openSpecialDialog(): void {
     this.dialog.open(ModalSpecialComponent, {
-      width: this.modalWidth,
+      // width: this.modalWidth,
+      panelClass: this.modalWindowClass,
     });
   }
 }
