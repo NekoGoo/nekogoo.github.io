@@ -1,3 +1,4 @@
+import { Character } from './engine-mechanisms/character';
 import { Space } from './space';
 import { Time } from './time';
 // import { GameTime } from '../models/mechanisms/game-time';
@@ -5,11 +6,15 @@ import { Time } from './time';
 // GameContext / liveData/saveData
 // TODO: Time, Exploration, ItemContainer, KeyItemTypeContainer, PerkTypeContainer, StatusEffectTypeContainer, ItemSlot
 export interface SaveState {
-  // player: Character;
-  momentId: number;
-  momentStep: number;
-  player?: string;
-  mainText?: string;
+  // player?: string;
+  player: Character;
+  currentStory: number;
+  currentStoryStep: number;
+  // currentMoment: number;
+  // mainText?: string;
+
+  currentTurn: number;
+  currentRound: number;
 }
 
 export interface OgSaveState {

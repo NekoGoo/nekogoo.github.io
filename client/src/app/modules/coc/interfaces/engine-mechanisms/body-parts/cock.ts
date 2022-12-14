@@ -1,4 +1,4 @@
-import { CockType } from '../appearance-types';
+import { CockType } from '../../appearance-types';
 
 export interface Cock {
   type: CockType;

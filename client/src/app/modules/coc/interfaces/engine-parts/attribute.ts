@@ -118,6 +118,17 @@ export const AttributeSeed: Attribute[] = [
     minValue: 1,
     maxValue: 100,
   },
+  {
+    id: 'fatigue',
+    title: 'Fatigue',
+    abbreviation: 'fati',
+    dimension: DimensionTypes.CoC,
+    type: AttributeTypes.Secondary,
+    description:
+      'Your exhaustion. Magic and special attacks cost fatigue, as well as many actions. Lowered by resting, waiting or events/items. Extremely high Fatigue may lead to a Bad End.',
+    format: 'number',
+    maxValue: 100,
+  },
   /**
    * Corruption of Champions (combat stats)
    * (Delete when declaring a new mob except for changing initial stats)
@@ -146,29 +157,24 @@ export const AttributeSeed: Attribute[] = [
     maxValue: 100,
   },
   {
-    id: 'fatigue',
-    title: 'Fatigue',
-    abbreviation: 'fati',
+    id: 'tease-level',
+    title: 'Tease Level',
+    abbreviation: 'teaseLevel',
     dimension: DimensionTypes.CoC,
     type: AttributeTypes.Secondary,
-    description:
-      'Your exhaustion. Magic and special attacks cost fatigue, as well as many actions. Lowered by resting, waiting or events/items. Extremely high Fatigue may lead to a Bad End.',
     format: 'number',
-    maxValue: 100,
+  },
+  {
+    id: 'tease-xp',
+    title: 'Tease XP',
+    abbreviation: 'teaseXP',
+    dimension: DimensionTypes.CoC,
+    type: AttributeTypes.Secondary,
+    format: 'number',
   },
   /**
    * Corruption of Champions (advancement stats)
    */
-  {
-    id: 'level',
-    title: 'Level',
-    abbreviation: 'lvl',
-    dimension: DimensionTypes.CoC,
-    type: AttributeTypes.Secondary,
-    description:
-      'Your current level. The higher your level, the more powerful, resilient and experienced your character becomes. There is no level cap.',
-    format: 'number',
-  },
   {
     id: 'experience',
     title: 'Experience',
@@ -180,6 +186,16 @@ export const AttributeSeed: Attribute[] = [
     format: 'number',
   },
   {
+    id: 'level',
+    title: 'Level',
+    abbreviation: 'lvl',
+    dimension: DimensionTypes.CoC,
+    type: AttributeTypes.Secondary,
+    description:
+      'Your current level. The higher your level, the more powerful, resilient and experienced your character becomes. There is no level cap.',
+    format: 'number',
+  },
+  {
     id: 'gems',
     title: 'Gems',
     abbreviation: 'gems',
@@ -187,6 +203,14 @@ export const AttributeSeed: Attribute[] = [
     type: AttributeTypes.Secondary,
     description:
       'The main currency in the world of Mareth. A small amount of gems and time will be lost upon losing a (real) fight unless a Bad End is triggered. No cap but hidden if over 9999.',
+    format: 'number',
+  },
+  {
+    id: 'perk-points',
+    title: 'Perk Points',
+    abbreviation: 'perkPoints',
+    dimension: DimensionTypes.CoC,
+    type: AttributeTypes.Secondary,
     format: 'number',
   },
   /**

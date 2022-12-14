@@ -12,10 +12,10 @@ import {
   TongueType,
   WingType,
 } from '../appearance-types';
-import { Ass } from '../body-parts/ass';
-import { Breast } from '../body-parts/breast';
-import { Cock } from '../body-parts/cock';
-import { Pussy } from '../body-parts/pussy';
+import { Ass } from './body-parts/ass';
+import { Breast } from './body-parts/breast';
+import { Cock } from './body-parts/cock';
+import { Pussy } from './body-parts/pussy';
 
 export const CharacterTypes = {
   Unassigned: 0,
@@ -27,8 +27,12 @@ export type CharacterType = typeof CharacterTypes[keyof typeof CharacterTypes];
 export interface Character {
   // Name and references
   type: CharacterType;
-  genderBirth: GenderType;
-  genderCurrent: GenderType;
+  femininity: number;
+  masculinity: number;
+  originalGender: GenderType;
+  currentGender: GenderType;
+  originalSpecies: string;
+  currentSpecies: string;
 
   a: string;
   name: string;
@@ -51,41 +55,15 @@ export interface Character {
   lib: number;
   sens: number;
   cor: number;
+  fatigue: number;
   // Combat stats (Delete when declaring a new mob except for changing initial stats)
   HP: number;
   lust: number;
-  fatigue: number;
+  temperment: number;
   // Advancement
   level: number;
   XP: number;
   gems: number;
-
-  // --- Sexual Characteristics ---
-  femininity: number;
-  masculinity: number;
-  teaseLevel: number;
-  teaseXP: number;
-  lustVuln: number;
-  temperment: number;
-  // Ass/Butt
-  ass: Ass;
-  // Rows of Breasts
-  breastRows: Breast[][];
-  // Penises/Cocks
-  cocks: Cock[];
-  balls: number;
-  ballSize: number;
-  cumMultiplier: number;
-  hoursSinceCum: number;
-  // Vaginas
-  //   vaginas: Vagina[];
-  pussies: Pussy[];
-  // Virginity
-  assVirginity: number;
-  penisVirginity: number;
-  vaginaVirginity: number;
-  // Pregnancy
-  fertility: number;
 
   // --- Abilities / Auras ---
   spells: string[]; // Skill
@@ -105,20 +83,51 @@ export interface Character {
   accessory1?: string;
   accessory2?: string;
 
+  // --- Sexual Characteristics ---
+  teaseLevel: number;
+  teaseXP: number;
+  lustVuln: number;
+  // Ass/Butt
+  ass: Ass;
+  // Rows of Breasts
+  breastRows: Breast[][];
+  // Penises/Cocks
+  cocks: Cock[];
+  balls: number;
+  ballSize: number;
+  cumMultiplier: number;
+  hoursSinceCum: number;
+  // Vaginas
+  //   vaginas: Vagina[];
+  pussies: Pussy[];
+  // Virginity
+  assVirginity: number;
+  penisVirginity: number;
+  vaginaVirginity: number;
+  // Pregnancy (Preggo stuff)
+  fertility: number;
+  pregnancyIncubation: number;
+  pregnancyType: number;
+  buttPregnancyIncubation: number;
+  buttPregnancyType: number;
+
   // --- Appearance ---
   tallness: number; // Height in inches
-  skinTone: string;
+  thickness: number;
+  tone: number;
+
   skinType: SkinType;
+  skinTone: string;
   skinAdj: string;
   skinDesc: string;
-  hairType: HairType;
-  hairColor: string;
-  hairLength: number;
-  beardType: number;
-  beardLength: number;
   furColor: string;
 
   // Head (sight, hear, taste, smell)
+  hairType: HairType;
+  hairColor: string;
+  hairLength: number;
+  beardStyle: number; // BeardType
+  beardLength: number;
   faceType: FaceType;
   eyeType: EyeType;
   earType: EarType;
@@ -126,23 +135,41 @@ export interface Character {
   tongueType: TongueType;
   // Body (touch)
   lowerBody: number;
+  hipRating: number;
+  buttRating: number;
   legCount: number;
   armType: ArmType;
   // Extra body parts / accessories
   antennae: number;
   clawType: ClawType;
   clawTone: string;
-  hornType: HornType;
   horns: number;
+  hornType: HornType;
   gills: boolean;
   tailType: TailType;
-  tailVenom: number;
+  tailVenom: number; // tailVenum
   tailRecharge: number;
+  venom: number;
   wingType: WingType;
   wingDesc: string;
-  venom: number;
 
-  tone: number;
-  thickness: number;
-  hipRating: number;
+  // --- PIERCINGS --- (from saves.as)
+  // saveFile.data.nipplesPierced = player.nipplesPierced;
+  // saveFile.data.nipplesPShort = player.nipplesPShort;
+  // saveFile.data.nipplesPLong = player.nipplesPLong;
+  // saveFile.data.lipPierced = player.lipPierced;
+  // saveFile.data.lipPShort = player.lipPShort;
+  // saveFile.data.lipPLong = player.lipPLong;
+  // saveFile.data.tonguePierced = player.tonguePierced;
+  // saveFile.data.tonguePShort = player.tonguePShort;
+  // saveFile.data.tonguePLong = player.tonguePLong;
+  // saveFile.data.eyebrowPierced = player.eyebrowPierced;
+  // saveFile.data.eyebrowPShort = player.eyebrowPShort;
+  // saveFile.data.eyebrowPLong = player.eyebrowPLong;
+  // saveFile.data.earsPierced = player.earsPierced;
+  // saveFile.data.earsPShort = player.earsPShort;
+  // saveFile.data.earsPLong = player.earsPLong;
+  // saveFile.data.nosePierced = player.nosePierced;
+  // saveFile.data.nosePShort = player.nosePShort;
+  // saveFile.data.nosePLong = player.nosePLong;
 }

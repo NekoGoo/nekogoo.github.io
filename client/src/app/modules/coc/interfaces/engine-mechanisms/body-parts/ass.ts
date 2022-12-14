@@ -2,7 +2,7 @@ import {
   AnalLoosenessType,
   AnalWetnessType,
   HipRatingType,
-} from '../appearance-types';
+} from '../../appearance-types';
 
 export interface Ass {
   size: number;
