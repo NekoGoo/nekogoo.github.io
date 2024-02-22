@@ -7,14 +7,18 @@ import { Time } from './time';
 // TODO: Time, Exploration, ItemContainer, KeyItemTypeContainer, PerkTypeContainer, StatusEffectTypeContainer, ItemSlot
 export interface SaveState {
   // player?: string;
-  player: Character;
-  currentStory: number;
-  currentStoryStep: number;
+  player?: Character;
+  mainText?: string;
+  currentStory?: number;
+  currentStoryStep?: number;
   // currentMoment: number;
   // mainText?: string;
 
-  currentTurn: number;
-  currentRound: number;
+  currentTurn?: number;
+  currentRound?: number;
+
+  momentId: number;
+  momentStep: number;
 }
 
 export interface OgSaveState {
