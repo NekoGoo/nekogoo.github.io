@@ -264,7 +264,6 @@ __pycache__/
 
 **/.azure/credentials
 *vault.yml
-package-lock.json
 wwwroot/
 dist/
 
