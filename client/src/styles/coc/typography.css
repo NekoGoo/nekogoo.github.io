@@ -1,0 +1,83 @@
+/* -------- Typography -------- */
+
+/* (fonts/typefaces, size, style, position/spacing, color) */
+/*
+  --- Fonts / Typefaces ---
+  - font-family
+  
+  --- Size ---
+  - font-size
+  - line-height
+
+  --- Style ---
+  - font-weight
+  - font-style
+  - text-decoration
+
+  --- Position / Spacing ---
+  - text-align
+
+  --- Color ---
+  - color
+*/
+
+/* https://ansrsource.com/elements-of-typography */
+/* https://careerfoundry.com/en/blog/ui-design/beginners-guide-to-typography */
+
+/* Targeting .mat-typography activates more overrides without requiring !important */
+
+/* -------- Corruption of Champions: Overall Views -------- */
+body.mat-typography .coc-theme h2 {
+  font-size: 1.2em;
+}
+
+/* --- Buttons --- */
+body.mat-typography .coc-theme .button {
+  font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+  text-shadow: 1px 1px 1px #333333;
+  font-size: 16px;
+  line-height: 38px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+body.mat-typography .coc-theme .button:hover {
+  color: #00ffff;
+}
+body.mat-typography .coc-theme .button:active {
+  color: #00ffff;
+}
+
+/* -------- Game Main Stage -------- */
+
+/* --- Tooltip Display --- */
+body.mat-typography .coc-theme .coc-tooltip h4 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+body.mat-typography .coc-theme .coc-tooltip p {
+  font-size: 0.8em;
+}
+
+/* -------- Game Sidebar -------- */
+
+/* --- Stats Display --- */
+body.mat-typography .coc-theme coc-sidebar .stat-label,
+.stat-num {
+  font-family: 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  text-shadow: 1px 1px 5px #333333;
+}
+
+body.mat-typography .coc-theme coc-sidebar .stat-label {
+  font-size: 12px;
+}
+
+body.mat-typography .coc-theme coc-sidebar .stat-num {
+  font-size: 18px;
+  text-align: right;
+}
+
+/* --- Time Display --- */
+body.mat-typography .coc-theme coc-sidebar .timeDisplay {
+  font-family: 'Lucida Console', 'Courier New', monospace;
+}

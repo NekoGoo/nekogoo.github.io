@@ -2,7 +2,7 @@
 
 .nekogoo-toolbar-bg {
   background-image: linear-gradient(white, #ffffcc);
-  // box-shadow redundant with .mat-elevation-z3 but is softer
+  /* box-shadow redundant with .mat-elevation-z3 but is softer */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 

@@ -6,12 +6,11 @@
     "nekogoo-app": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "displayBlock": true,
-          "style": "scss"
-        },
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "displayBlock": true
         }
       },
       "root": "",
@@ -26,9 +25,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/index.css"],
             "stylePreprocessorOptions": {
               "includePaths": ["src/styles"]
             },
@@ -92,9 +90,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
             "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles/index.css"],
             "scripts": []
           }
         },

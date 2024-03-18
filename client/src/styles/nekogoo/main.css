@@ -18,32 +18,32 @@ body {
     }
 } */
 
-// --- SCROLLBAR STYLES (https://codepen.io/GhostRider/pen/oNvoNv) ---
+/* --- SCROLLBAR STYLES (https://codepen.io/GhostRider/pen/oNvoNv) --- */
 body::-webkit-scrollbar,
 .mat-dialog-content::-webkit-scrollbar {
   width: 8px;
-  // background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   background-color: #ffccff;
 }
 body::-webkit-scrollbar-track,
 .mat-dialog-content::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  // border-radius: 10px;
-  // background-color: #f5f5f5;
+  /* border-radius: 10px; */
+  /* background-color: #f5f5f5; */
   background-color: #ffccff;
 }
 body::-webkit-scrollbar-thumb,
 .mat-dialog-content::-webkit-scrollbar-thumb {
-  // border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: #fff;
-  // background-image: -webkit-gradient(
+  /* background-image: -webkit-gradient(
   //   linear,
   //   40% 0%,
   //   75% 84%,
   //   from(#00ffff),
   //   to(#00ffff),
   //   color-stop(0.6, #99ffff)
-  // );
+  // ); */
   background-image: -webkit-gradient(
     linear,
     40% 0%,
@@ -65,34 +65,37 @@ img {
 
 /* -------- Home Page -------- */
 
-app-home,
-app-demo-font {
-  .mat-divider {
-    margin: 1rem 0 !important;
-    border-top-color: rgba(0, 0, 0, 0.25);
-  }
-  ul {
-    margin-top: 0;
-  }
+app-home .mat-divider,
+app-demo-font .mat-divider {
+  margin: 1rem 0 !important;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+app-home ul,
+app-demo-font ul {
+  margin-top: 0;
 }
 
 /* -------- Header Background Styling -------- */
 
-app-home,
-app-demo-font,
-app-about {
-  h1,
-  h2,
-  h3,
-  h4 {
-    padding: 8px 24px;
-    /* background-color: #3C275A; */
-    /* background-color: #4d004d; */
-    background-image: linear-gradient(#660066, #4d004d);
-    border: 1px solid #f8d210;
-    border-radius: 24px 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  }
+app-home h1,
+app-home h2,
+app-home h3,
+app-home h4,
+app-demo-font h1,
+app-demo-font h2,
+app-demo-font h3,
+app-demo-font h4,
+app-about h1,
+app-about h2,
+app-about h3,
+app-about h4 {
+  padding: 8px 24px;
+  /* background-color: #3C275A; */
+  /* background-color: #4d004d; */
+  background-image: linear-gradient(#660066, #4d004d);
+  border: 1px solid #f8d210;
+  border-radius: 24px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 /* -------- NekoGoo Color Samples -------- */
@@ -125,7 +128,7 @@ app-about {
   background: #e5e4e2;
 }
 
-// --- Dialogs / Modals ---
+/* --- Dialogs / Modals --- */
 
 .nekogoo-modal-noscroll {
   overflow-y: hidden;
@@ -135,18 +138,18 @@ $screen-sm: 600px;
 $screen-md: 960px;
 
 .nekogoo-modal-about {
-  // extra small (0-600px, e.g. smart phone)
+  /* extra small (0-600px, e.g. smart phone) */
   width: 95vw;
   max-width: 95vw !important;
-  // small (600-960px, e.g. tablet)
+  /* small (600-960px, e.g. tablet) */
   @media screen and (min-width: $screen-sm) {
     width: 80vw;
   }
-  // medium (960-1280px)
+  /* medium (960-1280px) */
   @media screen and (min-width: $screen-md) {
     width: 60vw;
   }
-  // large (1280-1920px)
+  /* large (1280-1920px) */
 }
 
 .pad-text {

@@ -1,0 +1,236 @@
+/* -------- Corruption of Champions: Content Wrapper -------- */
+.coc-theme {
+  width: 910px;
+  margin: 0 auto;
+  border: 1px solid #808080;
+  background-color: #ebd7a5;
+  background-image: url('/assets/images/coc/interface/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coc-theme nav {
+  display: block;
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* --- Heading Texts --- */
+.coc-theme h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+/* --- Buttons --- */
+.coc-theme .buttonrow {
+  padding-bottom: 40px;
+}
+.coc-theme .button {
+  display: block;
+  float: left;
+  width: 136px;
+  height: 38px;
+  margin-top: 2px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  transition: color 0.2s linear;
+}
+.coc-theme .button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.coc-theme .button:hover div.coc-tooltip {
+  visibility: visible;
+}
+.coc-theme .button:active {
+  opacity: 0.6;
+}
+
+/* -------- Game Header -------- */
+
+.coc-theme .topbuttonset {
+  margin-bottom: 2px;
+}
+/* Replacement for buttonbuffer */
+.coc-theme .topbuttonset div:nth-child(3) {
+  margin-left: 70px;
+}
+.coc-theme .buttonbuffer {
+  margin-right: 74px;
+}
+
+/* -------- Game Main Stage -------- */
+
+/* --- Main Text Display --- */
+.coc-theme .coc-maintext {
+  width: 687px;
+  height: 440px;
+  padding-left: 5px;
+  overflow-y: scroll;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* border: 2px ridge black; */
+  border: 2px solid black;
+}
+
+/* --- Tooltip Display --- */
+.coc-theme .coc-tooltip {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  z-index: 10;
+  left: 100px;
+  bottom: 100px;
+  width: 300px;
+  height: 202px;
+  background-image: url('/assets/images/coc/interface/tooltip.png');
+  background-size: cover;
+}
+.coc-theme .coc-tooltip h4 {
+  margin: 5px 10px 0;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-bottom: solid 2px black;
+}
+ {
+}
+.coc-theme .coc-tooltip p {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* -------- Game Sidebar -------- */
+
+/* --- Stats Display --- */
+.coc-theme coc-sidebar {
+  width: 210px;
+  height: 560px;
+  /* background-image: url('/assets/images/coc/interface/sidepanel.png'); */
+  /* background-repeat: no-repeat; */
+}
+
+.coc-theme coc-sidebar .stat-container {
+  margin: 0 10px 1px;
+}
+
+.coc-theme coc-sidebar .stat-frame {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  border: 1px solid black;
+}
+.coc-theme coc-sidebar .stat-frame-blank {
+  padding: 2px;
+}
+
+.coc-theme coc-sidebar .stat-frame,
+.stat-frame-blank,
+.stat-updown {
+  height: 24px;
+}
+
+.coc-theme coc-sidebar .stat-updown {
+  background-image: url('/assets/images/coc/interface/arrow-up.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  margin-left: 2px;
+}
+
+.coc-theme coc-sidebar .stat-bar {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.7),
+    rgba(255, 127, 127, 0.7) 50%,
+    rgba(255, 0, 0, 0.7) 50%
+  );
+  transition: width 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.coc-theme coc-sidebar .stat-label:hover {
+  cursor: help;
+}
+
+/* --- Time Display --- */
+.coc-theme coc-sidebar .timeDisplay {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+// --- Sprite Display ---
+.coc-theme coc-sidebar .spriteDisplay {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
+  height: 80px;
+  width: 100px;
+  bottom: 0;
+}
+.coc-theme coc-sidebar .spriteDisplay img {
+  position: inherit;
+  display: block;
+  bottom: -50%;
+  padding-top: 18px;
+  padding-left: 10px;
+  transform: scale(2);
+  image-rendering: -moz-crisp-edges; /*Needed until Firefox properly resolves this.*/
+  image-rendering: pixelated;
+}
+
+/* -------- Game Footer -------- */
+
+.coc-theme coc-footer {
+  width: 700px;
+}
+
+.coc-theme .buttonset {
+  bottom: 200px;
+  margin-left: 0;
+  margin-bottom: 2px;
+}
+
+.coc-theme #buttonMain,
+.coc-theme #button0,
+.coc-theme #button10 {
+  background-image: url('/assets/images/coc/interface/button0.jpg');
+}
+.coc-theme #buttonData,
+.coc-theme #button1,
+.coc-theme #button11 {
+  background-image: url('/assets/images/coc/interface/button1.jpg');
+}
+.coc-theme #buttonLevel,
+.coc-theme #button2,
+.coc-theme #button12 {
+  background-image: url('/assets/images/coc/interface/button2.jpg');
+}
+.coc-theme #buttonStats,
+.coc-theme #button3,
+.coc-theme #button13 {
+  background-image: url('/assets/images/coc/interface/button3.jpg');
+}
+.coc-theme #buttonPerks,
+.coc-theme #button4,
+.coc-theme #button14 {
+  background-image: url('/assets/images/coc/interface/button4.jpg');
+}
+.coc-theme #buttonAppearance,
+.coc-theme #button5 {
+  background-image: url('/assets/images/coc/interface/button5.jpg');
+}
+.coc-theme #button6 {
+  background-image: url('/assets/images/coc/interface/button6.jpg');
+}
+.coc-theme #button7 {
+  background-image: url('/assets/images/coc/interface/button7.jpg');
+}
+.coc-theme #button8 {
+  background-image: url('/assets/images/coc/interface/button8.jpg');
+}
+.coc-theme #button9 {
+  background-image: url('/assets/images/coc/interface/button9.jpg');
+}

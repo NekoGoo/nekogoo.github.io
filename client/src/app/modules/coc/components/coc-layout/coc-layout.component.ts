@@ -18,7 +18,7 @@ import { getMode } from '@modules/coc/store/ui/ui.selectors';
 @Component({
   selector: 'coc-layout',
   templateUrl: './coc-layout.component.html',
-  styleUrls: ['./coc-layout.component.scss'],
+  styleUrls: ['./coc-layout.component.css'],
   // TODO: remove below line when styles no longer need to be global to work
   encapsulation: ViewEncapsulation.None,
 })
