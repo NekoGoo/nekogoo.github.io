@@ -58,6 +58,9 @@ ng add @ngrx/entity --skip-confirmation
 ng add @ngrx/data --skip-confirmation
 ```
 
+- [Vite as development server](https://angular.io/guide/esbuild#vite-as-a-development-server): is encapsulated within the Angular CLI dev-server builder and currently cannot be directly configured
+- [Hot Module Replacement](https://angular.dev/tools/cli/esbuild#hot-module-replacement) is planned for a future version
+
 ---
 
 #### Deployment Options
