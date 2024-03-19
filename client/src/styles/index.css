@@ -1,23 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'tailwind/base'; /* initial global styles */
+/* --- Initial Global Styles --- */
+
+@import 'tailwind'; /* Load TailwindCSS (must occur before themes) */
 /* https://material.angular.io/guide/theming */
 @import '@angular/material/prebuilt-themes/indigo-pink';
 
-/* @import 'ng-fixes'; */
+/* --- Application Styles  --- */
 
-@import 'tailwind';
+/* @import 'ng-fixes'; */
 @import 'nekogoo';
 
-/* Lazy-Loaded Components */
-/* imported here (instead of layouts) for accurate style sources in browser debugger */
-/* @import 'portfolio'; */
+/* --- Lazy-Loaded Styles  --- */
+/* imported here (instead of layouts) for accurate source tracking in browser debugger */
 
-/* html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-} */
+/* @import 'portfolio'; */
