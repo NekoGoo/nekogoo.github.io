@@ -65,30 +65,20 @@ img {
 
 /* -------- Home Page -------- */
 
-app-home .mat-divider,
-app-demo-font .mat-divider {
+[app-theme='main'] .mat-divider {
   margin: 1rem 0 !important;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
-app-home ul,
-app-demo-font ul {
+[app-theme='main'] ul {
   margin-top: 0;
 }
 
 /* -------- Header Background Styling -------- */
 
-app-home h1,
-app-home h2,
-app-home h3,
-app-home h4,
-app-demo-font h1,
-app-demo-font h2,
-app-demo-font h3,
-app-demo-font h4,
-app-about h1,
-app-about h2,
-app-about h3,
-app-about h4 {
+[app-theme='main'] h1,
+[app-theme='main'] h2,
+[app-theme='main'] h3,
+[app-theme='main'] h4 {
   padding: 8px 24px;
   /* background-color: #3C275A; */
   /* background-color: #4d004d; */

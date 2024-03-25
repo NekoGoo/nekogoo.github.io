@@ -8,7 +8,7 @@ import { ModalSpecialComponent } from './components/modal-special/modal-special.
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
   imgNekoGooFull = 'assets/images/NekoGoo-01-A.png';

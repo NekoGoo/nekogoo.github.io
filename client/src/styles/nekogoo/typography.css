@@ -9,13 +9,13 @@
   - font-size
   - line-height
 
+  --- Position / Spacing ---
+  - text-align
+
   --- Style ---
   - font-weight
   - font-style
   - text-decoration
-
-  --- Position / Spacing ---
-  - text-align
 
   --- Color ---
   - color
@@ -27,9 +27,9 @@
 /* -------- Nav toolbar -------- */
 
 .nekogoo-logo {
+  font-size: xx-large;
   /* text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px; */
   -webkit-text-stroke: 1px darkcyan; /* outline trace */
-  font-size: xx-large;
 }
 
 /* Targeting .mat-typography activates more overrides without requiring !important */
@@ -58,98 +58,62 @@ body.mat-typography .cdk-overlay-container {
 /* -------- Overall NekoGoo Pages -------- */
 
 /* --- Headers --- */
-body.mat-typography app-home h1,
-body.mat-typography app-home h3,
-body.mat-typography app-home h5,
-body.mat-typography app-about h1,
-body.mat-typography app-about h3,
-body.mat-typography app-about h5,
-body.mat-typography app-demo-font h1,
-body.mat-typography app-demo-font h3,
-body.mat-typography app-demo-font h5 {
+body.mat-typography [app-theme='main'] h1,
+body.mat-typography [app-theme='main'] h3,
+body.mat-typography [app-theme='main'] h5 {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
   font-weight: 500;
 }
 
-body.mat-typography app-home h1,
-body.mat-typography app-about h1,
-body.mat-typography app-demo-font h1 {
+body.mat-typography [app-theme='main'] h1 {
   font-size: 2.2rem;
   line-height: 2.7rem;
   font-style: italic;
   text-align: center;
 }
-body.mat-typography app-home h3,
-body.mat-typography app-about h3,
-body.mat-typography app-demo-font h3 {
+body.mat-typography [app-theme='main'] h3 {
   font-size: 1.6rem;
   line-height: 2rem;
 }
-body.mat-typography app-home h5,
-body.mat-typography app-about h5,
-body.mat-typography app-demo-font h5 {
+body.mat-typography [app-theme='main'] h5 {
   font-size: 1.25rem;
   line-height: 1.875rem;
 }
 
-body.mat-typography app-home h1,
-body.mat-typography app-home h2,
-body.mat-typography app-home h3,
-body.mat-typography app-home h4,
-body.mat-typography app-about h1,
-body.mat-typography app-about h2,
-body.mat-typography app-about h3,
-body.mat-typography app-about h4,
-body.mat-typography app-demo-font h1,
-body.mat-typography app-demo-font h2,
-body.mat-typography app-demo-font h3,
-body.mat-typography app-demo-font h4 {
+body.mat-typography [app-theme='main'] h1,
+body.mat-typography [app-theme='main'] h2,
+body.mat-typography [app-theme='main'] h3,
+body.mat-typography [app-theme='main'] h4 {
   color: white;
 }
 
-body.mat-typography app-home figcaption,
-body.mat-typography app-about figcaption,
-body.mat-typography app-demo-font figcaption {
+body.mat-typography [app-theme='main'] figcaption {
   /* font-size: 1rem; */ /* 16px expected */
   /* line-height: 1.5rem; */
   font-size: 0.875rem; /* 14px expected */
   line-height: 1.3125rem;
 }
-body.mat-typography app-home figcaption a,
-body.mat-typography app-about figcaption a,
-body.mat-typography app-demo-font figcaption a {
+body.mat-typography [app-theme='main'] figcaption a {
   font-style: italic;
 }
 
 /* -------- Home Page -------- */
 
-body.mat-typography app-home p,
-body.mat-typography app-home li,
-body.mat-typography app-demo-font p,
-body.mat-typography app-demo-font li {
+body.mat-typography [app-theme='main'] p,
+body.mat-typography [app-theme='main'] li {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-body.mat-typography app-home a,
-body.mat-typography app-demo-font a {
+body.mat-typography [app-theme='main'] a {
   color: #453674;
   text-decoration: none;
 }
-body.mat-typography app-home a:hover,
-body.mat-typography app-demo-font a:hover {
+body.mat-typography [app-theme='main'] a:hover {
   color: #4f3674;
   text-decoration: underline;
 }
-body.mat-typography app-home a:visited,
-body.mat-typography app-demo-font a:visited {
+body.mat-typography [app-theme='main'] a:visited {
   color: #3c275a;
-}
-
-/* -------- About Page -------- */
-
-body.mat-typography app-about p {
-  font-size: 1.25rem; /* 20px expected */
-  line-height: 1.875rem;
 }

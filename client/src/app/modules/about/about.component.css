@@ -1,0 +1,30 @@
+/* -------- About Page -------- */
+
+figure {
+  margin: 0 0 1rem;
+}
+figcaption {
+  text-align: center;
+}
+
+.rounded-img-bottom {
+  border-radius: 0 0 50% 50%;
+}
+
+.about-modal-selectors button {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 4px 8px;
+}
+.about-modal-selectors button:not(:first-of-type) {
+  margin-left: 6px;
+}
+
+/* --- Typography --- */
+
+/* can only select/target children below component level */
+/* body.mat-typography [app-theme='main'] p { */
+.about-text-container p {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  @apply tw-text-xl;
+}
