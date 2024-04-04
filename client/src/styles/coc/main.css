@@ -94,8 +94,6 @@
   padding-left: 5px;
   border-bottom: solid 2px black;
 }
- {
-}
 .coc-theme .coc-tooltip p {
   margin-top: 0;
   margin-left: 10px;
@@ -161,7 +159,7 @@
   padding-left: 10px;
 }
 
-// --- Sprite Display ---
+/* --- Sprite Display --- */
 .coc-theme coc-sidebar .spriteDisplay {
   display: inline-block;
   margin-left: 10px;
