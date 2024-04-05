@@ -58,7 +58,7 @@ ng add @ngrx/entity --skip-confirmation
 ng add @ngrx/data --skip-confirmation
 ```
 
-- [Vite as development server](https://angular.io/guide/esbuild#vite-as-a-development-server): is encapsulated within the Angular CLI dev-server builder and currently cannot be directly configured
+- [Vite as development server](https://angular.io/guide/esbuild#vite-as-a-development-server): v17+, is encapsulated within the Angular CLI dev-server builder and currently cannot be directly configured
 - [Hot Module Replacement](https://angular.dev/tools/cli/esbuild#hot-module-replacement) is planned for a future version
 
 ---
@@ -97,17 +97,12 @@ ng g g <guard-name>
 
 ### Angular 'update' Commands Used
 
-Globally install the latest Angular framework ([version compatibility](https://angular.io/guide/versions))
-
-```bash
-npm i -g @angular/cli@<release-version>
-```
-
-[Update](https://update.angular.io) Angular framework & Angular Materials
+[Update](https://update.angular.io) Angular framework ([version compatibility](https://angular.io/guide/versions)), Angular Materials, and [NgRx](https://ngrx.io/guide/migration/v17)
 
 ```bash
 ng update @angular/core@<release-version> @angular/cli@<release-version>
 ng update @angular/material@<release-version>
+ng update @ngrx/store@<release-version>
 ```
 
 ### Angular Migration Commands (optional)
