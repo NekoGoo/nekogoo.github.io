@@ -2,10 +2,10 @@
   display: block;
 }
 
-.mat-card {
+.mat-mdc-card {
   text-align: center;
 }
 
-.mat-button-base:not(:first-of-type) {
+.mat-mdc-button-base:not(:first-of-type) {
   margin-left: 8px;
 }
