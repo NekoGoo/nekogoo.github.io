@@ -110,10 +110,6 @@
   /* background-repeat: no-repeat; */
 }
 
-.coc-theme coc-sidebar .stat-container {
-  margin: 0 10px 1px;
-}
-
 .coc-theme coc-sidebar .stat-frame {
   /* background-color: rgba(0, 0, 0, 0.2); */
   border: 1px solid black;

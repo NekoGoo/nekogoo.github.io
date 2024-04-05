@@ -70,8 +70,10 @@
 <!-- </div> -->
 
 
-<div class="topbuttonset" fxLayout="row wrap">
-    <div *ngFor="let button of headButtons | keyvalue : originalOrder" fxFlex="140px">
-        <coc-button _id="{{ button.key }}" *ngIf="button.value.visible">{{ button.value.title }}</coc-button>
+<!-- <div class="topbuttonset" fxLayout="row wrap"> -->
+<!-- <div *ngFor="let button of headButtons | keyvalue : originalOrder" fxFlex="140px"> -->
+<div class="coc-header-button-layout topbuttonset">
+    <div *ngFor="let button of headButtons | keyvalue : originalOrder">
+        <coc-button _id="{{button.key}}" *ngIf="button.value.visible">{{button.value.title}}</coc-button>
     </div>
 </div>

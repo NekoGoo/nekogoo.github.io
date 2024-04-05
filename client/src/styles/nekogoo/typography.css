@@ -41,6 +41,18 @@ body.mat-typography .mat-tooltip {
   line-height: 21px;
 }
 
+/* --- Links --- */
+body.mat-typography a {
+  color: #453674;
+  text-decoration: none;
+}
+body.mat-typography a:visited {
+  color: #3c275a;
+}
+body.mat-typography a:hover {
+  text-decoration: underline;
+}
+
 /* --- Tooltip text (dotted underline) --- */
 /* .mat-tooltip-trigger { */
 body.mat-typography .tooltip-underline {
@@ -104,16 +116,4 @@ body.mat-typography [app-theme='main'] li {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-body.mat-typography [app-theme='main'] a {
-  color: #453674;
-  text-decoration: none;
-}
-body.mat-typography [app-theme='main'] a:hover {
-  color: #4f3674;
-  text-decoration: underline;
-}
-body.mat-typography [app-theme='main'] a:visited {
-  color: #3c275a;
 }

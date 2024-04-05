@@ -1,0 +1,133 @@
+/* -------- Flex/Grid Layout Styles -------- */
+
+.main-layout {
+  @apply tw-flex tw-flex-row tw-flex-wrap;
+}
+.main-layout > * {
+  @apply tw-flex-1 tw-basis-full tw-max-w-full;
+  @apply tw-mx-auto;
+}
+/* >xs, side margins same size as space above h1 */
+@media only screen and (min-width: 600px) {
+  .main-layout {
+    @apply tw-px-4;
+  }
+}
+/* >md, max-width of md */
+@media only screen and (min-width: 1280px) {
+  .main-layout > * {
+    @apply tw-basis-[1280px] tw-max-w-[1280px];
+  }
+}
+
+/* --- Layout Component  --- */
+
+/* <mat-toolbar-row fxLayout="row" fxLayoutAlign="center center" class="h-sm"> */
+.nekogoo-header-layout {
+  @apply tw-flex tw-flex-row;
+}
+.nekogoo-header-layout > *:nth-child(2) {
+  @apply tw-flex-1 tw-basis-full tw-max-w-full;
+}
+
+/* <div fxLayout="row wrap" fxLayoutAlign="center"> */
+.nekogoo-header-link-layout {
+  @apply tw-flex tw-flex-row;
+  @apply tw-content-stretch tw-items-stretch tw-justify-center;
+}
+
+/* <div mat-dialog-title fxLayout="row"> */
+.nekogoo-modal-header-layout {
+  @apply tw-flex tw-flex-row;
+}
+.nekogoo-modal-header-layout > * {
+  @apply tw-flex-1;
+}
+.nekogoo-modal-header-layout > *:first-child {
+  @apply tw-basis-full tw-max-w-full;
+}
+
+/* <div fxLayout="row" fxLayoutAlign="end"> */
+.nekogoo-modal-close-layout {
+  @apply tw-flex tw-flex-row;
+  @apply tw-content-center tw-items-center tw-justify-center;
+}
+
+/* --- Home Page  --- */
+
+.home-layout,
+.home-content-layout {
+  @apply tw-grid tw-gap-4;
+  @apply tw-grid-cols-1;
+}
+@media only screen and (min-width: 600px) {
+  .home-layout,
+  .home-content-layout {
+    @apply tw-grid-cols-2;
+  }
+}
+
+/* --- About Page  --- */
+
+/* <div fxLayout="row wrap" fxLayoutGap="24px grid" fxLayoutAlign="start start"> */
+/* <div fxFlex.gt-xs="50%" fxFlex.gt-lg="30%" fxFlex> */
+.about-content-layout {
+  @apply tw-flex tw-flex-row tw-flex-wrap;
+  @apply tw-content-start tw-items-start tw-justify-start;
+}
+.about-content-layout > * {
+  @apply tw-flex-1 tw-basis-full tw-max-w-full;
+}
+@media only screen and (min-width: 600px) {
+  .about-content-layout > * {
+    @apply tw-basis-[50%] tw-max-w-[50%];
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-content-layout > *:first-child {
+    @apply tw-basis-[30%] tw-max-w-[30%];
+  }
+  .about-content-layout > *:nth-child(2) {
+    @apply tw-basis-[70%] tw-max-w-[70%];
+  }
+}
+
+/* --- Demo Page  --- */
+
+/* <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center"> */
+/* <mat-card fxFlex="80%" class="mat-elevation-z3"> */
+.demo-ngrx-layout {
+  @apply tw-flex tw-flex-row tw-flex-wrap;
+}
+.demo-ngrx-layout > * {
+  @apply tw-flex-1 tw-basis-full tw-max-w-md;
+  @apply tw-mx-auto;
+}
+
+/* <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="start start" class="font-preview nekogoo-color"> */
+/* <div fxFlex="50%" *ngFor="let font of demoFontStyles"> */
+.demo-font-layout {
+  @apply tw-grid tw-gap-4;
+  @apply tw-grid-cols-2;
+}
+
+/* --- Not Found Page  --- */
+
+.not-found-layout {
+  @apply tw-flex tw-flex-row tw-flex-wrap;
+}
+.not-found-layout > * {
+  @apply tw-flex-1 tw-basis-full tw-max-w-md;
+  @apply tw-mx-auto tw-mt-8;
+}
+
+/* --- Roadmap Page  --- */
+
+/* <mat-tree-node fxLayout="row" *matTreeNodeDef="let node" matTreeNodeToggle> */
+/* <span fxFlex>{{node.name}}</span> */
+.roadmap-layout {
+  @apply tw-flex tw-flex-row;
+}
+.roadmap-layout > *:first-child {
+  @apply tw-flex-1 tw-basis-full tw-max-w-full;
+}

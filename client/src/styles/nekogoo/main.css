@@ -1,5 +1,14 @@
 /* https://www.cssportal.com/css-text-gradient-generator */
 
+/* html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+} */
+
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -54,13 +63,22 @@ body::-webkit-scrollbar-thumb,
   );
 }
 
-img {
-  max-width: 100%;
+/* https://dev.to/anewman15/what-does-box-sizing-border-box-do-what-are-its-advantages-1nbb */
+* {
+  @apply tw-box-border;
 }
 
+img {
+  @apply tw-max-w-full;
+}
+
+hr {
+  @apply tw-mb-4;
+}
+
+/* https://tailwindcss.com/docs/text-color */
 .inline_header {
-  font-style: italic;
-  color: purple;
+  @apply tw-italic tw-text-purple-900;
 }
 
 /* -------- Home Page -------- */

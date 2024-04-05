@@ -56,8 +56,10 @@
 <!-- https://angular.io/api/common/KeyValuePipe -->
 <!-- https://stackoverflow.com/questions/133051/what-is-the-difference-between-visibilityhidden-and-displaynone -->
 
-<div class="buttonset" fxLayout="row wrap">
-    <div *ngFor="let button of footButtons | keyvalue : originalOrder" fxFlex="140px">
+<!-- <div class="buttonset" fxLayout="row wrap"> -->
+<!-- <div *ngFor="let button of footButtons | keyvalue : originalOrder" fxFlex="140px"> -->
+<div class="coc-footer-button-layout buttonset">
+    <div *ngFor="let button of footButtons | keyvalue : originalOrder">
         <coc-button _id="{{ button.key }}" *ngIf="button.value.visible">{{ button.value.title }}</coc-button>
     </div>
 </div>

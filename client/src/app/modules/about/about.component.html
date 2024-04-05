@@ -1,62 +1,59 @@
-<div app-theme='main' fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center">
-    <div fxFlex fxFlex.gt-xs="95%" fxFlex.gt-md="80%">
-        <main>
-            <div fxLayout.gt-xs="row wrap" fxLayout="column" fxLayoutGap="24px grid" fxLayoutAlign="start start">
-                <div fxFlex.gt-xs="50%" fxFlex.gt-lg="30%" fxFlex>
-                    <!-- <figure>
-                        <a [href]="imgNekoGooFull">
-                            <img [src]="imgNekoGooHead" class="rounded-img-bottom" alt="NekoGoo profile pic" />
-                        </a>
-                        <figcaption>
-                            * art courtesy of
-                            <a href="https://twitter.com/blyzzarde" target="_blank" rel="noreferrer">Blyzzarde</a>
-                        </figcaption>
-                    </figure> -->
+<!-- <div app-theme='main' fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center"> -->
+<!-- <div fxFlex fxFlex.gt-xs="95%" fxFlex.gt-md="80%"> -->
+<!-- <main> -->
+<div class="main-layout">
+    <main app-theme="main">
+        <!-- <div fxLayout.gt-xs="row wrap" fxLayout="column" fxLayoutGap="24px grid" fxLayoutAlign="start start"> -->
+        <div class="about-content-layout">
+            <!-- <div fxFlex.gt-xs="50%" fxFlex.gt-lg="30%" fxFlex> -->
+            <figure>
+                <img src="assets/images/2022-11-19-Zie-no-bg.png" alt="full-body image of NekoGoo, a slime-girl with 6 arms and 9 tails" />
+                <figcaption>
+                    * art by
+                    <a href="https://twitter.com/mildh4nn" target="_blank" rel="noreferrer">mih4nn</a>
+                </figcaption>
+            </figure>
+            <!-- </div> -->
 
-                    <figure>
-                        <img src="assets/images/2022-11-19-Zie-no-bg.png" alt="NekoGoo image of full-body slime-girl with 6 arms and 8 tails" />
-                        <figcaption>
-                            * art by
-                            <a href="https://twitter.com/mildh4nn" target="_blank" rel="noreferrer">mih4nn</a>
-                        </figcaption>
-                    </figure>
-                </div>
+            <!-- <div fxFlex.gt-xs="50%" fxFlex.gt-lg="70%" fxFlex> -->
+            <div>
+                <h3>About NekoGoo</h3>
 
-                <div fxFlex.gt-xs="50%" fxFlex.gt-lg="70%" fxFlex>
-                    <h3>About NekoGoo</h3>
-                    <!-- <br /> -->
+                <div class="about-text-container pad-text">
+                    <p>Hello there!</p>
+                    <p>
+                        I am NekoGoo, a fruit slime monster (primarily banana) from another dimension.&nbsp; Being raised by a clan of catgirls, I adopted
+                        many of their personalities &amp; quirks.&nbsp; Nowadays, I'm stuck in this "Earth" world due to void magic gone awry.&nbsp;
+                        I initially tried getting home.. but there are so many games and snacks I want to try first!&nbsp;
+                        <span class="tw-text-nowrap">=(✪ω✪)=</span>
+                        <!-- https://cutekaomoji.com/animals/cats -->
+                    </p>
+                    <!-- <p>I enjoy streaming games and chatting about my favorite hobbies like videogames, superheroes, fantasy, sci-fi, anime, and vtubers.</p> -->
+                    <p>I enjoy chatting about my favorite hobbies like videogames, superheroes, fantasy, sci-fi, anime, and vtubers.</p>
+                    <p>
+                        You can also find me designing and programming my own text-based RPG on this site, which will be free to play upon release.&nbsp;
+                        Keep checking back for more, nya!~
+                    </p>
+                    <br />
 
-                    <div class="about-text-container pad-text">
-                        <p>Hello, there!</p>
-                        <p>
-                            I am NekoGoo, a fruit slime monster (primarily banana) from another dimension.&nbsp; Being raised by a clan of catgirls, I adopted
-                            many of their personalities &amp; quirks.&nbsp; Nowadays, I'm stuck in this 'Earth' world due to teleportation magic gone
-                            awry.&nbsp; I initially tried getting home.. but there are so many games and snacks I want to try first!&nbsp; =(✪ω✪)=
-                            <!-- https://cutekaomoji.com/animals/cats -->
-                        </p>
-                        <p>I enjoy streaming games and chatting about my favorite hobbies like videogames, superheroes, fantasy, sci-fi, anime, and vtubers.</p>
-                        <p>
-                            You can also find me designing and programming my own text-based RPG on this site, which will be free to play upon release.&nbsp;
-                            Keep checking back for more, nya!~
-                        </p>
-                        <br />
+                    <!-- <mat-chip-list aria-label="Modal selection">
+                                    <mat-chip selected color="accent" (click)="openAppearanceDialog()">Appearance</mat-chip>
+                                    <mat-chip selected color="accent" (click)="openPersonalityDialog()">Personality</mat-chip>
+                                    <mat-chip selected color="accent" (click)="openSpecialDialog()">Special Attributes</mat-chip>
+                                </mat-chip-list> -->
 
-                        <!-- <mat-chip-list aria-label="Modal selection">
-                                                <mat-chip selected color="accent" (click)="openAppearanceDialog()">Appearance</mat-chip>
-                                                <mat-chip selected color="accent" (click)="openPersonalityDialog()">Personality</mat-chip>
-                                                <mat-chip selected color="accent" (click)="openSpecialDialog()">Special Attributes</mat-chip>
-                                            </mat-chip-list> -->
-
-                        <div class="about-modal-selectors" aria-label="Modal selection">
-                            <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openAppearanceDialog()">Appearance</button>
-                            <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openSpecialDialog()">Special Attributes</button>
-                            <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openPersonalityDialog()">Personality</button>
-                        </div>
+                    <div class="about-modal-selectors" aria-label="Modal selection">
+                        <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openAppearanceDialog()">Appearance</button>
+                        <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openSpecialDialog()">Special Attributes</button>
+                        <button mat-stroked-button color="accent" class="mat-elevation-z1" (click)="openPersonalityDialog()">Personality</button>
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
             <br /><br />
 
-        </main>
-    </div>
+        </div>
+    </main>
 </div>
+<!-- </div> -->
+<!-- </div> -->

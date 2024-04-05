@@ -73,8 +73,9 @@ body.mat-typography .coc-theme coc-sidebar .stat-label {
 }
 
 body.mat-typography .coc-theme coc-sidebar .stat-num {
-  font-size: 18px;
-  text-align: right;
+  /* font-size: 18px; */
+  /* text-align: right; */
+  @apply tw-text-lg tw-whitespace-nowrap;
 }
 
 /* --- Time Display --- */
