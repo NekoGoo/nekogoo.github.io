@@ -22,7 +22,6 @@
 
 /* --- Layout Component  --- */
 
-/* <mat-toolbar-row fxLayout="row" fxLayoutAlign="center center" class="h-sm"> */
 .nekogoo-header-layout {
   @apply tw-flex tw-flex-row;
 }
@@ -30,13 +29,11 @@
   @apply tw-flex-1 tw-basis-full tw-max-w-full;
 }
 
-/* <div fxLayout="row wrap" fxLayoutAlign="center"> */
 .nekogoo-header-link-layout {
   @apply tw-flex tw-flex-row;
   @apply tw-content-stretch tw-items-stretch tw-justify-center;
 }
 
-/* <div mat-dialog-title fxLayout="row"> */
 .nekogoo-modal-header-layout {
   @apply tw-flex tw-flex-row;
 }
@@ -47,7 +44,6 @@
   @apply tw-basis-full tw-max-w-full;
 }
 
-/* <div fxLayout="row" fxLayoutAlign="end"> */
 .nekogoo-modal-close-layout {
   @apply tw-flex tw-flex-row;
   @apply tw-content-center tw-items-center tw-justify-center;
@@ -69,8 +65,6 @@
 
 /* --- About Page  --- */
 
-/* <div fxLayout="row wrap" fxLayoutGap="24px grid" fxLayoutAlign="start start"> */
-/* <div fxFlex.gt-xs="50%" fxFlex.gt-lg="30%" fxFlex> */
 .about-content-layout {
   @apply tw-flex tw-flex-row tw-flex-wrap;
   @apply tw-content-start tw-items-start tw-justify-start;
@@ -94,8 +88,6 @@
 
 /* --- Demo Page  --- */
 
-/* <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center"> */
-/* <mat-card fxFlex="80%" class="mat-elevation-z3"> */
 .demo-ngrx-layout {
   @apply tw-flex tw-flex-row tw-flex-wrap;
 }
@@ -104,8 +96,6 @@
   @apply tw-mx-auto;
 }
 
-/* <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="start start" class="font-preview nekogoo-color"> */
-/* <div fxFlex="50%" *ngFor="let font of demoFontStyles"> */
 .demo-font-layout {
   @apply tw-grid tw-gap-4;
   @apply tw-grid-cols-2;
@@ -123,8 +113,6 @@
 
 /* --- Roadmap Page  --- */
 
-/* <mat-tree-node fxLayout="row" *matTreeNodeDef="let node" matTreeNodeToggle> */
-/* <span fxFlex>{{node.name}}</span> */
 .roadmap-layout {
   @apply tw-flex tw-flex-row;
 }

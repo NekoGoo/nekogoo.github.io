@@ -41,37 +41,6 @@
 <!-- </div> -->
 
 
-<!-- <div class="topbuttonset" fxLayout="row wrap">
-    <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
-        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
-    </div>
-</div> -->
-
-
-<!-- <div class="topbuttonset" fxLayout="row wrap">
-    <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
-        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
-    </div>
-</div> -->
-
-
-<!-- <div class="topbuttonset" fxLayout="row wrap">
-    <coc-button _id="buttonMain">Main Menu</coc-button>
-    <coc-button _id="buttonData">Data</coc-button>
-    <div class="coc-buttonbuffer"></div>
-    <coc-button _id="buttonLevel">Level Up</coc-button>
-    <coc-button _id="buttonStats">Stats</coc-button>
-    <coc-button _id="buttonPerks">Perks</coc-button>
-    <coc-button _id="buttonAppearance">Appearance</coc-button> -->
-
-<!-- <div *ngFor="let button of headButtons | keyvalue" fxFlex="140px">
-        <coc-button buttonId="{{ button.key }}" title="{{ button.value.title }}" *ngIf="button.value.visible"></coc-button>
-    </div> -->
-<!-- </div> -->
-
-
-<!-- <div class="topbuttonset" fxLayout="row wrap"> -->
-<!-- <div *ngFor="let button of headButtons | keyvalue : originalOrder" fxFlex="140px"> -->
 <div class="coc-header-button-layout topbuttonset">
     <div *ngFor="let button of headButtons | keyvalue : originalOrder">
         <coc-button _id="{{button.key}}" *ngIf="button.value.visible">{{button.value.title}}</coc-button>

@@ -1,21 +1,12 @@
-<!-- <div class="stat-container" fxLayout="row" fxLayoutAlign="start center"> -->
 <div class="coc-stat-layout">
-    <!-- <div fxFlex> -->
-    <!-- <div [ngClass]="statFrameClass" fxFlex id="{{ _id }}"> -->
     <div id="{{_id}}" [ngClass]="statFrameClass">
-        <!-- <div [ngClass]="statBarClass" fxLayout="row">
-            <span class="stat-label" fxFlexAlign="start" title="{{tt}}">{{label}}:</span>
-            <span class="stat-num" fxFlex fxFlexAlign="end">{{value}}</span>
-        </div> -->
         <div class="coc-stat-bar-layout" [ngClass]="statBarClass">
             <span class="stat-label" title="{{tt}}">{{label}}:</span>
             <span class="stat-num">{{value}}</span>
         </div>
     </div>
-    <!-- </div> -->
 
     <!-- Stat Level Up Indicator -->
-    <!-- <div fxFlex="24px"> -->
     <div>
         <div *ngIf="statupdown" class="stat-updown"></div>
     </div>

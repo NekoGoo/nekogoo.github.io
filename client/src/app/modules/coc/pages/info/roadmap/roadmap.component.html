@@ -1,5 +1,3 @@
-<!-- <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center"> -->
-<!-- <mat-card fxFlex.gt-sm="80%" fxFlex.gt-xs="95%" fxFlex> -->
 <div class="main-layout">
     <mat-card>
         <mat-card-title>
@@ -12,9 +10,7 @@
                 <!-- This is the tree node template for leaf nodes -->
                 <!-- There is inline padding applied to this node using styles.
                   This padding value depends on the mat-icon-button width. -->
-                <!-- <mat-tree-node fxLayout="row" *matTreeNodeDef="let node" matTreeNodeToggle> -->
                 <mat-tree-node class="coc-roadmap-tree-node-layout" *matTreeNodeDef="let node" matTreeNodeToggle>
-                    <!-- <span fxFlex>{{node.name}}</span> -->
                     <div>{{node.name}}</div>
                     <div>
                         <!-- https://fonts.google.com/icons?selected=Material+Icons -->
