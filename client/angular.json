@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nekogoo-app:build:production"
+              "buildTarget": "nekogoo-app:build:production"
             },
             "development": {
-              "browserTarget": "nekogoo-app:build:development"
+              "buildTarget": "nekogoo-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nekogoo-app:build"
+            "buildTarget": "nekogoo-app:build"
           }
         },
         "test": {
