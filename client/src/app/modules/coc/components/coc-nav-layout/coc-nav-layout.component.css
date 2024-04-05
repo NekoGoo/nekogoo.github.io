@@ -1,15 +1,18 @@
+/* @import 'coc'; */
+@import '../../../../../styles/coc';
+
 :host {
   display: block;
 }
 
-// https://www.w3schools.com/colors/colors_picker.asp
+/* https://www.w3schools.com/colors/colors_picker.asp */
 .nekogoo-nav-toolbar-bg {
-  // background-image: linear-gradient(white, #ffffcc);
-  // background-image: linear-gradient(white, #00ff99);
+  /* background-image: linear-gradient(white, #ffffcc); */
+  /* background-image: linear-gradient(white, #00ff99); */
   background-image: linear-gradient(white, #66ff99);
   background-image: linear-gradient(white, BlanchedAlmond);
-  // background-image: linear-gradient(white, lavender);
-  // background-image: linear-gradient(white, ivory);
+  /* background-image: linear-gradient(white, lavender); */
+  /* background-image: linear-gradient(white, ivory); */
 }
 
 .mat-toolbar,
@@ -18,19 +21,19 @@
   min-height: auto;
 }
 
-// --- Info Styling ---
+/* --- Info Styling --- */
 
 .mat-card-title {
   text-align: center;
 }
 
-// --- Table Styling ---
-// https://material.angular.io/components/table/examples
+/* --- Table Styling --- */
+/* https://material.angular.io/components/table/examples */
 
 .info-table {
   width: 100%;
 
-  // --- Table Cell Styling ---
+  /* --- Table Cell Styling --- */
 
   th.mat-header-cell,
   th.mat-header-cell:first-of-type,
@@ -39,46 +42,46 @@
     padding: 0 3px;
   }
 
-  // .mat-header-cell {
-  //   text-align: center;
-  // }
+  /* .mat-header-cell {
+    text-align: center;
+  } */
 
   .mat-row:hover {
-    // background-color: #ccffff; // cyan
+    /* background-color: #ccffff; // cyan */
     background-color: #ccffee;
   }
 
-  // --- Table Cell Styling (by columm definition) ---
+  /* --- Table Cell Styling (by columm definition) --- */
 
   .mat-column-type.mat-header-cell,
   .mat-column-type.mat-cell {
-    // border-right: 1px solid rgba(0, 0, 0, 0.12);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.12); */
     text-align: center;
   }
 
   .mat-column-title.mat-cell {
     font-weight: bold;
-    // font-style: italic;
+    /* font-style: italic; */
   }
 }
 
 .info-detail-table {
   width: 100%;
 
-  // --- Table Cell Styling ---
+  /* --- Table Cell Styling --- */
 
   th.mat-header-cell,
   th.mat-header-cell:first-of-type,
   td.mat-cell,
   td.mat-cell:first-of-type {
     padding: 0 6px;
-    // vertical-align: top;
+    /* vertical-align: top; */
   }
 
-  // --- Table Cell Styling (by columm definition) ---
+  /* --- Table Cell Styling (by columm definition) --- */
 
   .mat-column-0.mat-cell {
-    // font-weight: bold;
+    /* font-weight: bold; */
     font-style: italic;
   }
 }
