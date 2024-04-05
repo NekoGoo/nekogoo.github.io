@@ -21,67 +21,63 @@
   min-height: auto;
 }
 
-/* --- Info Styling --- */
-
 .mat-card-title {
   text-align: center;
 }
 
-/* --- Table Styling --- */
+/* --- Info Table Styling --- */
 /* https://material.angular.io/components/table/examples */
 
 .info-table {
   width: 100%;
+}
 
-  /* --- Table Cell Styling --- */
+.info-table th.mat-header-cell,
+.info-table th.mat-header-cell:first-of-type,
+.info-table td.mat-cell,
+.info-table td.mat-cell:first-of-type {
+  padding: 0 3px;
+}
 
-  th.mat-header-cell,
-  th.mat-header-cell:first-of-type,
-  td.mat-cell,
-  td.mat-cell:first-of-type {
-    padding: 0 3px;
-  }
-
-  /* .mat-header-cell {
+/* .info-table .mat-header-cell {
     text-align: center;
   } */
 
-  .mat-row:hover {
-    /* background-color: #ccffff; // cyan */
-    background-color: #ccffee;
-  }
-
-  /* --- Table Cell Styling (by columm definition) --- */
-
-  .mat-column-type.mat-header-cell,
-  .mat-column-type.mat-cell {
-    /* border-right: 1px solid rgba(0, 0, 0, 0.12); */
-    text-align: center;
-  }
-
-  .mat-column-title.mat-cell {
-    font-weight: bold;
-    /* font-style: italic; */
-  }
+.info-table .mat-row:hover {
+  /* background-color: #ccffff; // cyan */
+  background-color: #ccffee;
 }
+
+/* Table Cell Styling (by columm definition) */
+
+.info-table .mat-column-type.mat-header-cell,
+.info-table .mat-column-type.mat-cell {
+  /* border-right: 1px solid rgba(0, 0, 0, 0.12); */
+  text-align: center;
+}
+
+.info-table .mat-column-title.mat-cell {
+  font-weight: bold;
+  /* font-style: italic; */
+}
+
+/* --- Info Detail Table Styling --- */
 
 .info-detail-table {
   width: 100%;
+}
 
-  /* --- Table Cell Styling --- */
+.info-detail-table th.mat-header-cell,
+.info-detail-table th.mat-header-cell:first-of-type,
+.info-detail-table td.mat-cell,
+.info-detail-table td.mat-cell:first-of-type {
+  padding: 0 6px;
+  /* vertical-align: top; */
+}
 
-  th.mat-header-cell,
-  th.mat-header-cell:first-of-type,
-  td.mat-cell,
-  td.mat-cell:first-of-type {
-    padding: 0 6px;
-    /* vertical-align: top; */
-  }
+/* Table Cell Styling (by columm definition) */
 
-  /* --- Table Cell Styling (by columm definition) --- */
-
-  .mat-column-0.mat-cell {
-    /* font-weight: bold; */
-    font-style: italic;
-  }
+.info-detail-table .mat-column-0.mat-cell {
+  /* font-weight: bold; */
+  font-style: italic;
 }
