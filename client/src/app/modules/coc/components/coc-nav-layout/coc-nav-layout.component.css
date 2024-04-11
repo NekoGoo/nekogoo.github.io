@@ -21,10 +21,6 @@
   min-height: auto;
 }
 
-.mat-mdc-card-title {
-  text-align: center;
-}
-
 /* --- Info Table Styling --- */
 /* https://material.angular.io/components/table/examples */
 

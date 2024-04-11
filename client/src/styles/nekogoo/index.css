@@ -1,7 +1,9 @@
+@import 'theme';
 @import '../font-faces/CandyShop';
 @import 'typography';
 @import 'layout';
 @import 'main';
 
-@import 'mat-components/toolbar';
-@import 'mat-components/dialog-modal';
+/* @import 'mat-components/toolbar'; */
+/* @import 'mat-components/dialog-modal'; */
+@import 'mat-components';

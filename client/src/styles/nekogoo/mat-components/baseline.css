@@ -1,0 +1,18 @@
+/* -------- Angular Materials Style Preferences -------- */
+
+/* --- Card (https://material.angular.io/components/card) --- */
+
+.mat-mdc-card-title {
+  @apply tw-text-center;
+}
+
+/* --- Card (https://material.angular.io/components/card) --- */
+
+body.mat-typography .mat-accent {
+  @apply tw-h-auto;
+}
+
+body.mat-typography .mat-mdc-dialog-content {
+  /* @apply tw-text-black/[.87] tw-tracking-normal; */
+  @apply tw-text-black/[.87];
+}

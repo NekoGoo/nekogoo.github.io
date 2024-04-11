@@ -36,6 +36,7 @@
 
 .nekogoo-modal-header-layout {
   @apply tw-flex tw-flex-row;
+  @apply tw-content-center tw-items-center tw-justify-center;
 }
 .nekogoo-modal-header-layout > * {
   @apply tw-flex-1;
@@ -44,21 +45,29 @@
   @apply tw-basis-full tw-max-w-full;
 }
 
-.nekogoo-modal-close-layout {
+/* .nekogoo-modal-close-layout {
   @apply tw-flex tw-flex-row;
   @apply tw-content-center tw-items-center tw-justify-center;
+} */
+
+.nekogoo-modal-close-layout {
+  height: 30px;
 }
 
 /* --- Home Page  --- */
 
 .home-layout,
-.home-content-layout {
+.home-content-layout,
+/* .demo-font-layout, */
+.grid-2-gt-xs-layout {
   @apply tw-grid tw-gap-4;
   @apply tw-grid-cols-1;
 }
 @media only screen and (min-width: 600px) {
   .home-layout,
-  .home-content-layout {
+  .home-content-layout,
+  /* .demo-font-layout, */
+  .grid-2-gt-xs-layout {
     @apply tw-grid-cols-2;
   }
 }
@@ -94,11 +103,6 @@
 .demo-ngrx-layout > * {
   @apply tw-flex-1 tw-basis-full tw-max-w-md;
   @apply tw-mx-auto;
-}
-
-.demo-font-layout {
-  @apply tw-grid tw-gap-4;
-  @apply tw-grid-cols-2;
 }
 
 /* --- Not Found Page  --- */

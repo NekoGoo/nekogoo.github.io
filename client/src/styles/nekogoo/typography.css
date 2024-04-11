@@ -24,21 +24,19 @@
 /* https://ansrsource.com/elements-of-typography */
 /* https://careerfoundry.com/en/blog/ui-design/beginners-guide-to-typography */
 
-/* -------- Nav toolbar -------- */
+/*  The phase-out of vendor prefixes (-moz-*, -webkit-*) began around the mid-2010s as browser vendors started to align their implementations
+    with CSS specifications and standards.  By the late 2010s and early 2020s, most modern browsers had excellent support for CSS properties
+    without the need for prefixes, particularly for widely-used features like gradients. */
+/*  To check the current state of browser support for specific CSS properties: https://caniuse.com */
 
-.nekogoo-logo {
-  font-size: xx-large;
-  /* text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px; */
-  -webkit-text-stroke: 1px darkcyan; /* outline trace */
-}
+/* https://www.cssportal.com/css-text-gradient-generator */
 
 /* Targeting .mat-typography activates more overrides without requiring !important */
 
 /* -------- Body -------- */
 
 body.mat-typography .mat-mdc-tooltip {
-  font-size: 14px;
-  line-height: 21px;
+  @apply tw-text-sm;
 }
 
 /* --- Links --- */
@@ -53,7 +51,27 @@ body.mat-typography a:hover {
   text-decoration: underline;
 }
 
+/* --- Logo Button (Navbar) --- */
+
+body.mat-typography .nekogoo-logo {
+  /* font-size: xx-large; */
+  /* text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px; */
+  @apply tw-text-3xl tw-drop-shadow;
+}
+
+/* https://medium.com/@christianjbolus/how-to-make-a-button-with-a-gradient-border-and-gradient-text-in-html-css-7d495656169 */
+body.mat-typography .nekogoo-logo::after {
+  content: attr(data);
+  background: var(--nekogoo-color-gradient);
+  background-clip: text; /* Apply gradient only to text */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px darkcyan; /* outline trace */
+  @apply tw-px-6;
+}
+
 /* --- Tooltip text (dotted underline) --- */
+
 /* .mat-tooltip-trigger { */
 body.mat-typography .tooltip-underline {
   border-bottom: 1px dotted #c90;
@@ -62,6 +80,7 @@ body.mat-typography .tooltip-underline {
 }
 
 /* --- Dialog (Modal) --- */
+
 body.mat-typography .cdk-overlay-container {
   font-size: 1rem;
   line-height: 1.5rem;

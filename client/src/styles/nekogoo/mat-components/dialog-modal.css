@@ -2,45 +2,57 @@
 
 /* --- Shift padding from the container to each modal section (header, body, footer) --- */
 
-.mat-mdc-dialog-container {
-  padding: 0 !important;
+.mat-mdc-dialog-container .mat-mdc-dialog-title,
+.mat-mdc-dialog-container .mat-mdc-dialog-content {
+  @apply tw-p-3 !important;
 }
-.mat-mdc-dialog-title,
-.mat-mdc-dialog-content {
-  margin: 0 !important;
-  padding: 12px !important;
+.mat-mdc-dialog-container .mat-mdc-dialog-title {
+  @apply tw-py-2 tw-mb-0 !important;
+}
+
+.mat-mdc-dialog-container .mat-mdc-icon-button {
+  @apply tw-p-0 !important;
+}
+
+.mat-mdc-dialog-container .mat-mdc-dialog-content ul {
+  @apply tw-mb-3;
 }
 
 /* --- Other Styling --- */
 
 /* Modal Header */
-about-modal-appearance .mat-mdc-dialog-title,
-about-modal-personality .mat-mdc-dialog-title,
-about-modal-special .mat-mdc-dialog-title {
+[app-theme='modal'] .mat-mdc-dialog-title {
   background-image: linear-gradient(white, #ffffcc);
   border-bottom: 1px solid #dee2e6;
   line-height: 30px;
   font-style: italic;
+  @apply tw-flex tw-flex-row;
+  @apply tw-content-center tw-items-center tw-justify-center;
+}
+[app-theme='modal'] .mat-mdc-dialog-title > * {
+  @apply tw-flex-1;
+}
+[app-theme='modal'] .mat-mdc-dialog-title > *:first-child {
+  @apply tw-basis-full tw-max-w-full;
+}
+
+[app-theme='modal'] .mat-mdc-dialog-title .mat-icon {
+  @apply tw-flex tw-flex-row;
+  @apply tw-content-center tw-items-center tw-justify-center;
 }
 
 /* Close button (line-height should match between .mat-mdc-icon-button and .mat-mdc-dialog-title) */
-about-modal-appearance .mat-mdc-icon-button,
-about-modal-personality .mat-mdc-icon-button,
-about-modal-special .mat-mdc-icon-button {
+[app-theme='modal'] .mat-mdc-icon-button {
   line-height: 30px !important;
   height: 30px !important;
   width: 30px !important;
 }
 
-about-modal-appearance .mat-mdc-icon-button .mat-icon,
-about-modal-personality .mat-mdc-icon-button .mat-icon,
-about-modal-special .mat-mdc-icon-button .mat-icon {
+[app-theme='modal'] .mat-mdc-icon-button .mat-icon {
   line-height: 24px !important;
   height: 24px !important;
   width: 24px !important;
 }
-about-modal-appearance .mat-mdc-icon-button .material-icons,
-about-modal-personality .mat-mdc-icon-button .material-icons,
-about-modal-special .mat-mdc-icon-button .material-icons {
+[app-theme='modal'] .mat-mdc-icon-button .material-icons {
   font-size: 24px !important;
 }

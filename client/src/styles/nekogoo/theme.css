@@ -1,0 +1,64 @@
+/* --- Site Themes (custom properties) --- */
+
+:root,
+[data-theme='light-theme'] {
+  /* NekoGoo */
+  --nekogoo-color-gradient: repeating-linear-gradient(
+    to bottom right,
+    #fff099 0%,
+    #fff099 40%,
+    #fefefa 50%,
+    #00ffff 60%,
+    #00ffff 100%
+  );
+  /* Examples */
+  --text-color: #171717; /* rgb(23, 23, 23) */
+  --background-color: white;
+  --anchor-color: #4f3674;
+  --h1-background-color: #3c275a;
+  --h1-border-color: #d6a800;
+  --heading-background-color: #3c275a;
+  --heading-color: white;
+  --heading-border-color: #d6a800;
+  --anchor-hover-color: #4f3674;
+  --anchor-hover-background-color: #d6a800;
+  --card-background-color: white;
+  --card-title-color: #4f3674;
+  --btn-background-color: #4f3674;
+  --btn-color: white;
+  --btn-hover-background-color: #d6a800;
+  --btn-hover-color: #4f3674;
+  --input-border-color: #ccc;
+  --annotation-color: #6b7280;
+  --table-header-background-color: #4f3674;
+  --table-header-color: #fff;
+  --table-border-color: #ddd;
+  --table-hover-background-color: #d6a800;
+  --table-hover-color: #4f3674;
+}
+
+[data-theme='dark-theme'] {
+  --text-color: #fafafa;
+  --background-color: #303030;
+  --anchor-color: #d176e1;
+  --h1-background-color: #9c27b0;
+  --h1-border-color: #9c27b0;
+  --heading-background-color: #424242;
+  --heading-color: white;
+  --heading-border-color: #424242;
+  --anchor-hover-color: #d176e1;
+  --anchor-hover-background-color: #303030;
+  --card-background-color: #424242;
+  --card-title-color: #d176e1;
+  --btn-background-color: #d176e1;
+  --btn-color: white;
+  --btn-hover-background-color: #7d4787;
+  --btn-hover-color: #d176e1;
+  --input-border-color: #303030;
+  --annotation-color: #6b7280;
+  --table-header-background-color: #d176e1;
+  --table-header-color: #fff;
+  --table-border-color: #303030;
+  --table-hover-background-color: #7d4787;
+  --table-hover-color: #d176e1;
+}

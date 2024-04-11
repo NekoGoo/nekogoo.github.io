@@ -1,71 +1,16 @@
 /* -------- Toolbar (Navigation) -------- */
 
-.nekogoo-toolbar-bg {
+body.mat-typography .nekogoo-toolbar-bg {
   background-image: linear-gradient(white, #ffffcc);
   /* box-shadow redundant with .mat-elevation-z3 but is softer */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-.nekogoo-logo {
-  background: #fff099;
-  background: -webkit-repeating-linear-gradient(
-    to bottom right,
-    #fff099 0%,
-    #fff099 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background: -moz-repeating-linear-gradient(
-    to bottom right,
-    #fff099 0%,
-    #fff099 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background: repeating-linear-gradient(
-    to bottom right,
-    #fff099 0%,
-    #fff099 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .nekogoo-color p {
-  background: #ffe866;
-  background: -webkit-repeating-linear-gradient(
-    to bottom right,
-    #ffe866 0%,
-    #ffe866 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background: -moz-repeating-linear-gradient(
-    to bottom right,
-    #ffe866 0%,
-    #ffe866 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background: repeating-linear-gradient(
-    to bottom right,
-    #ffe866 0%,
-    #ffe866 40%,
-    #fefefa 50%,
-    #00ffff 60%,
-    #00ffff 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
+  background: var(--nekogoo-color-gradient);
+  background-clip: text; /* Apply gradient only to text */
   -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke: 1px darkcyan; */ /* outline trace */
 }
 
 footer {
