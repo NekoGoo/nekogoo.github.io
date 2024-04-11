@@ -11,6 +11,10 @@
     "deploy-bak": "gh-pages -d wwwroot",
     "deploy": "ng deploy"
   },
+  "engines": {
+    "node": "^18.13.0 || ^20.9.0",
+    "npm": ">=8.0.0"
+  },
   "dependencies": {
     "@angular/animations": "^17.3.3",
     "@angular/cdk": "^17.3.3",
