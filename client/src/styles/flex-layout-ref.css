@@ -13,7 +13,7 @@
 
 .flex-layout {
   /* fxLayout="row wrap" */
-  @apply tw-flex tw-box-border tw-flex-row tw-flex-wrap;
+  @apply tw-flex tw-flex-row tw-flex-wrap;
 }
 
 /* --- fxLayoutAlign --- */
@@ -43,8 +43,20 @@
 /* https://tailwindcss.com/docs/max-width */
 
 .flex {
-  @apply tw-box-border tw-flex-1 tw-basis-full tw-max-w-full;
+  @apply tw-flex-1; /* fxFlex */
 }
 .flex-auto {
-  @apply tw-box-border tw-flex-auto;
+  @apply tw-flex-auto;
+}
+.flex-100 {
+  @apply tw-flex-1 tw-basis-full tw-max-w-full;
+}
+
+@media only screen and (min-width: 600px) {
+  .flex-gt-xs-30 {
+    @apply tw-basis-[30%] tw-max-w-[30%];
+  }
+  .flex-gt-xs-40 {
+    @apply tw-basis-[40%] tw-max-w-[40%];
+  }
 }
