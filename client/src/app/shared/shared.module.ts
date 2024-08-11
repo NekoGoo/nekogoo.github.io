@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -25,20 +28,11 @@ import { RoadmapComponent } from './pages/roadmap/roadmap.component';
     GooPillComponent,
     RoadmapComponent,
   ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-  ],
   exports: [
     CommonModule,
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
     // Components
     NotFoundComponent,
     BaseLayoutComponent,
@@ -49,5 +43,13 @@ import { RoadmapComponent } from './pages/roadmap/roadmap.component';
     GooPillComponent,
     RoadmapComponent,
   ],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export class SharedModule {}
