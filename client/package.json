@@ -7,9 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "npm run build",
-    "deploy-bak": "gh-pages -d wwwroot",
-    "deploy": "ng deploy"
+    "predeploy": "npm run build && node predeploy.js",
+    "deploy": "npx angular-cli-ghpages --dir=dist/nekogoo-app"
   },
   "engines": {
     "node": "^18.19.0 || ^20.9.0",
@@ -42,7 +41,6 @@
     "@angular/cli": "~18.1.4",
     "@angular/compiler-cli": "^18.1.4",
     "@types/jasmine": "~4.0.0",
-    "angular-cli-ghpages": "^2.0.1",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
