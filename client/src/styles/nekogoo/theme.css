@@ -3,14 +3,30 @@
 :root,
 [data-theme='light-theme'] {
   /* NekoGoo */
-  --nekogoo-color-gradient: repeating-linear-gradient(
+  /* --nekogoo-color-gradient: repeating-linear-gradient(
     to bottom right,
     #fff099 0%,
     #fff099 40%,
     #fefefa 50%,
     #00ffff 60%,
     #00ffff 100%
+  ); */
+  --nekogoo-color-gradient: repeating-linear-gradient(
+    to bottom left,
+    #fff099 0%,
+    #fff099 35%,
+    #fefefa 50%,
+    #00ffff 65%,
+    #00ffff 100%
   );
+  /* --nekogoo-color-gradient: repeating-linear-gradient(
+    to bottom,
+    #fff099 0%,
+    #fff099 40%,
+    #fefefa 50%,
+    #00ffff 65%,
+    #00ffff 100%
+  ); */
   /* Examples */
   --text-color: #171717; /* rgb(23, 23, 23) */
   --background-color: white;
