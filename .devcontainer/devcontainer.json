@@ -1,0 +1,91 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+// https://code.visualstudio.com/docs/devcontainers/tips-and-tricks
+{
+    "name": "Ubuntu NodeJS",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    // "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20",
+    // "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  
+    "containerEnv": {
+      // --- Development Environment Only ---
+      // Disable Mangling: live reloads will build faster at cost of bundle size (not minified but more readable)
+      "NG_BUILD_MANGLE": "false"
+    },
+  
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "20"
+      }
+    },
+  
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [4200],
+  
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "uname -a",
+    // "postCreateCommand": "npm i && cd client-angular && npm i",
+  
+    //   "mounts": [
+    //     "source=${localWorkspaceFolder}/python/modules/active,target=/home/codespace/.local/lib/python3.12/site-packages,type=bind,consistency=cached"
+    //   ],
+    // "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}", // This is usually the default
+    
+    // https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+    ],
+
+    // Configure tool-specific properties.
+    "customizations": {
+      "vscode": {
+        // Add the IDs of extensions to install when container is created
+        "extensions": [
+          "ms-vscode-remote.remote-containers",
+          "ms-azuretools.vscode-docker",
+          "esbenp.prettier-vscode", // formatter
+          // [Shell]
+          "foxundermoon.shell-format",
+          // [JavaScript|TypeScript]
+          "dbaeumer.vscode-eslint", // linter
+          "christian-kohler.path-intellisense", // autocompletes filenames
+          "mike-co.import-sorter", // TS
+          "steoates.autoimport", // TS
+          // [CSS]
+          "small-tech.comment-out-css",
+          "kamikillerto.vscode-colorize",
+          "pucelle.vscode-css-navigation",
+          "csstools.postcss",
+          "bradlc.vscode-tailwindcss",
+          // [Other Languages]
+          "DavidAnson.vscode-markdownlint",
+          "redhat.vscode-yaml",
+          // "ms-dotnettools.csharp",
+          // "bowlerhatllc.vscode-as3mxml",
+          "mikestead.dotenv",
+          "formulahendry.auto-close-tag", // HTML/XML
+          "formulahendry.auto-rename-tag", // HTML/XML
+          "christian-kohler.npm-intellisense",
+          // "theumletteam.umlet",
+          // "42Crunch.vscode-openapi",
+          "Angular.ng-template",
+          // "Vue.volar",
+          // "hashicorp.terraform",
+          // [Other]
+          "natqe.reload",
+          "donjayamanne.githistory",
+          "bierner.markdown-preview-github-styles",
+          "vscode-icons-team.vscode-icons",
+          "wayou.vscode-todo-highlight",
+          "lihui.vs-color-picker"
+          // "mongodb.mongodb-vscode"
+        ]
+      }
+    }
+  
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+  }
+  
