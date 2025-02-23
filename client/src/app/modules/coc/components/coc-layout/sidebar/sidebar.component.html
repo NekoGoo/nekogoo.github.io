@@ -1,33 +1,56 @@
-<div *ngIf="state$ | async as state">
+@if (state$ | async; as state) {
+  <div>
     <h2>{{ state.charName }}</h2>
-
     <h2>Core Stats</h2>
-    <div *ngFor="let stat of state.coreStats">
-        <coc-stat-frame [_id]="stat._id" [label]="stat.label" [minValue]="stat.minValue" [maxValue]="stat.maxValue" [tt]="stat.tt"
-            [isTextOnly]="stat.isTextOnly" [statupdown]="stat.statupdown"></coc-stat-frame>
-    </div>
-
+    @for (stat of state.coreStats; track stat) {
+      <div>
+        <coc-stat-frame
+          [_id]="stat._id"
+          [label]="stat.label"
+          [minValue]="stat.minValue"
+          [maxValue]="stat.maxValue"
+          [tt]="stat.tt"
+          [isTextOnly]="stat.isTextOnly"
+          [statupdown]="stat.statupdown"></coc-stat-frame>
+      </div>
+    }
     <h2>Combat Stats</h2>
-    <div *ngFor="let stat of state.combatStats">
-        <coc-stat-frame [_id]="stat._id" [label]="stat.label" [minValue]="stat.minValue" [maxValue]="stat.maxValue" [tt]="stat.tt"
-            [isTextOnly]="stat.isTextOnly" [statupdown]="stat.statupdown"></coc-stat-frame>
-    </div>
-
+    @for (stat of state.combatStats; track stat) {
+      <div>
+        <coc-stat-frame
+          [_id]="stat._id"
+          [label]="stat.label"
+          [minValue]="stat.minValue"
+          [maxValue]="stat.maxValue"
+          [tt]="stat.tt"
+          [isTextOnly]="stat.isTextOnly"
+          [statupdown]="stat.statupdown"></coc-stat-frame>
+      </div>
+    }
     <h2>Advancement</h2>
-    <div *ngFor="let stat of state.advancement">
-        <coc-stat-frame [_id]="stat._id" [label]="stat.label" [minValue]="stat.minValue" [maxValue]="stat.maxValue" [tt]="stat.tt"
-            [isTextOnly]="stat.isTextOnly" [statupdown]="stat.statupdown"></coc-stat-frame>
-    </div>
-</div>
+    @for (stat of state.advancement; track stat) {
+      <div>
+        <coc-stat-frame
+          [_id]="stat._id"
+          [label]="stat.label"
+          [minValue]="stat.minValue"
+          [maxValue]="stat.maxValue"
+          [tt]="stat.tt"
+          [isTextOnly]="stat.isTextOnly"
+          [statupdown]="stat.statupdown"></coc-stat-frame>
+      </div>
+    }
+  </div>
+}
 <br />
 
 <div class="timeDisplay">
-    <p>
-        Day#: 1337
-        <br />
-        Time: 12:00pm
-        <br />
-    </p>
+  <p>
+    Day#: 1337
+    <br />
+    Time: 12:00pm
+    <br />
+  </p>
 </div>
 
 <div class="spriteDisplay"></div>

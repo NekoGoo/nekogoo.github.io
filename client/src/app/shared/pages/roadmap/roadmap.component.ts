@@ -1,5 +1,4 @@
 import { NestedTreeControl } from '@angular/cdk/tree';
-import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatIconButton } from '@angular/material/button';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
@@ -121,7 +120,6 @@ const TASK_DATA: TaskNode[] = [
     MatTreeNodeDef,
     MatTreeNode,
     MatTreeNodeToggle,
-    NgIf,
     MatIcon,
     MatNestedTreeNode,
     MatIconButton,

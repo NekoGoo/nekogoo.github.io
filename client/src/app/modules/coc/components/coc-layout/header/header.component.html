@@ -40,9 +40,12 @@
 
 <!-- </div> -->
 
-
 <div class="coc-header-button-layout topbuttonset">
-    <div *ngFor="let button of headButtons | keyvalue : originalOrder">
-        <coc-button _id="{{button.key}}" *ngIf="button.value.visible">{{button.value.title}}</coc-button>
+  @for (button of headButtons | keyvalue: originalOrder; track button) {
+    <div>
+      @if (button.value.visible) {
+        <coc-button _id="{{ button.key }}">{{ button.value.title }}</coc-button>
+      }
     </div>
+  }
 </div>

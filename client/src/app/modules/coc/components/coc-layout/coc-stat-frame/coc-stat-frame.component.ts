@@ -1,4 +1,4 @@
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './coc-stat-frame.component.html',
   styleUrls: ['./coc-stat-frame.component.scss'],
   standalone: true,
-  imports: [NgClass, NgIf],
+  imports: [NgClass],
 })
 export class CocStatFrameComponent implements OnInit {
   @Input() _id = '';

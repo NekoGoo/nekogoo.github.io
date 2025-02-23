@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatDialog } from '@angular/material/dialog';
@@ -34,7 +33,6 @@ import { InfoEffectsDetailComponent } from './detail/detail.component';
   imports: [
     MatCard,
     MatCardTitle,
-    NgIf,
     MatCardContent,
     MatTable,
     MatColumnDef,

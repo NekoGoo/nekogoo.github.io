@@ -1,5 +1,4 @@
 import { CdkScrollable } from '@angular/cdk/scrolling';
-import { NgFor } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import {
   MAT_DIALOG_DATA,
@@ -29,7 +28,6 @@ import { Attribute } from '@modules/coc/interfaces';
     CdkScrollable,
     MatDialogContent,
     MatTable,
-    NgFor,
     MatColumnDef,
     MatHeaderCellDef,
     MatHeaderCell,

@@ -1,13 +1,15 @@
 <div class="coc-stat-layout">
-    <div id="{{_id}}" [ngClass]="statFrameClass">
-        <div class="coc-stat-bar-layout" [ngClass]="statBarClass">
-            <span class="stat-label" title="{{tt}}">{{label}}:</span>
-            <span class="stat-num">{{value}}</span>
-        </div>
+  <div id="{{ _id }}" [ngClass]="statFrameClass">
+    <div class="coc-stat-bar-layout" [ngClass]="statBarClass">
+      <span class="stat-label" title="{{ tt }}">{{ label }}:</span>
+      <span class="stat-num">{{ value }}</span>
     </div>
+  </div>
 
-    <!-- Stat Level Up Indicator -->
-    <div>
-        <div *ngIf="statupdown" class="stat-updown"></div>
-    </div>
+  <!-- Stat Level Up Indicator -->
+  <div>
+    @if (statupdown) {
+      <div class="stat-updown"></div>
+    }
+  </div>
 </div>

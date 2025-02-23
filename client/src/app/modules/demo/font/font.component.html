@@ -1,14 +1,16 @@
 <div class="main-layout">
-    <main app-theme="main">
-        <h1>Demo: Font Styling</h1>
-        <mat-divider></mat-divider>
+  <main app-theme="main">
+    <h1>Demo: Font Styling</h1>
+    <mat-divider></mat-divider>
 
-        <!-- <div class="demo-font-layout font-preview nekogoo-color"> -->
-        <div class="grid-2-gt-xs-layout font-preview nekogoo-color">
-            <div *ngFor="let font of demoFontStyles">
-                <h4>{{font.title}}</h4>
-                <p><span class="{{font.class}}">NekoGoo Clone</span></p>
-            </div>
+    <!-- <div class="demo-font-layout font-preview nekogoo-color"> -->
+    <div class="grid-2-gt-xs-layout font-preview nekogoo-color">
+      @for (font of demoFontStyles; track font) {
+        <div>
+          <h4>{{ font.title }}</h4>
+          <p><span class="{{ font.class }}">NekoGoo Clone</span></p>
         </div>
-    </main>
+      }
+    </div>
+  </main>
 </div>

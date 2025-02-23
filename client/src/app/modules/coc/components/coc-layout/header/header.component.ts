@@ -1,4 +1,4 @@
-import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
+import { KeyValuePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 import { CocButton } from '@modules/coc/interfaces';
@@ -9,7 +9,7 @@ import { CocButtonComponent } from '../coc-button/coc-button.component';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [NgFor, NgIf, CocButtonComponent, KeyValuePipe],
+  imports: [CocButtonComponent, KeyValuePipe],
 })
 export class CocHeaderComponent implements OnInit {
   headButtons: { [key: string]: CocButton };
