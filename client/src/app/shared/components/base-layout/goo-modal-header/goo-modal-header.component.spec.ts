@@ -8,9 +8,8 @@ describe('GooModalHeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GooModalHeaderComponent ]
-    })
-    .compileComponents();
+      imports: [GooModalHeaderComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GooModalHeaderComponent);
     component = fixture.componentInstance;

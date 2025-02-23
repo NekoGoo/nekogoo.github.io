@@ -1,3 +1,4 @@
+import { AsyncPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { EMPTY, Observable } from 'rxjs';
@@ -10,6 +11,8 @@ import { getMode } from '@modules/coc/store/ui/ui.selectors';
   selector: 'coc-play',
   templateUrl: './play.component.html',
   styleUrls: ['./play.component.scss'],
+  standalone: true,
+  imports: [AsyncPipe],
 })
 export class CocPlayComponent implements OnInit {
   mainText$ = this.store.select(getMainText);

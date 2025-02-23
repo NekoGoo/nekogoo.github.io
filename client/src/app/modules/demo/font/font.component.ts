@@ -1,4 +1,6 @@
+import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatDivider } from '@angular/material/divider';
 import { Subscription, interval } from 'rxjs';
 
 interface DemoFontStyle {
@@ -10,6 +12,8 @@ interface DemoFontStyle {
   selector: 'app-demo-font',
   templateUrl: './font.component.html',
   styleUrls: ['./font.component.scss'],
+  standalone: true,
+  imports: [MatDivider, NgFor],
 })
 export class FontComponent implements OnInit {
   subDemoHMR: Subscription | undefined;

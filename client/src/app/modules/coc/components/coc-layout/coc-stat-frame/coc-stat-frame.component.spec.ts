@@ -8,9 +8,8 @@ describe('CocStatFrameComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CocStatFrameComponent ]
-    })
-    .compileComponents();
+      imports: [CocStatFrameComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CocStatFrameComponent);
     component = fixture.componentInstance;

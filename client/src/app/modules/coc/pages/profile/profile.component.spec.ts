@@ -8,7 +8,7 @@ describe('CocProfileComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CocProfileComponent],
+      imports: [CocProfileComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CocProfileComponent);

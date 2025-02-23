@@ -8,9 +8,8 @@ describe('FontComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FontComponent ]
-    })
-    .compileComponents();
+      imports: [FontComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FontComponent);
     component = fixture.componentInstance;

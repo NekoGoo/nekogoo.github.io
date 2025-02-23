@@ -29,7 +29,13 @@ import { CocProfileComponent } from './pages/profile/profile.component';
 // https://www.optizent.com/blog/cookies-vs-javascript-local-storage-vs-session-storage-difference-and-uses
 
 @NgModule({
-  declarations: [
+  imports: [
+    CocRoutingModule,
+    SharedModule,
+    StoreModule.forFeature('coc', reducers, {
+      metaReducers,
+    }),
+    // Components
     CocComponent,
     CocLayoutComponent,
     CocHeaderComponent,
@@ -47,14 +53,6 @@ import { CocProfileComponent } from './pages/profile/profile.component';
     InfoEffectsDetailComponent,
     InfoTagsComponent,
     InfoTagsDetailComponent,
-  ],
-  imports: [
-    CocRoutingModule,
-    SharedModule,
-    StoreModule.forFeature('coc', reducers, {
-      metaReducers,
-    }),
-    // EffectsModule.forFeature([]),
   ],
 })
 export class CocModule {

@@ -1,5 +1,21 @@
+import { CdkScrollable } from '@angular/cdk/scrolling';
+import { NgFor } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {
+  MAT_DIALOG_DATA,
+  MatDialogContent,
+  MatDialogTitle,
+} from '@angular/material/dialog';
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+} from '@angular/material/table';
 
 import { Attribute } from '@modules/coc/interfaces';
 
@@ -7,6 +23,21 @@ import { Attribute } from '@modules/coc/interfaces';
   selector: 'coc-info-attributes-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss'],
+  standalone: true,
+  imports: [
+    MatDialogTitle,
+    CdkScrollable,
+    MatDialogContent,
+    MatTable,
+    NgFor,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatCellDef,
+    MatCell,
+    MatRowDef,
+    MatRow,
+  ],
 })
 export class InfoAttributesDetailComponent implements OnInit {
   attributeDetails: [string, any][];

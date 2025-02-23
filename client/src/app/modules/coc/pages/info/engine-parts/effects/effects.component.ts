@@ -1,5 +1,21 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatDialog } from '@angular/material/dialog';
+import { MatIcon } from '@angular/material/icon';
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+} from '@angular/material/table';
+import { MatTooltip } from '@angular/material/tooltip';
 
 import {
   DimensionTypes,
@@ -14,13 +30,35 @@ import { InfoEffectsDetailComponent } from './detail/detail.component';
   selector: 'coc-info-effects',
   templateUrl: './effects.component.html',
   styleUrls: ['./effects.component.scss'],
+  standalone: true,
+  imports: [
+    MatCard,
+    MatCardTitle,
+    NgIf,
+    MatCardContent,
+    MatTable,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatCellDef,
+    MatCell,
+    MatIcon,
+    MatTooltip,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+  ],
 })
 export class InfoEffectsComponent implements OnInit {
   effects!: Effect[];
   displayedColumns: string[] = ['type', 'title', 'description'];
   effectTypes: string[];
 
-  constructor(private effectService: EffectService, public dialog: MatDialog) {
+  constructor(
+    private effectService: EffectService,
+    public dialog: MatDialog,
+  ) {
     this.effects = this.effectService.seed(DimensionTypes.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names
     this.effectTypes = Object.keys(EffectTypes).filter((v) =>

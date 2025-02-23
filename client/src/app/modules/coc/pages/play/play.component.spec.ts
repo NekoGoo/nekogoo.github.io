@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlayComponent } from './play.component';
+import { CocPlayComponent } from './play.component';
 
 describe('PlayComponent', () => {
-  let component: PlayComponent;
-  let fixture: ComponentFixture<PlayComponent>;
+  let component: CocPlayComponent;
+  let fixture: ComponentFixture<CocPlayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlayComponent ]
-    })
-    .compileComponents();
+      imports: [CocPlayComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(PlayComponent);
+    fixture = TestBed.createComponent(CocPlayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

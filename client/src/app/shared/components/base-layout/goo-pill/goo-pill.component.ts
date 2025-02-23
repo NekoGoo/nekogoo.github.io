@@ -4,9 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'goo-pill',
   templateUrl: './goo-pill.component.html',
   styleUrls: ['./goo-pill.component.scss'],
+  standalone: true,
 })
 export class GooPillComponent implements OnInit {
-  constructor() {}
+  // constructor() {}
 
   ngOnInit(): void {}
 }

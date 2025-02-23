@@ -12,7 +12,11 @@ import { ModalPersonalityComponent } from './components/modal-personality/modal-
 import { ModalSpecialComponent } from './components/modal-special/modal-special.component';
 
 @NgModule({
-  declarations: [
+  imports: [
+    CommonModule,
+    AboutRoutingModule,
+    SharedModule,
+    // Components
     AboutComponent,
     ModalAppearanceComponent,
     ModalPersonalityComponent,
@@ -20,6 +24,5 @@ import { ModalSpecialComponent } from './components/modal-special/modal-special.
     // GooModalHeaderComponent,
     // GooPillComponent,
   ],
-  imports: [CommonModule, AboutRoutingModule, SharedModule],
 })
 export class AboutModule {}

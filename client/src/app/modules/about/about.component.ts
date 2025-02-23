@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButton } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 
 import { ModalAppearanceComponent } from './components/modal-appearance/modal-appearance.component';
@@ -9,6 +10,8 @@ import { ModalSpecialComponent } from './components/modal-special/modal-special.
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
+  standalone: true,
+  imports: [MatButton],
 })
 export class AboutComponent implements OnInit {
   imgNekoGooFull = 'assets/images/NekoGoo-01-A.png';

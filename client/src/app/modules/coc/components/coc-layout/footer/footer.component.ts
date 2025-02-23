@@ -1,11 +1,15 @@
+import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 import { CocButton } from '@modules/coc/interfaces';
+import { CocButtonComponent } from '../coc-button/coc-button.component';
 
 @Component({
   selector: 'coc-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
+  standalone: true,
+  imports: [NgFor, NgIf, CocButtonComponent, KeyValuePipe],
 })
 export class CocFooterComponent implements OnInit {
   footButtons: { [key: string]: CocButton };

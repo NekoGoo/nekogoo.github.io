@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 
 import { Attribute, Effect, SaveState, Tag } from '@modules/coc/interfaces';
@@ -14,6 +15,9 @@ import {
   outputText,
 } from '@modules/coc/store/play/play.actions';
 import { getMode } from '@modules/coc/store/ui/ui.selectors';
+import { CocFooterComponent } from './footer/footer.component';
+import { CocHeaderComponent } from './header/header.component';
+import { CocSidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
   selector: 'coc-layout',
@@ -21,6 +25,13 @@ import { getMode } from '@modules/coc/store/ui/ui.selectors';
   styleUrls: ['./coc-layout.component.css'],
   // TODO: remove below line when styles no longer need to be global to work
   encapsulation: ViewEncapsulation.None,
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    CocHeaderComponent,
+    CocSidebarComponent,
+    CocFooterComponent,
+  ],
 })
 // export class CocLayoutComponent implements OnInit {
 export class CocLayoutComponent implements AfterViewInit {

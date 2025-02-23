@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButton } from '@angular/material/button';
+import { MatCard } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
 
 import {
   Attribute,
@@ -13,6 +16,8 @@ import {
   selector: 'app-coc',
   templateUrl: './coc.component.html',
   styleUrls: ['./coc.component.scss'],
+  standalone: true,
+  imports: [MatCard, MatButton, RouterLink],
 })
 export class CocComponent implements OnInit {
   attributes: Attribute[];

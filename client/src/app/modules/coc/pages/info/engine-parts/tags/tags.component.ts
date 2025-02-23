@@ -1,5 +1,23 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatIconButton } from '@angular/material/button';
+import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatDialog } from '@angular/material/dialog';
+import { MatIcon } from '@angular/material/icon';
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+} from '@angular/material/table';
+import { MatTooltip } from '@angular/material/tooltip';
+import { RouterLink } from '@angular/router';
 
 import {
   DimensionTypes,
@@ -14,13 +32,37 @@ import { InfoTagsDetailComponent } from './detail/detail.component';
   selector: 'coc-info-tags',
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
+  standalone: true,
+  imports: [
+    MatCard,
+    MatCardTitle,
+    NgIf,
+    MatCardContent,
+    MatTable,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatCellDef,
+    MatCell,
+    MatIcon,
+    MatTooltip,
+    MatIconButton,
+    RouterLink,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+  ],
 })
 export class InfoTagsComponent implements OnInit {
   tags!: Tag[];
   displayedColumns: string[] = ['type', 'title', 'description'];
   tagTypes: string[];
 
-  constructor(private tagService: TagService, public dialog: MatDialog) {
+  constructor(
+    private tagService: TagService,
+    public dialog: MatDialog,
+  ) {
     // this.tags = this.tagService.data;
     this.tags = this.tagService.seed(DimensionTypes.CoC);
     // https://bobbyhadz.com/blog/typescript-get-all-enum-names

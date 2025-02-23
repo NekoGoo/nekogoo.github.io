@@ -8,7 +8,7 @@ describe('CocRoadmapComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CocRoadmapComponent],
+      imports: [CocRoadmapComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CocRoadmapComponent);

@@ -6,7 +6,6 @@ import { DemoRoutingModule } from './demo-routing.module';
 import { FontComponent } from './font/font.component';
 
 @NgModule({
-  declarations: [FontComponent, CounterComponent],
-  imports: [SharedModule, DemoRoutingModule],
+  imports: [SharedModule, DemoRoutingModule, FontComponent, CounterComponent],
 })
 export class DemoModule {}

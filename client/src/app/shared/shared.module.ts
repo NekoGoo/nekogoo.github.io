@@ -18,16 +18,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { RoadmapComponent } from './pages/roadmap/roadmap.component';
 
 @NgModule({
-  declarations: [
-    NotFoundComponent,
-    BaseLayoutComponent,
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent,
-    GooModalHeaderComponent,
-    GooPillComponent,
-    RoadmapComponent,
-  ],
   exports: [
     CommonModule,
     MaterialModule,
@@ -49,6 +39,15 @@ import { RoadmapComponent } from './pages/roadmap/roadmap.component';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
+    // Components
+    NotFoundComponent,
+    BaseLayoutComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+    GooModalHeaderComponent,
+    GooPillComponent,
+    RoadmapComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
 })

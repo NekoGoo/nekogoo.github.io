@@ -1,5 +1,21 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { MatDialog } from '@angular/material/dialog';
+import { MatIcon } from '@angular/material/icon';
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+} from '@angular/material/table';
+import { MatTooltip } from '@angular/material/tooltip';
 
 import {
   Attribute,
@@ -14,6 +30,25 @@ import { InfoAttributesDetailComponent } from './detail/detail.component';
   selector: 'coc-info-attributes',
   templateUrl: './attributes.component.html',
   styleUrls: ['./attributes.component.scss'],
+  standalone: true,
+  imports: [
+    MatCard,
+    MatCardTitle,
+    NgIf,
+    MatCardContent,
+    MatTable,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatCellDef,
+    MatCell,
+    MatIcon,
+    MatTooltip,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+  ],
 })
 export class InfoAttributesComponent implements OnInit {
   attributes!: Attribute[];

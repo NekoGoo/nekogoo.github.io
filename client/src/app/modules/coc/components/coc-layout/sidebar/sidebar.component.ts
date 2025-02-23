@@ -1,14 +1,18 @@
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { CocSidebarState } from '@modules/coc/interfaces';
 import { setSidebar } from '@modules/coc/store/ui/ui.actions';
 import { getSidebarState } from '@modules/coc/store/ui/ui.selectors';
+import { CocStatFrameComponent } from '../coc-stat-frame/coc-stat-frame.component';
 
 @Component({
   selector: 'coc-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
+  standalone: true,
+  imports: [NgIf, NgFor, CocStatFrameComponent, AsyncPipe],
 })
 export class CocSidebarComponent implements OnInit {
   state$ = this.store.select(getSidebarState);

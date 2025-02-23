@@ -8,9 +8,8 @@ describe('CocLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CocLayoutComponent ]
-    })
-    .compileComponents();
+      imports: [CocLayoutComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CocLayoutComponent);
     component = fixture.componentInstance;

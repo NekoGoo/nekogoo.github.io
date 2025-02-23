@@ -1,4 +1,7 @@
+import { AsyncPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { MatButton } from '@angular/material/button';
+import { MatCard } from '@angular/material/card';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
@@ -13,6 +16,8 @@ import {
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css'],
+  standalone: true,
+  imports: [MatCard, MatButton, AsyncPipe],
 })
 export class CounterComponent implements OnInit {
   count$: Observable<number>;

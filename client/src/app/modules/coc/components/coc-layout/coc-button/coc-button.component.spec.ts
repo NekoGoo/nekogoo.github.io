@@ -8,7 +8,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CocButtonComponent],
+      imports: [CocButtonComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CocButtonComponent);

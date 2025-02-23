@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EffectsComponent } from './effects.component';
+import { InfoEffectsComponent } from './effects.component';
 
 describe('EffectsComponent', () => {
-  let component: EffectsComponent;
-  let fixture: ComponentFixture<EffectsComponent>;
+  let component: InfoEffectsComponent;
+  let fixture: ComponentFixture<InfoEffectsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EffectsComponent ]
-    })
-    .compileComponents();
+      imports: [InfoEffectsComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(EffectsComponent);
+    fixture = TestBed.createComponent(InfoEffectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

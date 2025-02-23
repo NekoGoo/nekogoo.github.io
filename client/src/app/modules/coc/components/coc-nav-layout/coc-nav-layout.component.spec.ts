@@ -8,9 +8,8 @@ describe('CocNavLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CocNavLayoutComponent ]
-    })
-    .compileComponents();
+      imports: [CocNavLayoutComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CocNavLayoutComponent);
     component = fixture.componentInstance;

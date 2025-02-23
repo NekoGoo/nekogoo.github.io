@@ -8,9 +8,8 @@ describe('GooPillComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GooPillComponent ]
-    })
-    .compileComponents();
+      imports: [GooPillComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GooPillComponent);
     component = fixture.componentInstance;
