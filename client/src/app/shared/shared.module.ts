@@ -13,14 +13,13 @@ import { GooModalHeaderComponent } from './components/base-layout/goo-modal-head
 import { GooPillComponent } from './components/base-layout/goo-pill/goo-pill.component';
 import { HeaderComponent } from './components/base-layout/header/header.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { MaterialModule } from './material.module';
+
 import { HomeComponent } from './pages/home/home.component';
 import { RoadmapComponent } from './pages/roadmap/roadmap.component';
 
 @NgModule({
   exports: [
     CommonModule,
-    MaterialModule,
     FormsModule,
     ReactiveFormsModule,
     // Components
@@ -35,7 +34,6 @@ import { RoadmapComponent } from './pages/roadmap/roadmap.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
