@@ -10,7 +10,7 @@ import { CocStatFrameComponent } from '../coc-stat-frame/coc-stat-frame.componen
 @Component({
   selector: 'coc-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss'],
+  // styleUrls: ['./sidebar.component.css'],
   standalone: true,
   imports: [CocStatFrameComponent, AsyncPipe],
 })

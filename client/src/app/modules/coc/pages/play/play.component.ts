@@ -10,7 +10,7 @@ import { getMode } from '@modules/coc/store/ui/ui.selectors';
 @Component({
   selector: 'coc-play',
   templateUrl: './play.component.html',
-  styleUrls: ['./play.component.scss'],
+  // styleUrls: ['./play.component.css'],
   standalone: true,
   imports: [AsyncPipe],
 })

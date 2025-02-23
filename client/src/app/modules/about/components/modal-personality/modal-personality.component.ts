@@ -8,7 +8,7 @@ import { GooPillComponent } from '@shared/components/base-layout/goo-pill/goo-pi
 @Component({
   selector: 'about-modal-personality',
   templateUrl: './modal-personality.component.html',
-  styleUrls: ['./modal-personality.component.scss'],
+  styleUrls: ['./modal-personality.component.css'],
   standalone: true,
   imports: [
     GooModalHeaderComponent,

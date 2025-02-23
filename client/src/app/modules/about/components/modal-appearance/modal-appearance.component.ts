@@ -18,7 +18,7 @@ export interface DialogData {
 @Component({
   selector: 'about-modal-appearance',
   templateUrl: './modal-appearance.component.html',
-  styleUrls: ['./modal-appearance.component.scss'],
+  // styleUrls: ['./modal-appearance.component.css'],
   standalone: true,
   imports: [
     GooModalHeaderComponent,

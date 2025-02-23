@@ -6,7 +6,7 @@ import { MatIcon } from '@angular/material/icon';
 @Component({
   selector: 'goo-modal-header',
   templateUrl: './goo-modal-header.component.html',
-  styleUrls: ['./goo-modal-header.component.scss'],
+  // styleUrls: ['./goo-modal-header.component.css'],
   standalone: true,
   imports: [MatDialogTitle, MatIconButton, MatIcon],
 })

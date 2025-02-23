@@ -7,10 +7,6 @@
 @use 'font-faces/ReglisseFill';
 @use 'font-faces/ReglisseRegular';
 
-:host {
-  display: block;
-}
-
 .font-preview {
   p {
     font-size: 4rem;

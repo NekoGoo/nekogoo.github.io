@@ -7,7 +7,7 @@ import { CocButtonComponent } from '../coc-button/coc-button.component';
 @Component({
   selector: 'coc-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
+  // styleUrls: ['./footer.component.css'],
   standalone: true,
   imports: [CocButtonComponent, KeyValuePipe],
 })

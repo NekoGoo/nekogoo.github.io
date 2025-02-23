@@ -21,7 +21,7 @@ import { Tag } from '@modules/coc/interfaces';
 @Component({
   selector: 'coc-info-tags-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.scss'],
+  // styleUrls: ['./detail.component.css'],
   standalone: true,
   imports: [
     MatDialogTitle,

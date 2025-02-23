@@ -10,7 +10,7 @@ interface DemoFontStyle {
 @Component({
   selector: 'app-demo-font',
   templateUrl: './font.component.html',
-  styleUrls: ['./font.component.scss'],
+  styleUrls: ['./font.component.css'],
   standalone: true,
   imports: [MatDivider],
 })

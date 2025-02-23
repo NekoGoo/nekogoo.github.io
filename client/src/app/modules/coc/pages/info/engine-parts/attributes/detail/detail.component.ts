@@ -21,7 +21,7 @@ import { Attribute } from '@modules/coc/interfaces';
 @Component({
   selector: 'coc-info-attributes-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.scss'],
+  // styleUrls: ['./detail.component.css'],
   standalone: true,
   imports: [
     MatDialogTitle,

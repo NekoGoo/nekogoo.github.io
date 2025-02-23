@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'coc-button',
   templateUrl: './coc-button.component.html',
-  styleUrls: ['./coc-button.component.scss'],
+  // styleUrls: ['./coc-button.component.css'],
   standalone: true,
 })
 export class CocButtonComponent implements OnInit {

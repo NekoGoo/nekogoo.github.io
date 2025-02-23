@@ -110,7 +110,7 @@ const TASK_DATA: TaskNode[] = [
 @Component({
   selector: 'app-roadmap',
   templateUrl: './roadmap.component.html',
-  styleUrls: ['./roadmap.component.scss'],
+  styleUrls: ['./roadmap.component.css'],
   standalone: true,
   imports: [
     MatCard,

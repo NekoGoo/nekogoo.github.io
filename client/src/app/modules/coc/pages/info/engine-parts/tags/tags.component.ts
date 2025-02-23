@@ -30,7 +30,7 @@ import { InfoTagsDetailComponent } from './detail/detail.component';
 @Component({
   selector: 'coc-info-tags',
   templateUrl: './tags.component.html',
-  styleUrls: ['./tags.component.scss'],
+  // styleUrls: ['./tags.component.css'],
   standalone: true,
   imports: [
     MatCard,

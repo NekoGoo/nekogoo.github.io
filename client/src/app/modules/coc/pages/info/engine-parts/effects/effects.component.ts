@@ -28,7 +28,7 @@ import { InfoEffectsDetailComponent } from './detail/detail.component';
 @Component({
   selector: 'coc-info-effects',
   templateUrl: './effects.component.html',
-  styleUrls: ['./effects.component.scss'],
+  // styleUrls: ['./effects.component.css'],
   standalone: true,
   imports: [
     MatCard,

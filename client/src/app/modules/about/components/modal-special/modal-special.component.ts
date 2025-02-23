@@ -9,7 +9,7 @@ import { GooPillComponent } from '@shared/components/base-layout/goo-pill/goo-pi
 @Component({
   selector: 'about-modal-special',
   templateUrl: './modal-special.component.html',
-  styleUrls: ['./modal-special.component.scss'],
+  // styleUrls: ['./modal-special.component.css'],
   standalone: true,
   imports: [
     GooModalHeaderComponent,

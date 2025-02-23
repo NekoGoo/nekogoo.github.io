@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 @Component({
   selector: 'app-base-layout',
   templateUrl: './base-layout.component.html',
-  styleUrls: ['./base-layout.component.scss'],
+  styleUrls: ['./base-layout.component.css'],
   standalone: true,
   imports: [HeaderComponent, RouterOutlet, FooterComponent],
 })

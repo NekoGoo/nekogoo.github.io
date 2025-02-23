@@ -15,7 +15,7 @@ import {
 @Component({
   selector: 'app-coc',
   templateUrl: './coc.component.html',
-  styleUrls: ['./coc.component.scss'],
+  styleUrls: ['./coc.component.css'],
   standalone: true,
   imports: [MatCard, MatButton, RouterLink],
 })

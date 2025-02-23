@@ -1,9 +1,5 @@
 /* @import 'coc'; */
-@import '../../../../../styles/coc';
-
-:host {
-  display: block;
-}
+@import '../../../../../styles/coc/index.css';
 
 /* https://www.w3schools.com/colors/colors_picker.asp */
 .nekogoo-nav-toolbar-bg {

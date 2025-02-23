@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'coc-stat-frame',
   templateUrl: './coc-stat-frame.component.html',
-  styleUrls: ['./coc-stat-frame.component.scss'],
+  // styleUrls: ['./coc-stat-frame.component.css'],
   standalone: true,
   imports: [NgClass],
 })

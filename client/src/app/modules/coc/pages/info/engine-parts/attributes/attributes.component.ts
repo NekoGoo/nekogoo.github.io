@@ -28,7 +28,7 @@ import { InfoAttributesDetailComponent } from './detail/detail.component';
 @Component({
   selector: 'coc-info-attributes',
   templateUrl: './attributes.component.html',
-  styleUrls: ['./attributes.component.scss'],
+  // styleUrls: ['./attributes.component.css'],
   standalone: true,
   imports: [
     MatCard,
