@@ -14,3 +14,13 @@ npm i -D eslint-config-prettier eslint-plugin-prettier
 npm i -D eslint-plugin-import eslint-config-airbnb-base eslint-config-airbnb-typescript
 npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
+
+### Using Git LFS (Large File Storage)
+
+LFS is used for large or frequently changing binary files.&nbsp; It is only applied when `.gitattributes` specifies files like so `*.png filter=lfs diff=lfs merge=lfs -text`.&nbsp; It results in reduced repo size but requires an extra dependency.
+
+```bash
+sudo apt install git-lfs
+git lfs install
+git lfs pull
+```
