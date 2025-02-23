@@ -1,12 +1,11 @@
+import { isDevMode } from '@angular/core';
 import {
   ActionReducerMap,
   createFeatureSelector,
   MetaReducer,
 } from '@ngrx/store';
 
-import { environment } from '@env';
 import { CocState } from './play/coc.state';
-
 import { playReducer } from './play/play.reducer';
 import { templateReducer } from './templates/template.reducer';
 import { uiReducer } from './ui/ui.reducer';
@@ -22,7 +21,6 @@ export const reducers: ActionReducerMap<CocState> = {
   templates: templateReducer,
 };
 
+// --- MetaReducers ---
 // Old example of logging: https://github.com/ngrx/platform/blob/127ccc99663442ea1a902e459ae9fb1041fd7f80/example-app/app/reducers/index.ts
-export const metaReducers: MetaReducer<CocState>[] = !environment.production
-  ? []
-  : [];
+export const metaReducers: MetaReducer<CocState>[] = !isDevMode() ? [] : [];
