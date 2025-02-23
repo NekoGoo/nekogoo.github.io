@@ -1,0 +1,17 @@
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore minified JavaScript files
+*.min.js
+
+# Ignore all JSON files except for config
+*.json
+!config/*.json
+
+# # Ignore specific file
+# src/some-file-to-ignore.js
+
+# # Ignore all files in a folder but include some specific ones
+# node_modules/*
+# !node_modules/some-package/*.js
