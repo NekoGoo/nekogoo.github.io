@@ -27,6 +27,27 @@ _Languages:_ HTML, CSS, JavaScript, SCSS, TypeScript
 
 Angular, Angular Material, NGRX (data store, redux)
 
+### Dev Run Steps
+
+Find the container ID or name
+
+```bash
+docker ps
+```
+
+Access the running dev container
+
+```bash
+docker exec -it --user vscode <container_id_or_name> /bin/bash
+```
+
+Navigate to the project directory and run the app
+
+```bash
+cd /workspaces/nekogoo.github.io/client
+npm run dev
+```
+
 ### Project Commands Used
 
 Generate a new Angular application ([tutorial](https://angular.io/tutorial/toh-pt5), [layouts](https://indepth.dev/posts/1235/how-to-reuse-common-layouts-in-angular-using-router-2), [RxJS](https://www.learnrxjs.io))
