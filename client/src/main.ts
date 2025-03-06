@@ -1,40 +1,27 @@
-import { importProvidersFrom, isDevMode } from '@angular/core';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { EntityDataModule } from '@ngrx/data';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import {
+  PreloadAllModules,
+  provideRouter,
+  withPreloading,
+} from '@angular/router';
 
-import { SharedModule } from '@shared/shared.module';
-import { counterReducer } from '@shared/store/counter/counter.reducer';
-import { entityConfig } from '@shared/store/entity-metadata';
-import { AppRoutingModule } from './app/app-routing.module';
 import { AppComponent } from './app/app.component';
+import { routes } from './app/app.routes';
+import { ngrxProviders } from './app/shared/ngrx.providers';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom(
-      // --- Core imports ---
-      BrowserModule,
-      // StoreModule.forRoot({}, {}),
-      // StoreModule.forRoot(reducers, {
-      //   metaReducers,
-      // }),
-      StoreModule.forRoot({ counter: counterReducer }),
-      // Instrumentation must be imported after StoreModule (config is optional)
-      StoreDevtoolsModule.instrument({
-        maxAge: 25, // Retains last 25 states
-        logOnly: !isDevMode(), // Restrict extension to log-only mode
-        connectInZone: true,
-      }),
-      EffectsModule.forRoot([]),
-      EntityDataModule.forRoot(entityConfig),
-      // --- Routing imports ---
-      AppRoutingModule,
-      // --- Shared imports ---
-      SharedModule,
-    ),
+    // Core Angular & Animations
+    provideHttpClient(withInterceptorsFromDi()),
     provideAnimations(),
+    // Angular Router with Preloading
+    provideRouter(routes, withPreloading(PreloadAllModules)),
+    // Data Store
+    ...ngrxProviders,
   ],
 }).catch((err) => console.error(err));

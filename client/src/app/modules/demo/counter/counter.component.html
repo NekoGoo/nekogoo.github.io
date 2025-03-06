@@ -1,13 +1,14 @@
 <div class="demo-ngrx-layout">
-    <mat-card appearance="raised" class="mat-elevation-z3">
-        <h2>Counter</h2>
+  <mat-card appearance="raised" class="mat-elevation-z3">
+    <h2>Counter Demo</h2>
 
-        <div>Current Count: {{ count$ | async }}</div>
-        <br />
+    <div>Current Count: {{ count$ | async }}</div>
+    <br />
 
-        <button mat-stroked-button (click)="decrement()">Decrement</button>
-        <button mat-stroked-button (click)="reset()">Reset Counter</button>
-        <button mat-stroked-button (click)="increment()">Increment</button>
-    </mat-card>
+    <button mat-stroked-button (click)="decrement()">Decrement</button>
+    <button mat-stroked-button (click)="reset()">Reset Counter</button>
+    <button mat-stroked-button (click)="increment()">Increment</button>
+    <button mat-stroked-button (click)="setCount()">Set Count</button>
+  </mat-card>
 </div>
 <br /><br />

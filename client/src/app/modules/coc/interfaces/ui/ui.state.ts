@@ -18,7 +18,7 @@ export const UiModeTypes = {
   DebugInfo: 'debug-info',
   Settings: 'settings',
 } as const;
-export type UiModeType = typeof UiModeTypes[keyof typeof UiModeTypes];
+export type UiModeType = (typeof UiModeTypes)[keyof typeof UiModeTypes];
 
 export interface UiState {
   // mode: string; // UiModeType

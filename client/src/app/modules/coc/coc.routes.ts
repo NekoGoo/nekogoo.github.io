@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { CocComponent } from './coc.component';
 import { CocLayoutComponent } from './components/coc-layout/coc-layout.component';
 import { CocNavLayoutComponent } from './components/coc-nav-layout/coc-nav-layout.component';
+import { cocStoreProviders } from './store/coc.providers';
 
 import { InfoAttributesComponent } from './pages/info/engine-parts/attributes/attributes.component';
 import { InfoEffectsComponent } from './pages/info/engine-parts/effects/effects.component';
@@ -12,10 +12,11 @@ import { CocRoadmapComponent } from './pages/info/roadmap/roadmap.component';
 import { CocPlayComponent } from './pages/play/play.component';
 import { CocProfileComponent } from './pages/profile/profile.component';
 
-const routes: Routes = [
+export const cocRoutes: Routes = [
   {
     path: '',
     component: CocNavLayoutComponent,
+    providers: [...cocStoreProviders], // Lazily load feature states
     children: [
       {
         path: '',
@@ -54,9 +55,3 @@ const routes: Routes = [
     ],
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-})
-export class CocRoutingModule {}

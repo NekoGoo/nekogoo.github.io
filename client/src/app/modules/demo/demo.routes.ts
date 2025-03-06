@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { CounterComponent } from './counter/counter.component';
 import { FontComponent } from './font/font.component';
 
-const routes: Routes = [
+export const demoRoutes: Routes = [
   {
     path: '',
     children: [
@@ -21,9 +20,3 @@ const routes: Routes = [
     ],
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-})
-export class DemoRoutingModule {}
